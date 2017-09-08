@@ -1,8 +1,11 @@
 # bNest Token Site
 
 ### General
-- Form sent to bnesttoken@gmail.com
+- Email: bNesttoken@gmail.com
+- Forms sent to Email
+- Google Analytics on Email
 
 ### To-Do
 - Possibly include reset.css or normalize.css
+- Include minor media queries for breakpoints
 
