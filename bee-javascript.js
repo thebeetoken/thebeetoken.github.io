@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   setTimeout(function() {
     beeLogo.style.opacity = 0;
   }, 1000);
+
+  // timeout for logo display none
+  setTimeout(function() {
+    beeLogo.style.display = 'none';
+  }, 2000);
   
   //timeout for main logo fade in
   setTimeout(function() {
