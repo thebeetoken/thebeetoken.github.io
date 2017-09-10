@@ -71,8 +71,8 @@ body {
 }
 
 #bn-logo-main {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   pointer-events: none;
