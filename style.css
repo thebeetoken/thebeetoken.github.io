@@ -71,12 +71,12 @@ body {
 }
 
 #bn-logo-main {
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: 175px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   pointer-events: none;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 @media (min-width: 768px) {
@@ -226,7 +226,7 @@ body {
 .bn-main-social-links {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 250px;
 }
 
