@@ -71,8 +71,8 @@ body {
 }
 
 #bn-logo-main {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   pointer-events: none;
@@ -225,31 +225,39 @@ body {
 
 .bn-main-social-links {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   margin-top: 10px;
-  height: 140px;
-  text-align: center;
+  width: 250px;
 }
 
 @media (min-width: 768px) {
   .bn-main-social-links {
-    height: auto;
-    flex-direction: row;
     width: 500px;
     margin-top: 50px;
   }
 }
 
 .bn-main-social-link {
-  color: #aaa;
-  font-size: 16px;
-  text-decoration: none;
-  transition: color 0.35s ease-in-out;
+  display: flex;
+  height: 35px;
+  width: 35px;
+  transition: all 0.35s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .bn-main-social-link {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.bn-link-image {
+  width: 100%;
+  height: 100%;
 }
 
 .bn-main-social-link:hover {
-  color: #f1c40f
+  transform: scale(1.1);
 }
 
 
