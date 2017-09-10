@@ -4,7 +4,6 @@ body {
   padding: 0;
   opacity: 0;
   transition: opacity 1.5s;
-  overflow: hidden;
 }
 
 .bn-main {
@@ -67,7 +66,7 @@ body {
 
 @media (min-width: 768px) {
   #bn-main-cta {
-    margin-bottom: 200px;
+    margin-bottom: 140px;
   }
 }
 
@@ -100,7 +99,7 @@ body {
 
 @media (min-width: 768px) {
   .bn-main-cta-form {
-    width: 570px;
+    width: 450px;
     margin-top: 0;
   }
 }
@@ -111,72 +110,37 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  .bn-main-cta-form h2 {
-    display: block;
-    position: relative;
-    font-family: Helvetica;
-    font-size: 18px;
-    color: #999;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .bn-main-cta-form h2::before,
-  .bn-main-cta-form h2::after {
-    content:'';
-    position: absolute;
-    border: 1px solid rgba(0,0,0,.15);
-    top: -14px;
-    bottom: -14px;
-    left: -5px;
-    right: -5px;
-  }
-  
-  .bn-main-cta-form h2::after {
-    top: -4px;
-    bottom: -4px;
-    left: -20px;
-    right: -20px;
-  }
-}
-
-@media (min-width: 768px) {
-  .bn-main-cta-form h2 {
-    display: none;
-  }
-}
-
 .bn-main-cta-form h1 {
-  display: none;
+  display: block;
+  position: relative;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bn-main-cta-form h1::before,
+.bn-main-cta-form h1::after {
+  content:'';
+  position: absolute;
+  border: 1px solid rgba(0,0,0,.15);
+  top: -14px;
+  bottom: -14px;
+  left: -5px;
+  right: -5px;
+}
+
+.bn-main-cta-form h1::after {
+  top: -4px;
+  bottom: -4px;
+  left: -20px;
+  right: -20px;
 }
 
 @media (min-width: 768px) {
   .bn-main-cta-form h1 {
-    display: block;
-    position: relative;
-    font-family: Helvetica;
     font-size: 24px;
-    color: #999;
-    text-align: center;
-  }
-  
-  .bn-main-cta-form h1::before,
-  .bn-main-cta-form h1::after {
-    content:'';
-    position: absolute;
-    border: 1px solid rgba(0,0,0,.15);
-    top: -14px;
-    bottom: -14px;
-    left: -5px;
-    right: -5px;
-  }
-  
-  .bn-main-cta-form h1::after {
-    top: -4px;
-    bottom: -4px;
-    left: -20px;
-    right: -20px;
   }
 }
 
@@ -237,7 +201,7 @@ body {
   min-height: 50px;         
 }
 
-.bn-main-cta-form button:hover {
+.bn-main-cta-form button:hover:enabled {
   background-color: #f1c40f;
   color: #fff;
   outline: 0;
@@ -252,6 +216,11 @@ body {
 .bn-main-cta-form button:active {
   position: relative;
   top: 3px;
+}
+
+.bn-main-cta-form button:disabled {
+  opacity: 0.24;
+  cursor: not-allowed;
 }
 
 .bn-main-social-links {
