@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var beeLogoMain = document.getElementById('bn-logo-main');
   var mainCTA = document.getElementById('bn-main-cta');
   var emailEl = document.getElementById('bn-main-cta-email');
+  var ccEl = document.getElementById('bn-main-cta-cc');
   var submitButtonEl = document.getElementById('bn-main-cta-submit');
 
   submitButtonEl.disabled = true;
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     if (emailRegex.test(emailValue)) {
       submitButtonEl.disabled = false;
+      ccEl.value = emailValue;
     } else {
       submitButtonEl.disabled = true;
     }
