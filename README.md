@@ -6,6 +6,6 @@
 - Google Analytics on Email
 
 ### To-Do
-- Possibly include reset.css or normalize.css (Included in v1)
+- Possibly include reset.css or normalize.css
 - Include minor media queries for breakpoints
 

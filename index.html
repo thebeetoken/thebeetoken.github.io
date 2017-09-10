@@ -1,41 +1,43 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
 		<meta name="Referrer" content="origin">
 		<title>Bee Token</title>
 		<link rel="stylesheet" href="style.css">
 		<script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-106178091-1', 'auto');
-          ga('send', 'pageview');
+
+  ga('create', 'UA-106178091-1', 'auto');
+    ga('send', 'pageview');
+
 		</script>
 	</head>
 	<body>
-		<div class="container">
-			<div class="overview">
-				<div class="overview__header">
-					<h1>Bee Token ...</h1>
-					<!-- Insert Bee Image -->
-					<div class="logo-image">IMG</div>
-				</div>
-				<form method="POST" action="http://formspree.io/thebeetoken@gmail.com">
-					  <input type="email" name="email" placeholder="Your email">
-					  <input type="hidden" name="_next" value="www.thebeetoken.com" />
-					  <button type="submit">Send</button>
-				</form>
-				<div class="social-media-links">
-					<div>Icon 1</div>
-					<div>Icon 2</div>
-					<div>Icon 3</div>
-					<div>Icon 4</div>
-					<div>Icon 5</div>
-					<div>Icon 6</div>
-				</div>
-			</div>
-		</div>
+		<section class="bn-main">
+      <div class="bn-main-container">
+          <img src="bee.jpg" id="bn-logo-enter">
+          <img src="bee.jpg" id="bn-logo-main">
+          <div id="bn-main-cta">
+            <form class="bn-main-cta-form" method="POST" action="http://formspree.io/thebeetoken@gmail.com">
+              <h1>The Bee Token - <span class="bn-main-cta-header-span">Reinventing Housing Exchange</span></h1>
+              <input class="bn-main-cta-email" type="email" name="email" placeholder="Your email">
+              <input class="bn-main-cta-hidden" type="hidden" name="_next" value="https://thebeetoken.github.io" />
+              <button class="bn-main-cta-submit" type="submit">Submit</button>
+            </form>
+            <div class="bn-main-social-links">
+                <a class="bn-main-social-link" href="#" target="_blank">Slack</a>
+                <a class="bn-main-social-link" href="#" target="_blank">Reddit</a>
+                <a class="bn-main-social-link" href="#" target="_blank">Telegram</a>
+                <a class="bn-main-social-link" href="#" target="_blank">Discord</a>
+              </div>
+          </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="bee-javascript.js"></script>
 	</body>
 </html>
