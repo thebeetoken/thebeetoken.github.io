@@ -2,6 +2,8 @@ body {
   font-family: 'Helvetica';
   margin: 0;
   padding: 0;
+  opacity: 0;
+  transition: opacity 1.5s;
 }
 
 .bn-main {
@@ -86,12 +88,14 @@ body {
   right: -20px;
 }
 
-.bn-main-cta-email:placeholder {
+.bn-main-cta-email::-webkit-input-placeholder {
   font-family: 'Helvetica';
   font-style: italic;
+  font-weight: 700;
   font-size: 16px;
   text-align: center;
-  color: #bbb;
+  color: #000;
+  opacity: 0.24;
 }
 
 .bn-main-cta-email {
@@ -139,7 +143,7 @@ body {
 .bn-main-cta-form button:hover {
   color: #fff;
   outline: 0;
-  box-shadow: 0 0 40px 40px #f1c40f inset;
+  box-shadow: 0 0 41px 41px #F1C30F inset;
 }
 
 .bn-main-cta-form button:focus {
@@ -155,13 +159,14 @@ body {
 .bn-main-social-links {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 400px;
+  margin-top: 50px;
 }
 
 .bn-main-social-link {
   color: #aaa;
   text-decoration: none;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.35s ease-in-out;
 }
 
 .bn-main-social-link:hover {
