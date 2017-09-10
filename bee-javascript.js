@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var emailValue = emailEl.value;
 
     if (emailRegex.test(emailValue)) {
-      ccEl.value = emailValue;
       submitButtonEl.disabled = false;
+      ccEl.value = emailValue;
     } else {
       submitButtonEl.disabled = true;
     }
