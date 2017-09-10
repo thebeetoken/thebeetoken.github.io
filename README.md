@@ -1,7 +1,7 @@
-# bNest Token Site
+# Bee Token Site
 
 ### General
-- Email: bNesttoken@gmail.com
+- Email: thebeetoken@gmail.com
 - Forms sent to Email
 - Google Analytics on Email
 
