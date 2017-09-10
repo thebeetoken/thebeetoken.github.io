@@ -99,7 +99,7 @@ body {
 
 @media (min-width: 768px) {
   .bn-main-cta-form {
-    width: 570px;
+    width: 450px;
     margin-top: 0;
   }
 }
@@ -110,72 +110,37 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  .bn-main-cta-form h2 {
-    display: block;
-    position: relative;
-    font-family: Helvetica;
-    font-size: 18px;
-    color: #999;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .bn-main-cta-form h2::before,
-  .bn-main-cta-form h2::after {
-    content:'';
-    position: absolute;
-    border: 1px solid rgba(0,0,0,.15);
-    top: -14px;
-    bottom: -14px;
-    left: -5px;
-    right: -5px;
-  }
-  
-  .bn-main-cta-form h2::after {
-    top: -4px;
-    bottom: -4px;
-    left: -20px;
-    right: -20px;
-  }
-}
-
-@media (min-width: 768px) {
-  .bn-main-cta-form h2 {
-    display: none;
-  }
-}
-
 .bn-main-cta-form h1 {
-  display: none;
+  display: block;
+  position: relative;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bn-main-cta-form h1::before,
+.bn-main-cta-form h1::after {
+  content:'';
+  position: absolute;
+  border: 1px solid rgba(0,0,0,.15);
+  top: -14px;
+  bottom: -14px;
+  left: -5px;
+  right: -5px;
+}
+
+.bn-main-cta-form h1::after {
+  top: -4px;
+  bottom: -4px;
+  left: -20px;
+  right: -20px;
 }
 
 @media (min-width: 768px) {
   .bn-main-cta-form h1 {
-    display: block;
-    position: relative;
-    font-family: Helvetica;
     font-size: 24px;
-    color: #999;
-    text-align: center;
-  }
-  
-  .bn-main-cta-form h1::before,
-  .bn-main-cta-form h1::after {
-    content:'';
-    position: absolute;
-    border: 1px solid rgba(0,0,0,.15);
-    top: -14px;
-    bottom: -14px;
-    left: -5px;
-    right: -5px;
-  }
-  
-  .bn-main-cta-form h1::after {
-    top: -4px;
-    bottom: -4px;
-    left: -20px;
-    right: -20px;
   }
 }
 
