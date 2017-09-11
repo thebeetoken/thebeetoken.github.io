@@ -222,15 +222,9 @@ body {
   }
 }
 
-
-.bee-main-cta-header-span {
-  font-style: italic;
-}
-
 .bee-main-cta-email::-webkit-input-placeholder {
   font-family: 'Helvetica';
   font-size: 10px;
-  line-height: 22px;
   font-weight: 300;
   color: #fff;
 }
@@ -253,9 +247,9 @@ body {
   
 
 .bee-main-cta-form input {
-  padding: 5px 32px;
+  padding: 0 32px;
   width: 224px;
-  height: 50px;
+  height: 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #fff;
