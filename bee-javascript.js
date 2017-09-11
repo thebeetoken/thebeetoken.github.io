@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var emailEl = document.getElementById('bn-main-cta-email');
   var ccEl = document.getElementById('bn-main-cta-cc');
   var submitButtonEl = document.getElementById('bn-main-cta-submit');
+  var thankYou = document.getElementById('bn-main-cta-conformation');
+  var myStorage = window.localStorage;
 
   submitButtonEl.disabled = true;
   
@@ -50,6 +52,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
+  if (myStorage.getItem('bn-registered')) {
+    var date = new Date();
+    if (parseInt(myStorage.getItem('bn-registered')) < (date.getTime() / 1000)) {
+      myStorage.removeItem('bn-registered');
+    } else {
+      thankYou.style.display = 'block';
+    }
+  }
+
+  function addLocalStorage() {
+    var date = new Date();
+    var expDate = JSON.stringify((date.getTime() / 1000) + 172800);
+
+    myStorage.setItem('bn-registered', expDate);
+  }
+
+
   //adding event listener to input field
   emailEl.addEventListener('keyup', emailChecker);
+  submitButtonEl.addEventListener('click', addLocalStorage);
 });
