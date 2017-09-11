@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Helvetica';
   margin: 0;
@@ -340,9 +341,6 @@ body {
   opacity: 0.24;
   cursor: not-allowed;
 }
-
-
-
 
 #bee-main-social-links-container {
   position: absolute;
