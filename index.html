@@ -18,10 +18,51 @@
 		</script>
 	</head>
 	<body>
-		<section class="bn-main">
-      <img class="bn-main-background-comb" src="assets/background/comb-desktop.png">
-      <div class="bn-main-container">
-
+		<section class="bee-main">
+      <div class="bee-main-background-comb"></div>
+      <img id="bee-logo-enter" src="assets/svg/logo-vertical.svg">
+      <div class="bee-main-container">
+        <div id="bee-main-header-logo-container">
+          <img class="bee-main-header-logo" src="assets/svg/logo-horizontal.svg">
+        </div>
+        <div id="bee-main-social-links-container">
+            <a class="bee-main-social-link" href="https://medium.com/@thebeetoken" target="_blank">
+              <img src="assets/svg/medium.svg" class="bee-link-image">
+            </a>
+            <a class="bee-main-social-link" href="https://twitter.com/thebeetoken" target="_blank">
+              <img src="assets/svg/twitter.svg" class="bee-link-image">
+            </a>
+            <a class="bee-main-social-link" href="https://join.slack.com/t/thebeetoken/shared_invite/MjM4MDY2NDQ3NDc2LTE1MDQ4NDA2ODMtN2Q5Yzc3Y2JhNg" target="_blank">
+              <img src="assets/svg/slack.svg" class="bee-link-image">
+            </a>
+            <a class="bee-main-social-link" href="https://t.me/thebeetoken" target="_blank">
+              <img src="assets/svg/telegram.svg" class="bee-link-image">
+            </a>
+            <a class="bee-main-social-link" href="https://facebook.com/thebeetoken" target="_blank">
+              <img src="assets/svg/facebook.svg" class="bee-link-image">
+            </a>
+        </div>
+        <div id="bee-main-content-container">
+          <h1>
+            The Bee Token:
+            <br>
+            Reinventing House Exchange
+          </h1>
+          <form class="bee-main-cta-form" method="POST" action="http://formspree.io/thebeetoken@gmail.com">
+            <input class="bee-main-cta-email" id="bee-main-cta-email" type="email" name="email" placeholder="Your Email" autocomplete="off">
+            <input class="bee-main-cta-cc" id="bee-main-cta-cc" type="hidden" name="_cc" value="" />
+            <input class="bee-main-cta-hidden" type="hidden" name="_subject" value="Stay tuned for The Bee Token updates!" />
+            <input class="bee-main-cta-hidden" type="hidden" name="_next" value="https://thebeetoken.github.io" />
+            <input class="bee-main-cta-hidden" type="hidden" name="_format" value="plain" />
+            <button class="bee-main-cta-submit" id="bee-main-cta-submit" type="submit">Submit</button>
+          </form>
+          <h2 id="bee-main-cta-provide">Provide us your email to receive the latest news!</h2>
+          <h4 id="bee-main-cta-conformation">
+              Thanks for signing up! If you don't receive a 
+              <br>
+              confirmation email within a few minutes, please try again.
+          </h4>
+        </div>
       </div>
     </section>
     <script type="text/javascript" src="bee-javascript.js"></script>
