@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function addLocalStorage() {
     var date = new Date();
-    var expDate = JSON.stringify((date.getTime() / 1000) + 172,800);
+    var expDate = JSON.stringify((date.getTime() / 1000) + 172800);
 
     myStorage.setItem('bn-registered', expDate);
   }
