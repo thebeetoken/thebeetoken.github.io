@@ -66,7 +66,7 @@ body {
 
 @media (min-width: 768px) {
   #bn-main-cta {
-    margin-bottom: 140px;
+    margin-bottom: 90px;
   }
 }
 
@@ -76,7 +76,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   pointer-events: none;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 @media (min-width: 768px) {
@@ -258,6 +258,31 @@ body {
 
 .bn-main-social-link:hover {
   transform: scale(1.1);
+}
+
+#bn-main-cta-conformation {
+  display: none;
+  font-family: Helvetica;
+  font-size: 12px;
+  color: #999;
+  font-weight: 300;
+  margin: 0;
+  width: 245px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #bn-main-cta-conformation {
+    font-size: 16px;
+    width: 420px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #bn-main-cta-conformation {
+    margin-bottom: 30px;
+  }
 }
 
 
