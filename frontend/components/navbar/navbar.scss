@@ -1,4 +1,4 @@
-nav {
+.bee-nav-container {
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -7,7 +7,7 @@ nav {
     border: 1px solid black;
 }
 
-.navbar-links {
+.bee-nav-links-container {
     width: 40vw; 
     display: flex;
     justify-content: space-around;

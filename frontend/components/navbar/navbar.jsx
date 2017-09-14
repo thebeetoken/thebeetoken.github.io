@@ -2,9 +2,9 @@ import React from 'react';
 require ("./navbar.scss");
 
 const NavBar = () => (
-  <nav>
-    <div className="logo_image">LOGO</div>
-    <div className="navbar-links">
+  <nav className="bee-nav-container">
+    <div className="bee-nav-logo-container">LOGO</div>
+    <div className="bee-nav-links-container">
       <a>Home</a>
       <a>About</a>
       <a>Team</a>

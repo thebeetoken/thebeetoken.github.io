@@ -1,4 +1,37 @@
-nav {
+.bee-splash-container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black; }
+
+.bee-splash-overview-container {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8em; }
+
+.bee-splash-overview-links-container {
+  width: 25em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  .bee-splash-overview-links-container a {
+    height: 3em;
+    width: 10em;
+    text-align: center;
+    border: 1px solid black; }
+.bee-social-media-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid black; }
+.bee-nav-container {
   height: 10vh;
   display: flex;
   flex-direction: row;
@@ -6,7 +39,7 @@ nav {
   align-items: center;
   border: 1px solid black; }
 
-.navbar-links {
+.bee-nav-links-container {
   width: 40vw;
   display: flex;
   justify-content: space-around;
