@@ -1,9 +1,14 @@
 // webpack.config.js
 var path = require("path");
 var webpack = require("webpack");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var plugins = []; // if using any plugins for both dev and production
-var devPlugins = []; // if using any plugins for development
+// plugins for development and production
+var plugins = [];
+// plugins for development
+var devPlugins = [
+  new ExtractTextPlugin({ filename: '../stylesheets/style.css', allChunks: true })
+];
 
 var prodPlugins = [
   new webpack.DefinePlugin({
@@ -43,7 +48,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
+        loader: ExtractTextPlugin.extract('css-loader!sass-loader')
       }
     ],
   },
