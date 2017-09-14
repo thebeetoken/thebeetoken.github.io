@@ -25,7 +25,7 @@ plugins = plugins.concat(
 // include plugins config
 module.exports = {
   context: __dirname,
-  entry: "./frontend/<name of entry file>",
+  entry: "./frontend/thebeetoken.jsx",
   output: {
     path: path.resolve(__dirname, "app", "assets", "javascripts"),
     filename: "bundle.js"
@@ -40,8 +40,12 @@ module.exports = {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
-    ]
+    ],
   },
   devtool: 'source-map',
   resolve: {

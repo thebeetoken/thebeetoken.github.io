@@ -1,0 +1,16 @@
+nav {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.navbar-links {
+    width: 40vw; 
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
