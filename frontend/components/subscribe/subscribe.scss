@@ -1,10 +1,34 @@
 .bee-subscribe {
+  position: relative;
   height: 440px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #263238;
+}
+
+.bee-subscribe-honeycomb-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('http://res.cloudinary.com/duettwoxj/image/upload/v1505625793/honeycomb-web-desktop_eliozt.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
+    background: linear-gradient(180deg,#263238 0,transparent);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    pointer-events: none;
+  }
 }
 
 .bee-subscribe-container {

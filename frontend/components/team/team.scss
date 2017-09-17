@@ -1,0 +1,79 @@
+.bee-team {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3200px;
+  width: 100%;
+  background: #37474F;
+  padding-top: 131px;
+
+  &:before {
+    background: linear-gradient(180deg,#37474F 0,transparent);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &:after {
+    background: linear-gradient(0deg,#37474F 0,transparent);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 2;
+    pointer-events: none;
+  }
+}
+
+.bee-team-honeycomb-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('http://res.cloudinary.com/duettwoxj/image/upload/v1505639529/honeycomb-team_yjj77l.png');
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  z-index: 1;
+}
+
+.bee-team-team,
+.bee-team-advisors-team {
+  position: relative;
+  font-weight: 600;
+  color: #fff;
+  font-size: 42px;
+  line-height: 52px;
+  z-index: 3;
+  margin: 0;
+  text-align: center;
+}
+
+.bee-team-blurb,
+.bee-team-advisors-blurb {
+  position: relative;
+  width: 383px;
+  font-weight: 200;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 3;
+  margin: 0;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.bee-team-advisors-team {
+  margin-top: 50px;
+}

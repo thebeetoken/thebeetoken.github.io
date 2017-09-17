@@ -1,0 +1,51 @@
+.bee-team-advisors {
+  position: relative;
+  width: 898px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+
+.bee-team-advisors-container {
+  width: 184px;
+  height: 500px;
+  margin-top: 72px;
+}
+
+.bee-team-advisors-profile-container {
+  width: 184px;
+  height: 184px;
+  border-radius: 50%;
+  background: #B0BEC5;
+  opacity: 0.5;
+}
+
+.bee-team-advisors-name {
+  font-weight: 600;
+  color: #FFC107;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 54px;
+}
+
+.bee-team-advisors-title {
+  font-weight: 600;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 6px;
+}
+
+.bee-team-advisors-info {
+  font-weight: 200;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 30px;
+}
