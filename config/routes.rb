@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :api, default: { format: :json } do
+    resource :email, only: [:create]
+  end
+
   root "static_pages#root"
 
   # The priority is based upon order of creation: first created -> highest priority.
