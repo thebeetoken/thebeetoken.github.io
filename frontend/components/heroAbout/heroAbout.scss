@@ -1,0 +1,35 @@
+.bee-hero-about {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 772px;
+  display: flex;
+  background: #fff;
+  z-index: 20;
+}
+
+.bee-hero-about-container {
+  padding: 136px 0 0 132px;
+}
+
+.bee-hero-about-content {
+  h1 {
+    width: 222px;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 500;
+    color: #37474F;
+    margin: 0;
+  }
+
+  p {
+    width: 300px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #37474F;
+    margin: 0;
+    margin-top: 24px;
+  }
+}

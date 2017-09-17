@@ -1,0 +1,21 @@
+.bee-subscribe {
+  height: 440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #263238;
+}
+
+.bee-subscribe-container {
+  width: 894px;
+
+  h1 {
+    font-weight: 200;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}

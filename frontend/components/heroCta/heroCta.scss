@@ -1,0 +1,79 @@
+.bee-hero-cta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 772px;
+  display: flex;
+  background: #263238;
+  z-index: 10;
+}
+
+.bee-hero-cta-container {
+  padding: 148px 0 0 107px;
+}
+
+.bee-hero-cta-logo-container {
+  width: 104px;
+  height: 131px;
+}
+
+.bee.hero-cta-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.bee-hero-cta-content {
+  position: relative;
+  margin-top: 48px;
+
+  h1 {
+    width: 400px;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+  }
+
+  p {
+    width: 262px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0;
+    margin-top: 24px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 29px;
+    width: 8px;
+    background: #FFC107;
+    left: -27px;
+    top: 14px;
+  }
+}
+
+.bee-hero-cta-button {
+  width: 240px;
+  height: 64px;
+  background: #FFC107;
+  border: none;
+  border-radius: 3em; 
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-top: 48px;
+  transition: all 0.25s ease-in-out;
+  outline: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff;
+    color: #263238;
+  }
+}
