@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   background: #37474F;
-  padding-top: 56px;
+  padding: 56px 0;
 
   @media (min-width: 768px) {
     padding-top: 131px;
@@ -39,20 +39,22 @@
 }
 
 .bee-team-honeycomb-desktop {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('http://res.cloudinary.com/duettwoxj/image/upload/v1505713324/honeycomb-team-mobile_wj3pzc.png');
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  z-index: 1;
 
   @media (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('http://res.cloudinary.com/duettwoxj/image/upload/v1505639529/honeycomb-team_yjj77l.png');
     background-position: center center;
     background-repeat: repeat-y;
-    background-size: cover;
-    z-index: 1;
+    background-size: contain;
+    background: url('http://res.cloudinary.com/duettwoxj/image/upload/v1505639529/honeycomb-team_yjj77l.png');
   }
 }
 

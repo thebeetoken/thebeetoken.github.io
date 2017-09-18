@@ -15,11 +15,8 @@ const Team = () => (
       <h1 className="bee-team-advisors-team">Advisors</h1>
       <h1 className="bee-team-advisors-blurb">A special group of individuals providing insight from top tech and financial companies.</h1>
     </div>
-    {/* <TeamAdvisors /> */}
+    <TeamAdvisors />
   </section>
 );
 
 export default Team;
-
-
-

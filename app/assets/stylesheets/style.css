@@ -51,7 +51,7 @@
   align-items: center;
   width: 100%;
   background: #37474F;
-  padding-top: 56px; }
+  padding: 56px 0; }
   @media (min-width: 768px) {
     .bee-team {
       padding-top: 131px; } }
@@ -79,20 +79,22 @@
     pointer-events: none; }
 
 .bee-team-honeycomb-desktop {
-  display: none; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("http://res.cloudinary.com/duettwoxj/image/upload/v1505713324/honeycomb-team-mobile_wj3pzc.png");
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  z-index: 1; }
   @media (min-width: 768px) {
     .bee-team-honeycomb-desktop {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url("http://res.cloudinary.com/duettwoxj/image/upload/v1505639529/honeycomb-team_yjj77l.png");
       background-position: center center;
       background-repeat: repeat-y;
-      background-size: cover;
-      z-index: 1; } }
+      background-size: contain;
+      background: url("http://res.cloudinary.com/duettwoxj/image/upload/v1505639529/honeycomb-team_yjj77l.png"); } }
 
 .bee-team-team,
 .bee-team-advisors-team {
@@ -144,17 +146,31 @@
   right: 0; }
 .bee-team-advisors {
   position: relative;
-  width: 898px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   z-index: 3; }
+  @media (min-width: 768px) {
+    .bee-team-advisors {
+      width: 898px;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap; } }
 
 .bee-team-advisors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 184px;
-  height: 500px;
-  margin-top: 72px; }
+  height: 400px;
+  margin-top: 42px; }
+  @media (min-width: 768px) {
+    .bee-team-advisors-container {
+      display: block;
+      height: 500px;
+      margin-top: 72px; } }
 
 .bee-team-advisors-profile-container {
   width: 184px;
@@ -166,26 +182,44 @@
 .bee-team-advisors-name {
   font-weight: 600;
   color: #FFC107;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 20px;
   margin: 0;
-  margin-top: 54px; }
+  margin-top: 36px; }
+  @media (min-width: 768px) {
+    .bee-team-advisors-name {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 54px; } }
 
 .bee-team-advisors-title {
   font-weight: 600;
   color: #fff;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 20px;
   margin: 0;
-  margin-top: 6px; }
+  margin-top: 2px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .bee-team-advisors-title {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 6px;
+      text-align: left; } }
 
 .bee-team-advisors-info {
   font-weight: 200;
   color: #fff;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 20px;
   margin: 0;
-  margin-top: 30px; }
+  margin-top: 30px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .bee-team-advisors-info {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left; } }
 .bee-team-core {
   position: relative;
   display: flex;
