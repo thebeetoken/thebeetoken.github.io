@@ -5,6 +5,10 @@
   height: 1280px;
 
   @media (min-width: 768px) {
+    height: 952px;
+  }
+
+  @media (min-width: 1025px) {
     height: 1552px;
   }
 }
@@ -60,9 +64,14 @@
   @media (min-width: 768px) {
     display: block;
     position: relative;
+    height: 832px;
+    width: 600px;
+    margin: auto;
+  }
+
+  @media (min-width: 1025px) {
     width: 1108px;
     height: 1432px;
-    margin: auto;
   }
 }
 

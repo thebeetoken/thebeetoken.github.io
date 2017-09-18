@@ -7,6 +7,10 @@
   background: #263238;
 
   @media (min-width: 768px) {
+    height: 400px;
+  }
+
+  @media (min-width: 1025px) {
     height: 520px;
   }
 }
@@ -18,6 +22,11 @@
   justify-content: space-between;
 
   @media (min-width: 768px) {
+    width: 700px;
+    flex-direction: row;
+  }
+
+  @media (min-width: 1025px) {
     width: 897px;
     flex-direction: row;
   }
@@ -34,12 +43,16 @@
   }
 
   @media (min-width: 768px) {
-    align-items: flex-start;
+    width: 150px;
     margin-top: 0;
 
     &:not(:first-child) {
       margin-top: 0;
     }
+  }
+
+  @media (min-width: 1025px) {
+    width: 184px;
   }
 
   h1 {
@@ -52,10 +65,13 @@
     text-align: center;
 
     @media (min-width: 768px) {
+      margin-top: 26px;
+    }
+
+    @media (min-width: 1025px) {
       font-size: 16px;
       line-height: 24px;
       margin-top: 34px;
-      text-align: left;
     }
   }
 
@@ -69,17 +85,19 @@
     text-align: center;
 
     @media (min-width: 768px) {
+      margin-top: 12px;
+    }
+
+    @media (min-width: 1025px) {
       font-size: 16px;
       line-height: 24px;
-      margin-top: 12px;
-      text-align: left;
     }
   }
 }
 
 .bee-value-prop-icon-container {
-  width: 44px;
-  height: 26px;
+  width: 40px;
+  height: 40px;
 }
 
 .bee-value-prop-icon {

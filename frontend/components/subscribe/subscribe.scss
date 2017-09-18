@@ -8,6 +8,10 @@
   background: #263238;
 
   @media (min-width: 768px) {
+    height: 300px;
+  }
+
+  @media (min-width: 1025px) {
     height: 440px;
   }
 }
@@ -45,6 +49,10 @@
 
   @media (min-width: 768px) {
     display: block;
+    width: 500px;
+  }
+
+  @media (min-width: 1025px) {
     width: 894px;
   }
 

@@ -54,6 +54,9 @@
   padding: 56px 0; }
   @media (min-width: 768px) {
     .bee-team {
+      padding-top: 72px; } }
+  @media (min-width: 1025px) {
+    .bee-team {
       padding-top: 131px; } }
   .bee-team:before {
     background: linear-gradient(180deg, #37474F 0, transparent);
@@ -153,11 +156,18 @@
   z-index: 3; }
   @media (min-width: 768px) {
     .bee-team-advisors {
-      width: 898px;
-      flex-direction: row;
+      width: 700px;
       align-items: flex-start;
-      justify-content: space-between;
-      flex-wrap: wrap; } }
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 0;
+      margin-left: -24px; } }
+  @media (min-width: 1025px) {
+    .bee-team-advisors {
+      width: 898px;
+      align-items: flex-start;
+      justify-content: space-between; } }
 
 .bee-team-advisors-container {
   display: flex;
@@ -168,9 +178,13 @@
   margin-top: 42px; }
   @media (min-width: 768px) {
     .bee-team-advisors-container {
+      display: flex;
+      margin-top: 72px;
+      margin-left: 24px; } }
+  @media (min-width: 1025px) {
+    .bee-team-advisors-container {
       display: block;
-      height: 500px;
-      margin-top: 72px; } }
+      height: 500px; } }
 
 .bee-team-advisors-profile-container {
   width: 184px;
@@ -186,7 +200,7 @@
   line-height: 20px;
   margin: 0;
   margin-top: 36px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .bee-team-advisors-name {
       font-size: 16px;
       line-height: 24px;
@@ -200,7 +214,7 @@
   margin: 0;
   margin-top: 2px;
   text-align: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .bee-team-advisors-title {
       font-size: 16px;
       line-height: 24px;
@@ -215,7 +229,7 @@
   margin: 0;
   margin-top: 30px;
   text-align: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .bee-team-advisors-info {
       font-size: 16px;
       line-height: 24px;
@@ -229,11 +243,18 @@
   z-index: 3; }
   @media (min-width: 768px) {
     .bee-team-core {
+      width: 700px;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 0;
+      margin-left: -24px; } }
+  @media (min-width: 1025px) {
+    .bee-team-core {
       width: 898px;
       align-items: flex-start;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      flex-direction: row; } }
+      justify-content: space-between; } }
 
 .bee-team-container {
   display: flex;
@@ -244,8 +265,12 @@
   margin-top: 56px; }
   @media (min-width: 768px) {
     .bee-team-container {
-      display: block;
+      display: flex;
       margin-top: 72px;
+      margin-left: 24px; } }
+  @media (min-width: 1025px) {
+    .bee-team-container {
+      display: block;
       height: 500px; } }
 
 .bee-team-profile-container {
@@ -262,7 +287,7 @@
   line-height: 20px;
   margin: 0;
   margin-top: 36px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .bee-team-name {
       font-size: 16px;
       line-height: 24px;
@@ -276,12 +301,12 @@
   margin: 0;
   margin-top: 2px;
   text-align: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .bee-team-title {
       font-size: 16px;
       line-height: 24px;
-      text-align: left;
-      margin-top: 6px; } }
+      margin-top: 6px;
+      text-align: left; } }
 
 .bee-team-info {
   font-weight: 200;
@@ -291,7 +316,7 @@
   margin: 0;
   margin-top: 30px;
   text-align: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .bee-team-info {
       font-size: 16px;
       line-height: 24px;
@@ -339,12 +364,20 @@
 
 @media (min-width: 768px) {
   .bee-main-cta-email::-webkit-input-placeholder {
+    font-size: 12px; } }
+
+@media (min-width: 1025px) {
+  .bee-main-cta-email::-webkit-input-placeholder {
     font-size: 14px; } }
 
 .bee-main-cta-email {
   font-size: 10px; }
 
 @media (min-width: 768px) {
+  .bee-main-cta-email {
+    font-size: 12px; } }
+
+@media (min-width: 1025px) {
   .bee-main-cta-email {
     font-size: 14px; } }
 
@@ -367,11 +400,12 @@
 @media (min-width: 768px) {
   .bee-main-cta-form input {
     width: 300px;
-    height: 64px; } }
+    height: 50px; } }
 
 @media (min-width: 1025px) {
   .bee-main-cta-form input {
-    width: 490px; } }
+    width: 490px;
+    height: 64px; } }
 
 .bee-main-cta-form input:focus {
   outline: 0;
@@ -398,6 +432,13 @@
 @media (min-width: 768px) {
   .bee-main-cta-form button {
     width: 120px;
+    height: 50px;
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 32px; } }
+
+@media (min-width: 1025px) {
+  .bee-main-cta-form button {
     height: 64px;
     font-size: 14px;
     margin-top: 0;
@@ -428,6 +469,9 @@
   justify-content: center;
   background: #263238; }
   @media (min-width: 768px) {
+    .bee-subscribe {
+      height: 300px; } }
+  @media (min-width: 1025px) {
     .bee-subscribe {
       height: 440px; } }
 
@@ -461,6 +505,9 @@
   @media (min-width: 768px) {
     .bee-subscribe-container {
       display: block;
+      width: 500px; } }
+  @media (min-width: 1025px) {
+    .bee-subscribe-container {
       width: 894px; } }
   .bee-subscribe-container h1 {
     font-weight: 200;
@@ -485,6 +532,9 @@
   background: #263238; }
   @media (min-width: 768px) {
     .bee-value-prop {
+      height: 400px; } }
+  @media (min-width: 1025px) {
+    .bee-value-prop {
       height: 520px; } }
 
 .bee-value-prop-container {
@@ -493,6 +543,10 @@
   flex-direction: column;
   justify-content: space-between; }
   @media (min-width: 768px) {
+    .bee-value-prop-container {
+      width: 700px;
+      flex-direction: row; } }
+  @media (min-width: 1025px) {
     .bee-value-prop-container {
       width: 897px;
       flex-direction: row; } }
@@ -506,10 +560,13 @@
     margin-top: 56px; }
   @media (min-width: 768px) {
     .bee-value-prop-content {
-      align-items: flex-start;
+      width: 150px;
       margin-top: 0; }
       .bee-value-prop-content:not(:first-child) {
         margin-top: 0; } }
+  @media (min-width: 1025px) {
+    .bee-value-prop-content {
+      width: 184px; } }
   .bee-value-prop-content h1 {
     font-weight: 600;
     color: #fff;
@@ -520,10 +577,12 @@
     text-align: center; }
     @media (min-width: 768px) {
       .bee-value-prop-content h1 {
+        margin-top: 26px; } }
+    @media (min-width: 1025px) {
+      .bee-value-prop-content h1 {
         font-size: 16px;
         line-height: 24px;
-        margin-top: 34px;
-        text-align: left; } }
+        margin-top: 34px; } }
   .bee-value-prop-content p {
     font-weight: 300;
     color: #fff;
@@ -534,14 +593,15 @@
     text-align: center; }
     @media (min-width: 768px) {
       .bee-value-prop-content p {
+        margin-top: 12px; } }
+    @media (min-width: 1025px) {
+      .bee-value-prop-content p {
         font-size: 16px;
-        line-height: 24px;
-        margin-top: 12px;
-        text-align: left; } }
+        line-height: 24px; } }
 
 .bee-value-prop-icon-container {
-  width: 44px;
-  height: 26px; }
+  width: 40px;
+  height: 40px; }
 
 .bee-value-prop-icon {
   width: 100%;
@@ -552,6 +612,9 @@
   background: #37474F;
   height: 1280px; }
   @media (min-width: 768px) {
+    .bee-hero {
+      height: 952px; } }
+  @media (min-width: 1025px) {
     .bee-hero {
       height: 1552px; } }
 
@@ -600,9 +663,13 @@
     .bee-hero-container-desktop {
       display: block;
       position: relative;
-      width: 1108px;
-      height: 1432px;
+      height: 832px;
+      width: 600px;
       margin: auto; } }
+  @media (min-width: 1025px) {
+    .bee-hero-container-desktop {
+      width: 1108px;
+      height: 1432px; } }
 
 .bee-hero-container-mobile {
   position: relative; }
@@ -640,10 +707,18 @@
       right: 0;
       align-items: flex-start;
       justify-content: flex-start;
+      width: 350px;
+      height: 450px; } }
+  @media (min-width: 1025px) {
+    .bee-hero-about {
       width: 600px;
       height: 772px; } }
 
 @media (min-width: 768px) {
+  .bee-hero-about-container {
+    padding: 42px 0 0 50px; } }
+
+@media (min-width: 1025px) {
   .bee-hero-about-container {
     padding: 136px 0 0 132px; } }
 
@@ -661,10 +736,14 @@
     text-align: center; }
     @media (min-width: 768px) {
       .bee-hero-about-content h1 {
-        font-size: 42px;
-        line-height: 52px;
-        width: 222px;
+        width: 250px;
+        font-size: 26px;
+        line-height: 31px;
         text-align: left; } }
+    @media (min-width: 1025px) {
+      .bee-hero-about-content h1 {
+        font-size: 42px;
+        line-height: 52px; } }
   .bee-hero-about-content p {
     font-weight: 300;
     font-size: 13px;
@@ -675,8 +754,12 @@
     text-align: center; }
     @media (min-width: 768px) {
       .bee-hero-about-content p {
+        width: 262px;
+        margin-top: 12px;
+        text-align: left; } }
+    @media (min-width: 1025px) {
+      .bee-hero-about-content p {
         width: 300px;
-        text-align: left;
         margin-top: 24px;
         font-size: 16px;
         line-height: 24px; } }
@@ -696,6 +779,10 @@
       left: 0;
       align-items: flex-start;
       justify-content: flex-start;
+      width: 350px;
+      height: 450px; } }
+  @media (min-width: 1025px) {
+    .bee-hero-cta {
       width: 600px;
       height: 772px; } }
 
@@ -707,12 +794,16 @@
   @media (min-width: 768px) {
     .bee-hero-cta-container {
       display: block;
+      padding: 42px 0 0 50px; } }
+  @media (min-width: 1025px) {
+    .bee-hero-cta-container {
+      display: block;
       padding: 148px 0 0 107px; } }
 
 .bee-hero-cta-logo-container {
   width: 71px;
   height: 89px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .bee-hero-cta-logo-container {
       width: 104px;
       height: 131px; } }
@@ -728,6 +819,9 @@
   @media (min-width: 768px) {
     .bee-hero-cta-content {
       width: auto;
+      margin-top: 24px; } }
+  @media (min-width: 1025px) {
+    .bee-hero-cta-content {
       margin-top: 48px; } }
   .bee-hero-cta-content h1 {
     font-size: 30px;
@@ -738,10 +832,15 @@
     text-align: center; }
     @media (min-width: 768px) {
       .bee-hero-cta-content h1 {
+        width: 250px;
+        font-size: 26px;
+        line-height: 31px;
+        text-align: left; } }
+    @media (min-width: 1025px) {
+      .bee-hero-cta-content h1 {
         width: 400px;
         font-size: 42px;
-        line-height: 52px;
-        text-align: left; } }
+        line-height: 52px; } }
   .bee-hero-cta-content p {
     font-weight: 300;
     font-size: 13px;
@@ -753,10 +852,13 @@
     @media (min-width: 768px) {
       .bee-hero-cta-content p {
         width: 262px;
+        margin-top: 12px;
+        text-align: left; } }
+    @media (min-width: 1025px) {
+      .bee-hero-cta-content p {
         font-size: 16px;
         line-height: 24px;
-        margin-top: 24px;
-        text-align: left; } }
+        margin-top: 24px; } }
   .bee-hero-cta-content:before {
     content: '';
     position: absolute;
@@ -787,6 +889,11 @@
   outline: 0;
   cursor: pointer; }
   @media (min-width: 768px) {
+    .bee-hero-cta-button {
+      width: 200px;
+      height: 50px;
+      margin-top: 24px; } }
+  @media (min-width: 1025px) {
     .bee-hero-cta-button {
       width: 240px;
       height: 64px;

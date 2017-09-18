@@ -6,7 +6,7 @@ const ValueProp = () => (
     <div className="bee-value-prop-container">
       <div className="bee-value-prop-content">
         <div className="bee-value-prop-icon-container">
-          <img className="bee-value-prop-icon" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505633036/test-icon_zueqhw.svg" />
+          <img className="bee-value-prop-icon" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505718995/decentralization_jiosjy.svg" />
         </div>
         <h1>Decentralized Ownership</h1>
         <p>
@@ -15,7 +15,7 @@ const ValueProp = () => (
       </div>
       <div className="bee-value-prop-content">
         <div className="bee-value-prop-icon-container">
-          <img className="bee-value-prop-icon" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505633036/test-icon_zueqhw.svg" />
+          <img className="bee-value-prop-icon" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505718995/beetoken_bjknya.svg" />
         </div>
         <h1>
           Lower Fees,
@@ -28,7 +28,7 @@ const ValueProp = () => (
       </div>
       <div className="bee-value-prop-content">
         <div className="bee-value-prop-icon-container">
-          <img className="bee-value-prop-icon" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505633036/test-icon_zueqhw.svg" />
+          <img className="bee-value-prop-icon" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505718995/security_k94omn.svg" />
         </div>
         <h1>Trust &amp; Security</h1>
         <p>
@@ -37,7 +37,7 @@ const ValueProp = () => (
       </div>
       <div className="bee-value-prop-content">
         <div className="bee-value-prop-icon-container">
-          <img className="bee-value-prop-icon" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505633036/test-icon_zueqhw.svg" />
+          <img className="bee-value-prop-icon" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505718995/smartcontracts_by5xmz.svg" />
         </div>
         <h1>Automation</h1>
         <p>
