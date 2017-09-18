@@ -1,35 +1,67 @@
 .bee-hero-about {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 600px;
-  height: 772px;
+  position: relative;
+  height: 480px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
   z-index: 20;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 600px;
+    height: 772px;
+  }
 }
 
 .bee-hero-about-container {
-  padding: 136px 0 0 132px;
+  @media (min-width: 768px) {
+    padding: 136px 0 0 132px;
+  }
 }
 
 .bee-hero-about-content {
+  width: 206px;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+
   h1 {
-    width: 222px;
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: 500;
     color: #37474F;
     margin: 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 42px;
+      line-height: 52px;
+      width: 222px;
+      text-align: left;
+    }
   }
 
   p {
-    width: 300px;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 20px;
     color: #37474F;
     margin: 0;
-    margin-top: 24px;
+    margin-top: 16px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      width: 300px;
+      text-align: left;
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }

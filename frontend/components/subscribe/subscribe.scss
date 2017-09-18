@@ -1,11 +1,15 @@
 .bee-subscribe {
   position: relative;
-  height: 440px;
+  height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #263238;
+
+  @media (min-width: 768px) {
+    height: 440px;
+  }
 }
 
 .bee-subscribe-honeycomb-desktop {
@@ -32,14 +36,32 @@
 }
 
 .bee-subscribe-container {
-  width: 894px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 224px;
+  z-index: 20;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 894px;
+  }
 
   h1 {
     font-weight: 200;
     color: #fff;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 20px;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 48px;
+      text-align: left;
+    }
   }
 }

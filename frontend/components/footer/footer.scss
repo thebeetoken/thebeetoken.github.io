@@ -24,20 +24,30 @@
 }
 
 .bee-footer-links {
-  width: 327px;
-  height: 40px;
+  width: 215px;
+  height: 24px;
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
+
+  @media (min-width: 768px) {
+    width: 327px;
+    height: 40px;
+  }
 }
 
 .bee-footer-link-container {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   transition: all 0.25s ease-in-out;
 
-  &:hover {
-    opacity: 0.5;
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 
