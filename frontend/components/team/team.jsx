@@ -5,10 +5,13 @@ import TeamCore from '../teamCore/teamCore.jsx';
 import TeamAdvisors from '../teamAdvisors/teamAdvisors.jsx';
 
 const Team = () => (
-  <section className="bee-team" id="team">
+  <section className="bee-team">
     <div className="bee-team-honeycomb-desktop"></div>
-    <h1 className="bee-team-team" >Team</h1>
-    <h1 className="bee-team-blurb">Not powered by Honey, but by a talented team of engineers from Google and Uber.</h1>
+    <div className="bee-team-team-text-container">
+    <div className="bee-scroll-block-team" id="team"></div>
+      <h1 className="bee-team-team" >Team</h1>
+      <h1 className="bee-team-blurb">Not powered by Honey, but by a talented team of engineers from Google and Uber.</h1>
+    </div>
     <TeamCore />
     <div className="bee-team-advisors-text-container">
       <div className="bee-scroll-block" id="advisors"></div>

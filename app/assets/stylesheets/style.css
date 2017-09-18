@@ -137,7 +137,8 @@
 .bee-team-advisors-team {
   margin-top: 50px; }
 
-.bee-team-advisors-text-container {
+.bee-team-advisors-text-container,
+.bee-team-team-text-container {
   position: relative; }
 
 .bee-scroll-block {
@@ -145,6 +146,14 @@
   height: 100px;
   width: 100%;
   top: -100px;
+  left: 0;
+  right: 0; }
+
+.bee-scroll-block-team {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: -150px;
   left: 0;
   right: 0; }
 .bee-team-advisors {
