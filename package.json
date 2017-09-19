@@ -28,6 +28,7 @@
     "babel-preset-react": "^6.24.1",
     "install": "^0.10.1",
     "react": "^15.6.1",
+    "react-burger-menu": "^2.1.6",
     "react-countdown-now": "^1.2.0",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
