@@ -7,10 +7,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var plugins = [
   new ExtractTextPlugin({ filename: '../stylesheets/style.css', allChunks: true })
 ];
+
 // plugins for development
-var devPlugins = [
-  new ExtractTextPlugin({ filename: '../stylesheets/style.css', allChunks: true })
-];
+var devPlugins = [];
 
 var prodPlugins = [
   new webpack.DefinePlugin({
