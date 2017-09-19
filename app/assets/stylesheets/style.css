@@ -772,6 +772,19 @@
         margin-top: 24px;
         font-size: 16px;
         line-height: 24px; } }
+  .bee-hero-about-content span {
+    display: block;
+    font-weight: 500;
+    color: #37474F;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 32px;
+    text-align: center; }
+    @media (min-width: 1025px) {
+      .bee-hero-about-content span {
+        font-size: 42px;
+        line-height: 52px;
+        margin-top: 88px; } }
 .bee-hero-cta {
   position: relative;
   width: 100%;

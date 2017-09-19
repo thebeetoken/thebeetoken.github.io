@@ -1,4 +1,5 @@
 import React from 'react';
+import Countdown from 'react-countdown-now';
 require ("./heroAbout.scss");
 
 const HeroAbout = () => (
@@ -13,6 +14,7 @@ const HeroAbout = () => (
           own side chain to make affordable, decentralized short-term 
           housing a reality
         </p>
+        <Countdown date={'Sept 19, 2017'} />
       </div>
     </div>
   </div>

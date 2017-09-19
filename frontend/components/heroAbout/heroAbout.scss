@@ -83,4 +83,20 @@
       line-height: 24px;
     }
   }
+
+  span {
+    display: block;
+    font-weight: 500;
+    color: #37474F;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 32px;
+    text-align: center;
+
+    @media (min-width: 1025px) {
+      font-size: 42px;
+      line-height: 52px;
+      margin-top: 88px;
+    }
+  }
 }
