@@ -12,7 +12,7 @@
     "npm": "5.4.x"
   },
   "scripts": {
-    "postinstall": "cd client && npm install"
+    "postinstall": "npm install"
   },
   "repository": {
     "type": "git",
