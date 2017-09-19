@@ -9,7 +9,7 @@ class HamburgerMenu extends Component {
 
   render(){
     return (
-      <Menu>
+      <Menu isOpen="false">
         <a href="#about" className="bee-header-link">about</a>
         <a href="#team" className="bee-header-link">team</a>
         <a href="#advisors" className="bee-header-link">advisors</a>
