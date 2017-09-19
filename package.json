@@ -12,7 +12,7 @@
     "npm": "5.4.x"
   },
   "scripts": {
-    "postinstall": "npm install"
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
