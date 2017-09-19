@@ -4,7 +4,9 @@ var webpack = require("webpack");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // plugins for development and production
-var plugins = [];
+var plugins = [
+  new ExtractTextPlugin({ filename: '../stylesheets/style.css', allChunks: true })
+];
 // plugins for development
 var devPlugins = [
   new ExtractTextPlugin({ filename: '../stylesheets/style.css', allChunks: true })
