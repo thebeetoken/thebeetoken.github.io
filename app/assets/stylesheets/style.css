@@ -168,7 +168,7 @@
 .bee-hero-cta-content {
   position: relative;
   margin-top: 27px;
-  width: 217px; }
+  width: 230px; }
   @media (min-width: 768px) {
     .bee-hero-cta-content {
       width: auto;
@@ -218,7 +218,7 @@
     height: 21px;
     width: 6px;
     background: #FFC107;
-    left: -5px;
+    left: -16px;
     top: 7px; }
     @media (min-width: 768px) {
       .bee-hero-cta-content:before {
