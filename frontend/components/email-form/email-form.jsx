@@ -21,6 +21,8 @@ class EmailForm extends Component {
     if (emailRegex.test(emailAddress)){
       this.setState({ submitStatus: false });
       $(".bee-main-cta-cc").value = emailAddress;
+    } else {
+      this.setState({ submitStatus: true });
     }
   }
 
