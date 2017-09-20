@@ -89,13 +89,30 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/miao_h0lhl8.jpg" />
       </div>
       <h1 className="bee-team-name">Miao Yu</h1>
+      <h2 className="bee-team-title">Engineer, Engineer &#64;Google, Former Uber Engineer</h2>
+      <p className="bee-team-info">
+      I must be sleeping when I'm not traveling, vice versa
+      </p>
+      <div className="flex-div"></div>
+      <div className="bee-team-social-links">
+        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/miao-yu-50b9098a">
+          <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/linkedin-clear_cvmcsw.svg" />
+        </a>
+      </div>
+    </div>
+
+    <div className="bee-team-container">
+      <div className="bee-team-profile-container">
+        <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/guocheng_o7xv7s.jpg" />
+      </div>
+      <h1 className="bee-team-name">Guocheng Xie</h1>
       <h2 className="bee-team-title">Engineer, Engineer &#64;Uber</h2>
       <p className="bee-team-info">
         My weekends are usually busier than weekdays
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
-        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/guocheng-xie-220b396a/">
+        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/miao-yu-50b9098a">
           <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/linkedin-clear_cvmcsw.svg" />
         </a>
       </div>
@@ -181,7 +198,7 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/andy_k95agu.jpg" />
       </div>
       <h1 className="bee-team-name">Andy Chou</h1>
-      <h2 className="bee-team-title">Marketing, Account Manager &#64;Critero | Former Marketing Analyst &#64;Rakuten</h2>
+      <h2 className="bee-team-title">Marketing, Account Manager &#64;Criteo | Former Marketing Analyst &#64;Rakuten</h2>
       <p className="bee-team-info">
         Started my career in Japan - and loved it
       </p>

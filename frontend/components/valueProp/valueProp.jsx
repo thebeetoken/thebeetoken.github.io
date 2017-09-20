@@ -41,7 +41,7 @@ const ValueProp = () => (
         </div>
         <h1>Automation</h1>
         <p>
-          Automated from start to finish. Smart Contracts, Smart Billing, and handsfree key handoffs makes everyone's life easier. Spend less time working and more time having fun.
+          Automated from start to finish. Smart Contracts, Smart Billing, and handsfree key handoffs make everyone's life easier. Spend less time working and more time having fun.
         </p>
       </div>
     </div>

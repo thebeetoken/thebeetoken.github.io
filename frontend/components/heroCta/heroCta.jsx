@@ -9,7 +9,7 @@ const HeroCta = () => (
       </div>
       <div className="bee-hero-cta-content">
         <h1>Reinventing Housing Exchange</h1>
-        <p>Putting housing back into the hands of the consumer through the power of Ethereum.</p>
+        <p>Putting housing back into the hands of the consumer through the power of Ethereum blockchain.</p>
       </div>
     </div>
   </div>
