@@ -1,13 +1,17 @@
 .bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px; }
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  right: 15px;
+  top: 50%;
+  transform: translate3d(0, -50%, 0); }
+  @media (min-width: 768px) {
+    .bm-burger-button {
+      display: none; } }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47; }
+  background: #37474F; }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
@@ -16,26 +20,27 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7; }
+  background: #37474F; }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em; }
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47; }
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 16px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center; }
 
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em; }
+  padding: 16px;
+  height: 207px; }
 
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3); }
+.menu-item {
+  font-weight: 300; }
 .bee-header-container {
   position: fixed;
   top: 0;
@@ -48,18 +53,22 @@
   align-items: center;
   background: #fff;
   z-index: 100; }
+  .bee-header-container div:nth-child(3) .bm-menu-wrap {
+    height: 400px; }
   @media (min-width: 768px) {
     .bee-header-container {
-      height: 120px;
-      padding: 0 40px; } }
+      height: 70px;
+      padding: 0 40px; }
+      .bee-header-container div:nth-child(3) {
+        display: none; } }
 
 .bee-header-logo-container {
   width: 84px;
   height: 24px; }
   @media (min-width: 768px) {
     .bee-header-logo-container {
-      width: 139px;
-      height: 40px; } }
+      width: 100px;
+      height: 29px; } }
 
 .bee-header-logo {
   width: 100%;
@@ -330,10 +339,10 @@
   height: 1280px; }
   @media (min-width: 768px) {
     .bee-hero {
-      height: 952px; } }
+      height: 902px; } }
   @media (min-width: 1025px) {
     .bee-hero {
-      height: 1552px; } }
+      height: 1502px; } }
 
 .bee-hero-background-desktop {
   display: none; }
@@ -372,7 +381,7 @@
   pointer-events: none; }
   @media (min-width: 768px) {
     .bee-hero-margin-block {
-      height: 120px; } }
+      height: 70px; } }
 
 .bee-hero-container-desktop {
   display: none; }

@@ -9,11 +9,15 @@ class HamburgerMenu extends Component {
 
   render(){
     return (
-      <Menu isOpen="false">
-        <a href="#about" className="bee-header-link">about</a>
-        <a href="#team" className="bee-header-link">team</a>
-        <a href="#advisors" className="bee-header-link">advisors</a>
-        <button href="#" className="bee-header-whitepaper-button">whitepaper</button>
+      <Menu
+        width={ '100%' }
+        noOverlay
+        right
+        bodyClassName={ "hbm-mobile" }
+        menuClassName={ "hbm-menu" }>
+        <a href="#about" className="bee-header-link menu-item">about</a>
+        <a href="#team" className="bee-header-link menu-item">team</a>
+        <a href="#advisors" className="bee-header-link menu-item">advisors</a>
       </Menu>
     );
   }
