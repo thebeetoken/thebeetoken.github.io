@@ -44,9 +44,9 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/coco_orjb11.jpg" />
       </div>
       <h1 className="bee-team-name">Coco Liu</h1>
-      <h2 className="bee-team-title">Designer</h2>
+      <h2 className="bee-team-title">Lead Designer</h2>
       <p className="bee-team-info">
-        Designer Left Field Labs &#64;Google
+        Designer, Left Field Labs &#64;Google
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
@@ -142,7 +142,7 @@ const TeamCore = () => (
       <h1 className="bee-team-name">Kevin Van</h1>
       <h2 className="bee-team-title">Front End Engineer</h2>
       <p className="bee-team-info">
-        Web Platform Engineer&#64;Bandai Namco Entertainment America
+        Web Platform Engineer &#64;Bandai Namco Entertainment America
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
