@@ -28,10 +28,11 @@
   flex-direction: column;
   align-items: center;
   width: 184px;
-  height: 400px;
+  height: 350px;
   margin-top: 56px;
 
   @media (min-width: 768px) {
+    height: 400px;
     display: flex;
     margin-top: 72px;
     margin-left: 24px;
@@ -39,7 +40,6 @@
 
   @media (min-width: 1025px) {
     align-items: flex-start;
-    height: 450px;
   }
 }
 
