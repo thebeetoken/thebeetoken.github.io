@@ -496,6 +496,8 @@
     text-align: center; }
     @media (min-width: 768px) {
       .bee-value-prop-content h1 {
+        display: block;
+        height: 48px;
         margin-top: 26px; } }
     @media (min-width: 1025px) {
       .bee-value-prop-content h1 {
@@ -838,10 +840,6 @@
       flex-direction: row;
       margin: 0;
       margin-left: -24px; } }
-  @media (min-width: 1025px) {
-    .bee-team-advisors {
-      width: 898px;
-      align-items: flex-start; } }
 
 .bee-team-advisors-container {
   display: flex;

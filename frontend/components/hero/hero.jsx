@@ -6,11 +6,12 @@ import HeroCta from '../heroCta/heroCta';
 import HeroAbout from '../heroAbout/heroAbout';
 
 const Hero = () => (
-  <ScrollableAnchor id={'about'}>
   <section className="bee-hero">
     <div className="bee-hero-background-desktop"></div>
     <div className="bee-hero-honeycomb-desktop"></div>
-    <div className="bee-hero-margin-block"></div>
+    <ScrollableAnchor id={'about'}>
+      <div className="bee-hero-margin-block"></div>
+    </ScrollableAnchor>
     <div className="bee-hero-container-desktop">
       <HeroCta />
       <HeroAbout />
@@ -22,7 +23,6 @@ const Hero = () => (
       <HeroAbout />
     </div>
   </section>
-  </ScrollableAnchor>
 );
 
 export default Hero;
