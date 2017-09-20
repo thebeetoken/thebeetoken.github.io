@@ -721,15 +721,18 @@
       margin-left: 24px; } }
   @media (min-width: 1025px) {
     .bee-team-container {
-      display: block;
+      align-items: flex-start;
       height: 500px; } }
 
 .bee-team-profile-container {
+  flex-shrink: 0;
   width: 184px;
   height: 184px;
   border-radius: 50%;
   background: #B0BEC5;
-  opacity: 0.5; }
+  opacity: 0.8; }
+  .bee-team-profile-container img {
+    border-radius: 50%; }
 
 .bee-team-name {
   font-weight: 600;
@@ -737,15 +740,15 @@
   font-size: 13px;
   line-height: 20px;
   margin: 0;
-  margin-top: 36px; }
+  margin-top: 24px; }
   @media (min-width: 1025px) {
     .bee-team-name {
       font-size: 16px;
       line-height: 24px;
-      margin-top: 54px; } }
+      margin-top: 36px; } }
 
 .bee-team-title {
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   font-size: 13px;
   line-height: 20px;
@@ -755,7 +758,7 @@
   @media (min-width: 1025px) {
     .bee-team-title {
       font-size: 16px;
-      line-height: 24px;
+      line-height: 20px;
       margin-top: 6px;
       text-align: left; } }
 
@@ -765,20 +768,24 @@
   font-size: 13px;
   line-height: 20px;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 18px;
   text-align: center; }
   @media (min-width: 1025px) {
     .bee-team-info {
       font-size: 16px;
-      line-height: 24px;
+      line-height: 20px;
       text-align: left; } }
 
 .bee-team-social-links {
-  width: 120px;
+  width: 72px;
   height: 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 24px; }
+  @media (min-width: 768px) {
+    .bee-team-social-links {
+      width: 120px;
+      justify-content: flex-start; } }
 
 .bee-team-social-link-container {
   width: 24px;
@@ -790,6 +797,9 @@
 .bee-team-social-link {
   width: 100%;
   height: 100%; }
+
+.flex-div {
+  flex-grow: 1; }
 .bee-team-advisors {
   position: relative;
   display: flex;
