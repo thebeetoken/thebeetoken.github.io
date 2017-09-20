@@ -216,7 +216,7 @@ const TeamCore = () => (
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
-        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/angela-gongqi-yu/">
+        <a className="bee-team-social-link-container" target="_blank" href="http://www.angelayu.tv/">
           <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505888054/A_inverted_hmimop.svg" />
         </a>
       </div>
