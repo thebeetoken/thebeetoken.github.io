@@ -5,6 +5,11 @@ require ('./hamburgerMenu.scss');
 class HamburgerMenu extends Component {
   constructor(){
     super();
+    this.state = { menuStatus: false }
+  }
+
+  changeStatus(){
+    this.setState({ menuStatus: false })
   }
 
   render(){
@@ -14,10 +19,17 @@ class HamburgerMenu extends Component {
         noOverlay
         right
         bodyClassName={ "hbm-mobile" }
-        menuClassName={ "hbm-menu" }>
-        <a href="#about" className="bee-header-link menu-item">about</a>
-        <a href="#team" className="bee-header-link menu-item">team</a>
-        <a href="#advisors" className="bee-header-link menu-item">advisors</a>
+        menuClassName={ "hbm-menu" }
+        isOpen={this.state.menuStatus}>
+        <a href="#about" 
+           className="bee-header-link menu-item" 
+           onClick={() => this.changeStatus()}>about</a>
+        <a href="#team" 
+           className="bee-header-link menu-item"
+           onClick={() => this.changeStatus()}>team</a>
+        <a href="#advisors" 
+           className="bee-header-link menu-item"
+           onClick={() => this.changeStatus()}>advisors</a>
       </Menu>
     );
   }
