@@ -42,17 +42,22 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 16px;
-  height: 207px;
-
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .menu-item {
   font-weight: 300;
 }
 
+.bm-menu-wrap {
+  top: 0 !important;
+}
+
 .hbm-menu {
-  border: 1px solid red;
+  height: 150px !important;
 }
 
 

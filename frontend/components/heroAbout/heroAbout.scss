@@ -25,7 +25,7 @@
 
 .bee-hero-about-container {
   @media (min-width: 768px) {
-    padding: 42px 0 0 50px;
+    padding: 36px 0 0 50px;
   }
 
   @media (min-width: 1025px) {
@@ -34,7 +34,7 @@
 }
 
 .bee-hero-about-content {
-  width: 206px;
+  width: 280px;
 
   @media (min-width: 768px) {
     width: auto;
@@ -74,6 +74,7 @@
       width: 262px;
       margin-top: 12px;
       text-align: left;
+      line-height: 19px;
     }
 
     @media (min-width: 1025px) {
@@ -81,6 +82,25 @@
       margin-top: 24px;
       font-size: 16px;
       line-height: 24px;
+    }
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #37474F;
+    margin: 88px 0 0;
+    margin-top: 24px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      text-align: left;
+    }
+
+    @media (min-width: 1025px) {
+      font-size: 22px;
+      margin-top: 24px;
     }
   }
 

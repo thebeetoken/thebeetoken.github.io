@@ -9,9 +9,9 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/jon_wgdrif.jpg" />
       </div>
       <h1 className="bee-team-name">Jonathan Chou</h1>
-      <h2 className="bee-team-title">CEO &amp; Co-Founder, Lead Engineer @Uber, Fraud &amp; Security</h2>
+      <h2 className="bee-team-title">CEO &amp; Co-Founder, Lead Engineer &#64;Uber, Fraud &amp; Security</h2>
       <p className="bee-team-info">
-        Enjoys running around San Francisco all day
+        Been in cryptocurrency since 2011 and participated in 50+ ICOs since last year
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
@@ -26,7 +26,7 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883746/tony_ocd4gx.jpg" />
       </div>
       <h1 className="bee-team-name">Tony Tran</h1>
-      <h2 className="bee-team-title">CTO &amp; Co-Founder, Engineer @Uber</h2>
+      <h2 className="bee-team-title">CTO &amp; Co-Founder, Engineer &#64;Uber</h2>
       <p className="bee-team-info">
         Learned how to speak French via DuoLingo
       </p>
@@ -38,32 +38,15 @@ const TeamCore = () => (
         </a>
       </div>
     </div>
-
-    <div className="bee-team-container">
-      <div className="bee-team-profile-container">
-        <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883746/yvonne_vyvv8b.jpg" />
-      </div>
-      <h1 className="bee-team-name">Yvonne Chen</h1>
-      <h2 className="bee-team-title">Analytics and Product</h2>
-      <p className="bee-team-info">
-        Hobbyist Artist
-      </p>
-      <div className="flex-div"></div>
-      <div className="bee-team-social-links">
-        <a className="bee-team-social-link-container" target="_blank" href="www.linkedin.com/in/yvonnelc">
-          <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/linkedin-clear_cvmcsw.svg" />
-        </a>
-      </div>
-    </div>
     
     <div className="bee-team-container">
       <div className="bee-team-profile-container">
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/coco_orjb11.jpg" />
       </div>
       <h1 className="bee-team-name">Coco Liu</h1>
-      <h2 className="bee-team-title">Designer Left Field Labs @Google</h2>
+      <h2 className="bee-team-title">Designer Left Field Labs &#64;Google</h2>
       <p className="bee-team-info">
-        Likes petting bees
+        Perpetually hungry
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
@@ -125,13 +108,10 @@ const TeamCore = () => (
       <h1 className="bee-team-name">Michael Pak</h1>
       <h2 className="bee-team-title">Technical Product Manager, Former Investment Banking Analyst &#64;IE</h2>
       <p className="bee-team-info">
-        bees over flowers
+        Training for Wimbledon (don't hold your breath~)
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
-        <a className="bee-team-social-link-container" target="_blank" href="https://www.github.com/Aelho-Pak">
-          <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/github-clear_wd5hgw.svg" />
-        </a>
         <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/pakjmichael">
           <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/linkedin-clear_cvmcsw.svg" />
         </a>
@@ -232,20 +212,28 @@ const TeamCore = () => (
       <h1 className="bee-team-name">Angela Yu</h1>
       <h2 className="bee-team-title">Animator, Art Director &#64;Yahoo</h2>
       <p className="bee-team-info">
-        I like drawing bees
+        Love all forms of creative expression
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
-        <a className="bee-team-social-link-container" target="_blank" href="">
-          <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505641776/twitter-clear_u3v9hm.svg" />
+        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/angela-gongqi-yu/">
+          <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505888054/A_inverted_hmimop.svg" />
         </a>
-        <a className="bee-team-social-link-container" target="_blank" href="">
-          <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/facebook-clear_pnttto.svg" />
-        </a>
-        <a className="bee-team-social-link-container" target="_blank" href="">
-          <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/github-clear_wd5hgw.svg" />
-        </a>
-        <a className="bee-team-social-link-container" target="_blank" href="">
+      </div>
+    </div>
+
+    <div className="bee-team-container">
+      <div className="bee-team-profile-container">
+        <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505885922/geroge_enkmbk.jpg" />
+      </div>
+      <h1 className="bee-team-name">George Perez</h1>
+      <h2 className="bee-team-title">Designer, UI/UX Designer &#64;Bandai</h2>
+      <p className="bee-team-info">
+        Rock Climber, Learning Ukulele, and Professional Animal Cuddler
+      </p>
+      <div className="flex-div"></div>
+      <div className="bee-team-social-links">
+        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/perezg/">
           <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/linkedin-clear_cvmcsw.svg" />
         </a>
       </div>

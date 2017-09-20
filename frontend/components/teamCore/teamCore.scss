@@ -39,7 +39,7 @@
 
   @media (min-width: 1025px) {
     align-items: flex-start;
-    height: 500px;
+    height: 450px;
   }
 }
 
@@ -48,12 +48,8 @@
   width: 184px;
   height: 184px;
   border-radius: 50%;
-  background: #B0BEC5;
   opacity: 0.8;
-
-  img {
-    border-radius: 50%;
-  }
+  overflow: hidden;
 }
 
 .bee-team-name {

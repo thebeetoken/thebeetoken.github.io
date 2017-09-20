@@ -36,14 +36,19 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 16px;
-  height: 207px; }
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
 
 .menu-item {
   font-weight: 300; }
 
+.bm-menu-wrap {
+  top: 0 !important; }
+
 .hbm-menu {
-  border: 1px solid red; }
+  height: 150px !important; }
 .bee-header-container {
   position: fixed;
   top: 0;
@@ -275,14 +280,14 @@
 
 @media (min-width: 768px) {
   .bee-hero-about-container {
-    padding: 42px 0 0 50px; } }
+    padding: 36px 0 0 50px; } }
 
 @media (min-width: 1025px) {
   .bee-hero-about-container {
     padding: 136px 0 0 132px; } }
 
 .bee-hero-about-content {
-  width: 206px; }
+  width: 280px; }
   @media (min-width: 768px) {
     .bee-hero-about-content {
       width: auto; } }
@@ -315,13 +320,29 @@
       .bee-hero-about-content p {
         width: 262px;
         margin-top: 12px;
-        text-align: left; } }
+        text-align: left;
+        line-height: 19px; } }
     @media (min-width: 1025px) {
       .bee-hero-about-content p {
         width: 300px;
         margin-top: 24px;
         font-size: 16px;
         line-height: 24px; } }
+  .bee-hero-about-content h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #37474F;
+    margin: 88px 0 0;
+    margin-top: 24px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .bee-hero-about-content h2 {
+        font-size: 18px;
+        text-align: left; } }
+    @media (min-width: 1025px) {
+      .bee-hero-about-content h2 {
+        font-size: 22px;
+        margin-top: 24px; } }
   .bee-hero-about-content span {
     display: block;
     font-weight: 500;
@@ -725,17 +746,15 @@
   @media (min-width: 1025px) {
     .bee-team-container {
       align-items: flex-start;
-      height: 500px; } }
+      height: 450px; } }
 
 .bee-team-profile-container {
   flex-shrink: 0;
   width: 184px;
   height: 184px;
   border-radius: 50%;
-  background: #B0BEC5;
-  opacity: 0.8; }
-  .bee-team-profile-container img {
-    border-radius: 50%; }
+  opacity: 0.8;
+  overflow: hidden; }
 
 .bee-team-name {
   font-weight: 600;
@@ -822,15 +841,14 @@
   @media (min-width: 1025px) {
     .bee-team-advisors {
       width: 898px;
-      align-items: flex-start;
-      justify-content: space-between; } }
+      align-items: flex-start; } }
 
 .bee-team-advisors-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 184px;
-  height: 400px;
+  height: 330px;
   margin-top: 42px; }
   @media (min-width: 768px) {
     .bee-team-advisors-container {
@@ -840,17 +858,18 @@
   @media (min-width: 1025px) {
     .bee-team-advisors-container {
       display: block;
-      height: 500px; } }
+      height: 400px; } }
 
 .bee-team-advisors-profile-container {
   width: 184px;
   height: 184px;
   border-radius: 50%;
   background: #B0BEC5;
-  opacity: 0.5; }
+  opacity: 0.8;
+  overflow: hidden; }
 
 .bee-team-advisors-name {
-  font-weight: 600;
+  font-weight: 500;
   color: #FFC107;
   font-size: 13px;
   line-height: 20px;
@@ -875,20 +894,6 @@
       font-size: 16px;
       line-height: 24px;
       margin-top: 6px;
-      text-align: left; } }
-
-.bee-team-advisors-info {
-  font-weight: 200;
-  color: #fff;
-  font-size: 13px;
-  line-height: 20px;
-  margin: 0;
-  margin-top: 30px;
-  text-align: center; }
-  @media (min-width: 1025px) {
-    .bee-team-advisors-info {
-      font-size: 16px;
-      line-height: 24px;
       text-align: left; } }
 .bee-team {
   position: relative;
@@ -991,7 +996,7 @@
   position: absolute;
   height: 100px;
   width: 100%;
-  top: -100px;
+  top: -50px;
   left: 0;
   right: 0; }
 
@@ -999,7 +1004,7 @@
   position: absolute;
   height: 100px;
   width: 100%;
-  top: -150px;
+  top: -100px;
   left: 0;
   right: 0; }
 .bee-footer {

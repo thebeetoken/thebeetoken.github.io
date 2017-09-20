@@ -11,9 +11,6 @@ const HeroCta = () => (
         <h1>Reinventing Housing Exchange</h1>
         <p>Putting housing back into the hands of the consumer through the power of Ethereum.</p>
       </div>
-      <button className="bee-hero-cta-button">
-        Read our whitepaper
-      </button>
     </div>
   </div>
 );

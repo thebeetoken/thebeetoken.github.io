@@ -16,7 +16,6 @@ class HamburgerMenu extends Component {
     return (
       <Menu
         width={ '100%' }
-        noOverlay
         right
         bodyClassName={ "hbm-mobile" }
         menuClassName={ "hbm-menu" }
