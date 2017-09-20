@@ -41,6 +41,9 @@
 
 .menu-item {
   font-weight: 300; }
+
+.hbm-menu {
+  border: 1px solid red; }
 .bee-header-container {
   position: fixed;
   top: 0;
