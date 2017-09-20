@@ -112,7 +112,7 @@ const TeamCore = () => (
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
-        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/miao-yu-50b9098a">
+        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/guocheng-xie-220b396a/">
           <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/linkedin-clear_cvmcsw.svg" />
         </a>
       </div>

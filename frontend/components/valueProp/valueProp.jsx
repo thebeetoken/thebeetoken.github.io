@@ -23,7 +23,7 @@ const ValueProp = () => (
           Higher Returns
         </h1>
         <p>
-          Less overhead, lower fees, and no 3rd party processors means more &#36;&#36;&#36; for everyone!
+          Less overhead, lower fees, and no 3rd party processors mean more &#36;&#36;&#36; for everyone!
         </p>
       </div>
       <div className="bee-value-prop-content">
