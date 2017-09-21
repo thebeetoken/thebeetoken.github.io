@@ -232,7 +232,7 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883746/tommy_lfrnys.jpg" />
       </div>
       <h1 className="bee-team-name">Tommy Koo</h1>
-      <h2 className="bee-team-title">Content Writer</h2>
+      <h2 className="bee-team-title">Content Writer/Community Manager</h2>
       <p className="bee-team-info">
         Community Manager
       </p>

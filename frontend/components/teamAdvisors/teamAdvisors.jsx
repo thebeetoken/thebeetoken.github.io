@@ -23,7 +23,7 @@ const TeamAdvisors = () => (
         <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505885922/stephen_az220y.jpg" />
       </div>
       <h1 className="bee-team-advisors-name">Stephen Seo</h1>
-      <h2 className="bee-team-advisors-title">Investment Advisor, Former Investment Banker &#64;JP Morgan</h2>
+      <h2 className="bee-team-advisors-title">CFA/CPA Investment Advisor, Former Investment Banker &#64;JP Morgan</h2>
     </div>
     <div className="bee-team-advisors-container">
       <div className="bee-team-advisors-profile-container">
@@ -41,7 +41,7 @@ const TeamAdvisors = () => (
     </div>
     <div className="bee-team-advisors-container">
       <div className="bee-team-advisors-profile-container">
-        <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505885922/jeff_zkgxzc.jpg" />
+        <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1506013642/jeff-rech_lzydsn.jpg" />
       </div>
       <h1 className="bee-team-advisors-name">Jeff Retchman</h1>
       <h2 className="bee-team-advisors-title">Contracts Law &#64;Google, Former Legal &#64;Grooveshark</h2>

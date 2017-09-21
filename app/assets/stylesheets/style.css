@@ -338,11 +338,12 @@
     @media (min-width: 768px) {
       .bee-hero-about-content h2 {
         font-size: 18px;
-        text-align: left; } }
+        text-align: left;
+        margin-top: 18px; } }
     @media (min-width: 1025px) {
       .bee-hero-about-content h2 {
-        font-size: 22px;
-        margin-top: 24px; } }
+        font-size: 23px;
+        margin-top: 36px; } }
   .bee-hero-about-content span {
     display: block;
     font-weight: 500;
