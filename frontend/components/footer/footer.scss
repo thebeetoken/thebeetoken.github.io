@@ -1,0 +1,57 @@
+.bee-footer {
+  width: 100%;
+  height: 200px;
+  background: #37474F;
+}
+
+.bee-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 0.8;
+
+  h1 {
+    font-weight: 300;
+    color: #90A4AE;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
+
+.bee-footer-links {
+  width: 215px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  @media (min-width: 768px) {
+    width: 327px;
+    height: 40px;
+  }
+}
+
+.bee-footer-link-container {
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s ease-in-out;
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.bee-footer-link-logo {
+  width: 100%;
+  height: 100%;
+}
