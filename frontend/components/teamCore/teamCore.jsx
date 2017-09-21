@@ -28,7 +28,7 @@ const TeamCore = () => (
       <h1 className="bee-team-name">Tony Tran</h1>
       <h2 className="bee-team-title">CTO &amp; Co-Founder</h2>
       <p className="bee-team-info">
-        Engineer &#64;Uber
+        Engineer &#64;Uber, Former Engineer &#64;bizo (acquired by Linkedin), Founder &#64;SFMachineLearn
       </p>
       <div className="flex-div"></div>
       <div className="flex-div"></div>
@@ -78,7 +78,7 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/andy_k95agu.jpg" />
       </div>
       <h1 className="bee-team-name">Andy Chou</h1>
-      <h2 className="bee-team-title">Marketing</h2>
+      <h2 className="bee-team-title">Lead Marketing</h2>
       <p className="bee-team-info">
         Account Manager &#64;Criteo | Former Marketing Analyst &#64;Rakuten
       </p>
@@ -112,7 +112,7 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/bonnie_oondg8.jpg" />
       </div>
       <h1 className="bee-team-name">Bonnie Qin</h1>
-      <h2 className="bee-team-title">Engineer</h2>
+      <h2 className="bee-team-title">Backend Engineer</h2>
       <p className="bee-team-info">
         Engineer &#64;Google
       </p>
@@ -152,7 +152,7 @@ const TeamCore = () => (
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/miao_h0lhl8.jpg" />
       </div>
       <h1 className="bee-team-name">Miao Yu</h1>
-      <h2 className="bee-team-title">Engineer</h2>
+      <h2 className="bee-team-title">Smart Contract Engineer</h2>
       <p className="bee-team-info">
         Engineer &#64;Google | Former &#64;Uber
       </p>

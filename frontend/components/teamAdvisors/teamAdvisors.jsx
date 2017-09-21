@@ -34,17 +34,17 @@ const TeamAdvisors = () => (
     </div>
     <div className="bee-team-advisors-container">
       <div className="bee-team-advisors-profile-container">
-        <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505885922/kevin_xdtvsi.jpg" />
+        <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505962639/kevin-zhou2_l9ub9e.jpg" />
       </div>
       <h1 className="bee-team-advisors-name">Kevin Zhou</h1>
-      <h2 className="bee-team-advisors-title">Co-founder Galois, Current Advisor &#64;Enigma, Capital Former Head of Trading &#64;Kraken</h2>
+      <h2 className="bee-team-advisors-title">Co-founder Galois Capital, Current Advisor &#64;Enigma, Former Head of Trading &#64;Kraken</h2>
     </div>
     <div className="bee-team-advisors-container">
       <div className="bee-team-advisors-profile-container">
         <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505885922/jeff_zkgxzc.jpg" />
       </div>
       <h1 className="bee-team-advisors-name">Jeff Retchman</h1>
-      <h2 className="bee-team-advisors-title">Technical Contracts Lawyer &#64;Google</h2>
+      <h2 className="bee-team-advisors-title">Contracts Law &#64;Google, Former Legal &#64;Grooveshark</h2>
     </div>
   </section>
 );
