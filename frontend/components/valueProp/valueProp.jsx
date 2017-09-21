@@ -32,7 +32,7 @@ const ValueProp = () => (
         </div>
         <h1>Trust &amp; Security</h1>
         <p>
-          Using Blockchain technology and a separate User Quality Score provided by your peers, feel secure knowing with multiple layers of security protecting you.
+          Feel secure with multiple layers of security through Blockchain technology.
         </p>
       </div>
       <div className="bee-value-prop-content">
