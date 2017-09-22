@@ -11,6 +11,7 @@ const Header = () => (
       <a href="#about" className="bee-header-link">about</a>
       <a href="#team" className="bee-header-link">team</a>
       <a href="#advisors" className="bee-header-link">advisors</a>
+      <a href="#subscribe" className="bee-header-link">subscribe</a>
     </div>
     <HamburgerMenu className="hbm-mobile"/>
   </nav>
