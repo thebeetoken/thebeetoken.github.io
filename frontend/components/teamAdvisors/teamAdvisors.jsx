@@ -30,7 +30,7 @@ const TeamAdvisors = () => (
         <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505885922/toshi_fuei7r.jpg" />
       </div>
       <h1 className="bee-team-advisors-name">Toshi Masubuchi</h1>
-      <h2 className="bee-team-advisors-title">FP&amp;A Analyst &#64;Tanium, Former Business Valuation Senior Associate &#64;Deloitte</h2>
+      <h2 className="bee-team-advisors-title">Corporate, Operations, and Product Finance &#64;Tanium, Former Business Valuation Senior Associate &#64;Deloitte</h2>
     </div>
     <div className="bee-team-advisors-container">
       <div className="bee-team-advisors-profile-container">
