@@ -120,6 +120,23 @@ const TeamCore = () => (
 
     <div className="bee-team-container">
       <div className="bee-team-profile-container">
+        <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/guocheng_o7xv7s.jpg" />
+      </div>
+      <h1 className="bee-team-name">Guocheng Xie</h1>
+      <h2 className="bee-team-title">Smart Contract Engineer</h2>
+      <p className="bee-team-info">
+        Engineer &#64;Uber
+      </p>
+      <div className="flex-div"></div>
+      <div className="bee-team-social-links">
+        <a className="bee-team-social-link-container" target="_blank" href="https://www.linkedin.com/in/guocheng-xie-220b396a/">
+          <img className="bee-team-social-link" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505713094/linkedin-clear_cvmcsw.svg" />
+        </a>
+      </div>
+    </div>
+
+    <div className="bee-team-container">
+      <div className="bee-team-profile-container">
         <img className="bee-team-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505883745/kcvan_eaqe0s.jpg" />
       </div>
       <h1 className="bee-team-name">Kevin Van</h1>
