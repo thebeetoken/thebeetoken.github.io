@@ -13,13 +13,6 @@ const TeamAdvisors = () => (
     </div>
     <div className="bee-team-advisors-container">
       <div className="bee-team-advisors-profile-container">
-        <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505941551/james-fickel_nwrvka.jpg" />
-      </div>
-      <h1 className="bee-team-advisors-name">James Fickel</h1>
-      <h2 className="bee-team-advisors-title">Co-founder and Managing Director &#64;Chromatic Capital Management</h2>
-    </div>
-    <div className="bee-team-advisors-container">
-      <div className="bee-team-advisors-profile-container">
         <img className="bee-team-advisors-profile" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505885922/stephen_az220y.jpg" />
       </div>
       <h1 className="bee-team-advisors-name">Stephen Seo</h1>
