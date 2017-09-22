@@ -92,7 +92,7 @@
       display: block; } }
 
 .bee-header-link {
-  font-weight: 600;
+  font-weight: 400;
   color: #90A4AE;
   font-size: 16px;
   line-height: 24px;
@@ -955,7 +955,7 @@
 .bee-team-team,
 .bee-team-advisors-team {
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   font-size: 30px;
   line-height: 36px;
