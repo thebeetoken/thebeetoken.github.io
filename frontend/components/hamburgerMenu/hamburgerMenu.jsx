@@ -29,6 +29,9 @@ class HamburgerMenu extends Component {
         <a href="#advisors" 
            className="bee-header-link menu-item"
            onClick={() => this.changeStatus()}>advisors</a>
+        <a href="#subscribe" 
+           className="bee-header-link menu-item"
+           onClick={() => this.changeStatus()}>subscribe</a>
       </Menu>
     );
   }

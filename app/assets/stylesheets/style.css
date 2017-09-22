@@ -48,7 +48,10 @@
   top: 0 !important; }
 
 .hbm-menu {
-  height: 150px !important; }
+  height: 200px !important; }
+
+.bm-overlay {
+  display: none !important; }
 .bee-header-container {
   position: fixed;
   top: 0;
