@@ -33,7 +33,7 @@ class EmailForm extends Component {
   render(){
     return (
       <div className="bee-email-form-container">
-        <form className="bee-main-cta-form" method="POST" action="http://formspree.io/thebeetoken@gmail.com">
+        <form className="bee-main-cta-form" method="POST" action="https://formspree.io/thebeetoken@gmail.com">
           <input className="bee-main-cta-email" id="bee-main-cta-email" type="email" name="email" placeholder="Your Email" autoComplete="off" onChange={(e) => this.handleChange(e)}/>
           <input className="bee-main-cta-cc" id="bee-main-cta-cc" type="hidden" name="_cc" value="" />
           <input className="bee-main-cta-hidden" type="hidden" name="_subject" value="Stay tuned for The Bee Token updates!" />
