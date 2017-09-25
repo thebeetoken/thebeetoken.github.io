@@ -5,7 +5,7 @@ require ("./header.scss");
 const Header = () => (
   <nav className="bee-header-container">
     <div className="bee-header-logo-container">
-      <img className="bee-header-logo" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505623250/logo-horizontal_zizcll.svg" />
+      <img className="bee-header-logo" src="https://res.cloudinary.com/duettwoxj/image/upload/v1505623250/logo-horizontal_zizcll.svg" />
     </div>
     <div className="bee-header-links-container">
       <a href="#about" className="bee-header-link">about</a>
