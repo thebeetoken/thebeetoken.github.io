@@ -46,7 +46,7 @@ const TeamCore = () => (
       <h1 className="bee-team-name">Ali Ayyash</h1>
       <h2 className="bee-team-title">Lead Engineer</h2>
       <p className="bee-team-info">
-        Lead Cloud Engineer &#64;Google | Former &#64;Amazon AWS
+        Lead Cloud Engineer &#64;Google, Former &#64;Amazon AWS
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
@@ -63,7 +63,7 @@ const TeamCore = () => (
       <h1 className="bee-team-name">Coco Liu</h1>
       <h2 className="bee-team-title">Lead Designer</h2>
       <p className="bee-team-info">
-        Designer &#64;Left Field Labs/&#64;Google
+        Designer &#64;Left Field Labs &#64;Google
       </p>
       <div className="flex-div"></div>
       <div className="bee-team-social-links">
