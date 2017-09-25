@@ -5,7 +5,7 @@ const HeroCta = () => (
   <div className="bee-hero-cta">
     <div className="bee-hero-cta-container">
       <div className="bee-hero-cta-logo-container">
-        <img className="bee-hero-cta-logo" src="http://res.cloudinary.com/duettwoxj/image/upload/v1505626872/logo-vertical_d1iixl.svg" />
+        <img className="bee-hero-cta-logo" src="https://res.cloudinary.com/duettwoxj/image/upload/v1505626872/logo-vertical_d1iixl.svg" />
       </div>
       <div className="bee-hero-cta-content">
         <h1>
