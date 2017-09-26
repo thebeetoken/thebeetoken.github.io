@@ -8,7 +8,7 @@ const ValueProp = () => (
         <div className="bee-value-prop-icon-container">
           <img className="bee-value-prop-icon" src="https://res.cloudinary.com/duettwoxj/image/upload/v1505718995/decentralization_jiosjy.svg" />
         </div>
-        <h1>Decentralized Ownership</h1>
+        <h1>Decentralized Network Effects</h1>
         <p>
           Power back to the people. 50&#37; of tokens distributed through presale and ICO.
         </p>
