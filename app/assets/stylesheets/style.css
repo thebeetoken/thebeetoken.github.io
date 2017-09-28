@@ -360,6 +360,8 @@
         font-size: 42px;
         line-height: 52px;
         margin-top: 88px; } }
+  .bee-hero-about-content a {
+    margin-left: 100px; }
 .bee-hero {
   position: relative;
   width: 100%;
