@@ -131,38 +131,3 @@
     }
   }
 }
-
-.bee-hero-cta-button {
-  width: 200px;
-  height: 48px;
-  background: #FFC107;
-  border: none;
-  border-radius: 3em; 
-  color: #000;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: 500;
-  margin-top: 32px;
-  transition: all 0.25s ease-in-out;
-  outline: 0;
-  cursor: pointer;
-
-  @media (min-width: 768px) {
-    width: 200px;
-    height: 50px;
-    margin-top: 24px;
-  }
-
-  @media (min-width: 1025px) {
-    width: 240px;
-    height: 64px;
-    font-size: 14px;
-    line-height: 22px;
-    margin-top: 48px;
-  }
-
-  &:hover {
-    background: #fff;
-    color: #263238;
-  }
-}

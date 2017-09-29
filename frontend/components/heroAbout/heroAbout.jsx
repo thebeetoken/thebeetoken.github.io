@@ -20,9 +20,12 @@ const HeroAbout = () => (
           consumers by cutting out the middle man and pushing the savings 
           and benefits back to the homeowners and renters. 
         </p>
-        <br />
-        <a href="https://www.thebeetoken.com/whitepaper" 
-           className="">white paper</a>
+        <a href="https://www.thebeetoken.com/whitepaper" target="_blank">
+          <button  
+            className="bee-about-wp-button">
+            white paper
+          </button>
+        </a>
       </div>
     </div>
   </div>

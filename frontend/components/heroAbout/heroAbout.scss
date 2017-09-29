@@ -34,9 +34,13 @@
 }
 
 .bee-hero-about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 280px;
 
   @media (min-width: 768px) {
+    display: block;
     width: auto;
   }
 
@@ -120,8 +124,38 @@
       margin-top: 88px;
     }
   }
+}
 
-  a {
-    margin-left: 100px;
+.bee-about-wp-button {
+  width: 200px;
+  height: 48px;
+  background: #FFC107;
+  border: none;
+  border-radius: 3em; 
+  color: #000;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 500;
+  margin-top: 24px;
+  transition: all 0.25s ease-in-out;
+  outline: 0;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 150px;
+    height: 36px;
+    margin-top: 16px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 240px;
+    height: 64px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 36px;
+  }
+
+  &:hover {
+    opacity: 0.6;
   }
 }
