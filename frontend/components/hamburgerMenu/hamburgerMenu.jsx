@@ -25,6 +25,7 @@ class HamburgerMenu extends Component {
            onClick={() => this.changeStatus()}>about</a>
         <a href="https://www.thebeetoken.com/whitepaper" 
            className="bee-header-link"
+           target="_blank"
            onClick={() => this.changeStatus()}>white paper</a>
         <a href="#team" 
            className="bee-header-link menu-item"
