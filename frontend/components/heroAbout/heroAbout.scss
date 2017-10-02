@@ -154,8 +154,10 @@
     line-height: 22px;
     margin-top: 36px;
   }
-
-  &:hover {
-    opacity: 0.6;
+  
+  a {
+    text-decoration: none;
+    color: #37474F;
+    margin-left: 100px;
   }
 }
