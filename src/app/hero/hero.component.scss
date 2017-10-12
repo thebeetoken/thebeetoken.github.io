@@ -1,0 +1,514 @@
+.hero {
+  position: relative;
+  height: 2745px;
+
+  @media (min-width: 768px) {
+    height: 2089px;
+  }
+
+  @media (min-width: 1025px) {
+    height: 2609px;
+  }
+}
+
+.hero-container {
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 344px;
+  padding: 116px 0 0;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    width: 404px;
+    height: 344px;
+    padding: 116px 0 0 86px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 750px;
+    height: 438px;
+    padding: 246px 0 0 214px;
+  }
+
+  h1 {
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 42px;
+      line-height: 52px;
+      padding-left: 0;
+    }
+  
+    @media (min-width: 1025px) {
+      font-size: 68px;
+      line-height: 82px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 16px;
+      left: -34px;
+      height: 48px;
+      width: 9px;
+      background: #FFC107;
+    }
+  }
+
+  p {
+    width: 235px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin: 24px 0 0;
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      padding-left: 0;
+      width: 260px;
+      margin: 12px 0 0;
+    }
+  
+    @media (min-width: 1025px) {
+      width: 438px;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 40px 0 0;
+    }
+  }
+}
+
+.hero-logo {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 215px;
+  height: 150px;
+  width: 119px;
+  background: url('/assets/svg/logo-vertical.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  transition: all 0.35s ease-in-out;
+
+  &.disappear {
+    opacity: 0;
+  }
+
+  @media (min-width: 1025px) {
+    display: block;
+  }
+}
+
+button {
+  width: 270px;
+  height: 64px;
+  background: #FFC107;
+  border: none;
+  border-radius: 3em; 
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 32px;
+
+  @media (min-width: 1025px) {
+    width: 240px;
+    margin-top: 40px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.about-content {
+  position: absolute;
+  left: 50%;
+  top: 700px;
+  transform: translate3d(-50%, 0, 0);
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    width: 540px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 476px;
+    top: 1001px;
+  }
+
+  h1 {
+    font-weight: 500;
+    color: #FFF8E1;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 26px 0 0;
+
+    @media (min-width: 768px) {
+      margin: 18px 0 0;
+      font-size: 42px;
+      line-height: 52px;
+    }
+
+    @media (min-width: 1025px) {
+      margin: 60px 0 0;
+      font-size: 42px;
+      line-height: 52px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    color: #FFF8E1;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 32px 0 0;
+    text-align: center;
+  }
+}
+
+.about-bee-trail {
+  position: absolute;
+  top: -210px;
+  left: 10px;
+  height: 219px;
+  width: 75px;
+  background: url('/assets/images/hero/about-bee-path-mobile.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    left: 130px;
+  }
+
+
+  @media (min-width: 1025px) {
+    height: 322px;
+    width: 170px;
+    top: -338px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    background: url('/assets/images/hero/about-bee-path-desktop.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.about-bee-trail-icon {
+  position: absolute;
+  top: 3px;
+  left: -6px;
+  height: 47px;
+  width: 69px;
+  background: url('/assets/images/hero/about-bee-path-icon-desktop.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(100deg);
+
+  @media (min-width: 1025px) {
+    top: -13px;
+    left: -10px;
+    transform: rotate(0);
+  }
+}
+
+.about-bee-trail-small {
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 22px;
+  height: 56px;
+  background: url('/assets/images/hero/about-bee-path-small-mobile.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    bottom: -65px;
+    left: -15px;
+    transform: translate3d(0, 0, 0);
+    width: 27px;
+    height: 72px;
+  }
+
+  @media (min-width: 1025px) {
+    bottom: -75px;
+    left: -50px;
+    width: 56px;
+    height: 93px;
+    background: url('/assets/images/hero/about-bee-path-small-desktop.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.about-bee-logo-container {
+  width: 49px;
+  height: 45px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  bottom: 48px;
+  height: 1308px;
+  border-top: 1px solid #FFF8E1;
+
+  @media (min-width: 768px) {
+    bottom: 56px;
+    height: 880px;
+    width: 588px;
+  }
+
+  @media (min-width: 1025px) {
+    bottom: 109px;
+    height: 956px;
+    width: 897px;
+  }
+}
+
+.more-info-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.more-info-wrapper {
+  width: 260px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 60px;
+
+  @media (min-width: 768px) {
+    width: 588px;
+    height: 800px;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  @media (min-width: 1025px) {
+    width: 905px;
+    height: 851px;
+  }
+
+  div:nth-child(1) {
+    .more-info-text {
+      width: 260px;
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+        width: 280px;
+      }
+    
+      @media (min-width: 1025px) {
+        width: 334px;
+      }
+    }
+
+    .more-info-image {
+      position: relative;
+      order: -1;
+      width: 240px;
+      height: 98px;
+      margin-bottom: 32px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+        order: 1;
+      }
+    
+      @media (min-width: 1025px) {
+        width: 475px;
+        height: 193px;
+      }
+    }
+  }
+
+  div:nth-child(2) {
+    justify-content: space-around;
+
+    .more-info-text {
+      width: 260px;
+
+      @media (min-width: 768px) {
+        width: 348px;
+      }
+    
+      @media (min-width: 1025px) {
+        width: 338px;
+      }
+    }
+
+    .more-info-image {
+      position: relative;
+      order: -1;
+      width: 170px;
+      height: 158px;
+      margin-bottom: 24px;
+
+      @media (min-width: 768px) {
+        width: 178px;
+        height: 166px;
+        margin-bottom: 0;
+      }
+    
+      @media (min-width: 1025px) {
+        width: 225px;
+        height: 209px;
+      }
+    }
+  }
+
+  div:nth-child(3) {
+    @media (min-width: 1025px) {
+      padding-right: 56px;
+    }
+
+    .more-info-text {
+      width: 260px;
+
+      @media (min-width: 768px) {
+        width: 296px;
+      }
+    
+      @media (min-width: 1025px) {
+        width: 334px;
+      }
+    }
+
+    .more-info-image {
+      position: relative;
+      width: 200px;
+      height: 104px;
+      order: -1;
+      margin-bottom: 36px;
+
+      @media (min-width: 768px) {
+        order: 1;
+        width: 240px;
+        height: 124px;
+        margin-bottom: 0;
+      }
+    
+      @media (min-width: 1025px) {
+        width: 329px;
+        height: 170px;
+      }
+    }
+  }
+}
+
+.more-info-image {
+  flex-shrink: 0;
+}
+
+.more-info-text {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFC107;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 32px 0 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.more-info-trail {
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: -75px;
+    left: 355px;
+    width: 290px;
+    height: 213px;
+    background: url('/assets/images/hero/info-bee-path-tablet.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: 1025px) {
+    bottom: -80px;
+    left: 510px;
+    width: 390px;
+    height: 286px;
+    background: url('/assets/images/hero/info-bee-path-desktop.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+#about {
+  position: absolute;
+  content: '';
+  top: -60px;
+  left: 0;
+  right: 0;
+  height: 60px;
+}

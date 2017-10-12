@@ -1,0 +1,260 @@
+.roadmap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 140px;
+  height: 1516px;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    height: 1590px;
+    padding-top: 170px;
+  }
+
+  @media (min-width: 768px) {
+    height: 1500px;
+  }
+}
+
+.roadmap-city {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 208px;
+  height: 77px;
+  background: url('/assets/images/roadmap/roadmap-city-mobile.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background: url('/assets/images/roadmap/roadmap-city.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 438px;
+    height: 123px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 529px;
+    height: 162px;
+  }
+}
+
+.roadmap-container {
+  position: relative;
+  width: 220px;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    width: 374px;
+    padding: 0 64px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 774px;
+  }
+
+  h2 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  p {
+    font-weight: 300;
+    color: #ECEFF1;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0 0;
+
+    @media (min-width: 768px) {
+      margin: 22px 0 0;
+    }
+  
+    @media (min-width: 1025px) {
+      margin: 16px 0 0;
+    }
+  }
+}
+
+.roadmap-bee-trail {
+  position: absolute;
+  top: -135px;
+  left: 7px;
+  width: 145px;
+  height: 155px;
+  background: url('/assets/images/roadmap/roadmap-bee-path-mobile.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    top: -150px;
+    left: -10px;
+    width: 269px;
+    height: 294px;
+    background: url('/assets/images/roadmap/roadmap-bee-path-tablet.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: 1025px) {
+    top: -222px;
+    left: -7px;
+    width: 375px;
+    height: 367px;
+    background: url('/assets/images/roadmap/roadmap-bee-path-desktop.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.roadmap-bee-icon {
+  position: absolute;
+  bottom: -60px;
+  left: -25px;
+  width: 39px;
+  height: 35px;
+  transform: rotate(8deg);
+  background: url('/assets/images/roadmap/roadmap-bee-icon-desktop.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    bottom: -30px;
+    left: -60px;
+  }
+
+  @media (min-width: 1025px) {
+    transform: rotate(0deg);
+    bottom: -50px;
+    left: -80px;
+  }
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-weight: 500;
+    color: #D3D0BF;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+
+    @media (min-width: 768px) {
+      font-size: 42px;
+      line-height: 52px;
+    }
+  }
+}
+
+.timeline-container {
+  position: relative;
+
+  div:first-of-type {
+    margin-top: 70px;
+
+    @media (min-width: 768px) {
+      margin-top: 95px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 5px;
+      height: 1430px;
+      width: 2px;
+      background: #FFC107;
+
+      @media (min-width: 768px) {
+        top: 0;
+        left: -64px;
+        height: 1400px;
+      }
+
+      @media (min-width: 768px) {
+        height: 1470px;
+      }
+    }
+  }
+
+  div:not(:first-child) {
+    margin-top: 24px;
+
+    @media (min-width: 768px) {
+      margin-top: 56px;
+    }
+  
+    @media (min-width: 1025px) {
+      margin-top: 64px;
+    }
+  }
+
+  div:last-of-type {
+    &:after {
+      content: '';
+      position: absolute;
+      left: -42px;
+      bottom: -255px;
+      height: 48px;
+      width: 46px;
+      background: url('/assets/images/roadmap/roadmap-bee-hive-desktop.png');
+      background-size: 100% 100%;
+
+      @media (min-width: 768px) {
+        left: -119px;
+        bottom: -400px;
+        height: 118px;
+        width: 114px;
+      }
+
+      @media (min-width: 1025px) {
+        left: -120px;
+        bottom: -524px;
+      }
+    }
+  }
+}
+
+.timeline {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #FFC107;
+
+    @media (min-width: 768px) {
+      left: -75px;
+      top: 0;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+#roadmap {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 40px;
+}

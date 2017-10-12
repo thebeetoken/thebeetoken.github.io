@@ -1,0 +1,85 @@
+.subscribe {
+  position: relative;
+  height: 342px;
+  background: #263238;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    height: 334px;
+  }
+
+  @media (min-width: 1025px) {
+    height: 440px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFB300;
+  opacity: 0.05;
+}
+
+.honeycomb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 66%;
+  background: url('/assets/images/subscribe/subscribe-honeycomb.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    height: 128px;
+    width: 600px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 924px;
+    align-items: flex-start;
+  }
+
+  p {
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    text-align: center;
+    width: 200px;
+    padding-bottom: 32px;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      width: auto;
+      padding-bottom: 0;
+    }
+  }
+}
+
+#subscribe {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 60px;
+
+  @media (min-width: 1025px) {
+    top: -30px;
+  }
+}

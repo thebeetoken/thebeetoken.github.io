@@ -1,0 +1,35 @@
+<header [class.fixed]="fixed">
+  <div class="container-mobile">
+    <div class="header-icon-mobile">
+      <div class="header-icon-inner"></div>
+    </div>
+    <div class="hamburger" (click)="switchIcon()">
+      <img [src]="icon">
+    </div>
+    <div class="mobile-overlay" *ngIf="isOpen" (click)="closeBurger()"></div>
+    <div class="mobile-links" [class.isOpen]="isOpen">
+        <a pageScroll href="#subscribe" class="subscribe-link" (click)="closeBurger()">subscribe</a>
+        <a pageScroll href="#about" (click)="closeBurger()">about</a>
+        <a pageScroll href="#roadmap" (click)="closeBurger()">roadmap</a>
+        <a pageScroll href="#team" (click)="closeBurger()">team</a>
+        <a pageScroll href="#advisors" (click)="closeBurger()">advisors</a>
+        <a href="">whitepaper</a>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="container-desktop">
+    <div class="header-icon-large">
+      <div class="header-icon-inner"></div>
+    </div>
+    <div class="links">
+      <a pageScroll href="#about">about</a>
+      <a pageScroll href="#roadmap">roadmap</a>
+      <a pageScroll href="#team">team</a>
+      <a pageScroll href="#advisors">advisors</a>
+      <a pageScroll href="#subscribe">subscribe</a>
+      <a href="">
+        <button>whitepaper</button>
+      </a>
+    </div>
+  </div>
+</header>
