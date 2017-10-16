@@ -5,15 +5,15 @@
   flex-direction: column;
   align-items: center;
   padding: 80px 0 121px;
-  height: 2360px;
+  height: 4950px;
 
   @media (min-width: 768px) {
-    height: 1550px;
+    height: 2800px;
     padding: 86px 0 145px;
   }
 
   @media (min-width: 1025px) {
-    height: 1150px;
+    height: 2360px;
     padding: 86px 0 145px;
   }
 }
@@ -60,13 +60,17 @@
     justify-content: center;
 
     .advisor-container:nth-child(1),
-    .advisor-container:nth-child(3) {
+    .advisor-container:nth-child(2n + 1) {
       margin-right: 35px;
     }
 
     .advisor-container:nth-child(2),
-    .advisor-container:nth-child(4) {
+    .advisor-container:nth-child(2n + 2) {
       margin-left: 35px;
+    }
+
+    .advisor-container:last-of-type {
+      margin-right: 0;
     }
   }
 
@@ -111,7 +115,6 @@
     overflow: hidden;
     visibility: hidden;
     transform: rotate(90deg);
-    cursor: pointer;
   }
   
   .hexagon-inner {
@@ -237,7 +240,6 @@
     overflow: hidden;
     visibility: hidden;
     transform: rotate(90deg);
-    cursor: pointer;
   }
   
   .hexagon-inner {
@@ -259,12 +261,28 @@
     transform: rotate(-60deg);
     transition: all 0.5s ease;
 
-    &.overlay {
-      box-shadow: inset 0 0 0 200px rgba(225, 193, 7, 0.20);
+    &.dark-gold {
+      box-shadow: inset 0 0 0 200px rgba(225, 193, 7, 0.5);
     }
 
-    &.colored {
+    &.gold {
+      box-shadow: inset 0 0 0 200px rgba(255, 193, 7, 0.2);
+    }
+
+    &.light-gold {
       box-shadow: inset 0 0 0 200px rgba(255, 248, 225, 0.1);
+    }
+
+    &.darker-grey {
+      box-shadow: inset 0 0 0 200px rgba(41, 54, 60, 1.0);
+    }
+
+    &.dark-grey {
+      box-shadow: inset 0 0 0 200px rgba(55, 66, 69, 0.5);
+    }
+
+    &.grey {
+      box-shadow: inset 0 0 0 200px rgba(115, 126, 132, 0.5);
     }
   }
 }
@@ -290,8 +308,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0) rotate(30deg);
-    width: 180px;
+    transform: translate3d(-50%, -50%, 0) rotate(-30deg);
+    width: 200px;
+    padding-top: 120px;
   
     h1 {
       font-weight: 600;
@@ -299,6 +318,7 @@
       font-size: 16px;
       line-height: 24px;
       text-align: center;
+      margin: 0 0 20px;
     }
   
     p {
@@ -307,6 +327,7 @@
       font-size: 16px;
       line-height: 24px;
       text-align: center;
+      margin: 0;
     }
   }
 }
