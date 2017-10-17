@@ -30,3 +30,21 @@
     background-size: cover;
   }
 }
+
+bee-email-bar {
+  display: none;
+
+  @media (min-width: 1025px) {
+    top: 100px;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s ease-in-out;
+
+    &.isVisible {
+      top: 80px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}

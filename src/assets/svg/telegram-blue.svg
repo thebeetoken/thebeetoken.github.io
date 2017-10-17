@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/social/telegram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.05183408,12.6911543 L7.7702025,17.218695 C8.18401866,17.218695 8.36685643,17.0156207 8.59783482,16.774655 L10.5860219,14.7001918 L14.722314,17.9793356 C15.4835288,18.4300215 16.0329249,18.1966784 16.2225355,17.2209892 L18.9378592,3.49082696 C19.2158609,2.2948495 18.5129942,1.75241018 17.7847743,2.10716857 L1.84043762,8.70427154 C0.752087326,9.17268939 0.758432507,9.82422935 1.64205415,10.1145427 L5.73373041,11.4848947 L15.2063961,5.07221638 C15.6535797,4.78123694 16.0640025,4.93767373 15.7271424,5.25847638 L8.05159749,12.6909667 Z" id="path-1"></path>
+    </defs>
+    <g id="•-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/social/telegram">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFC107" xlink:href="#path-1"></use>
+            <g id="Group" mask="url(#mask-2)" fill="#455A64">
+                <g id="Color/Blue3">
+                    <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -165,6 +165,17 @@
   }
 }
 
+.whitepaper {
+  width: 270px;
+  height: 64px;
+  margin-top: 32px;
+
+  @media (min-width: 1025px) {
+    width: 240px;
+    margin-top: 40px;
+  }
+}
+
 button {
   font-family: 'Montserrat', sans-serif;
   width: 270px;
@@ -179,11 +190,9 @@ button {
   transition: all 0.25s ease-in-out;
   outline: 0;
   cursor: pointer;
-  margin-top: 32px;
 
   @media (min-width: 1025px) {
     width: 240px;
-    margin-top: 40px;
   }
 
   &:hover {

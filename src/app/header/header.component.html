@@ -13,7 +13,26 @@
         <a pageScroll href="#roadmap" (click)="closeBurger()">roadmap</a>
         <a pageScroll href="#team" (click)="closeBurger()">team</a>
         <a pageScroll href="#advisors" (click)="closeBurger()">advisors</a>
-        <a href="">whitepaper</a>
+        <a [routerLink]="['/whitepaper']" (click)="closeBurger()" target="_blank">whitepaper</a>
+        <div class="header-social-links">
+          <div class="header-social-container">
+            <a href="https://medium.com/@thebeetoken" target="_blank" (click)="closeBurger()">
+              <img src="/assets/svg/medium-blue.svg" alt="medium">
+            </a>
+            <a href="https://thebeetoken.slack.com/join/shared_invite/MjM4MDY2NDQ3NDc2LTE1MDQ4NDA2ODMtN2Q5Yzc3Y2JhNg" target="_blank" (click)="closeBurger()">
+              <img src="/assets/svg/slack-blue.svg" alt="slack">
+            </a>
+            <a href="https://www.facebook.com/thebeetoken" target="_blank" (click)="closeBurger()">
+              <img src="/assets/svg/facebook-blue.svg" alt="facebook">
+            </a>
+            <a href="https://twitter.com/thebeetoken" target="_blank" (click)="closeBurger()">
+              <img src="/assets/svg/twitter-blue.svg" alt="twitter">
+            </a>
+            <a href="https://t.me/thebeetalk" target="_blank" (click)="closeBurger()">
+              <img src="/assets/svg/telegram-blue.svg" alt="telegram">
+            </a>
+          </div>
+        </div>
     </div>
   </div>
   <div class="overlay"></div>
@@ -27,7 +46,7 @@
       <a pageScroll href="#team">team</a>
       <a pageScroll href="#advisors">advisors</a>
       <a pageScroll href="#subscribe">subscribe</a>
-      <a href="">
+      <a [routerLink]="['/whitepaper']" target="_blank" (click)="closeBurger()">
         <button>whitepaper</button>
       </a>
     </div>

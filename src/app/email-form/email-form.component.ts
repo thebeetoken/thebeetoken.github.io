@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './email-form.component.html',
   styleUrls: ['./email-form.component.scss']
 })
-export class EmailFormComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class EmailFormComponent  { }

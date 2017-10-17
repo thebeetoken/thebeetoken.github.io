@@ -178,10 +178,6 @@ header {
   transform: translate3d(0, -150%, 0);
   transition: all 0.35s ease-in-out;
 
-  @media (min-height: 768px) {
-    // height: 378px;
-  }
-
   &.isOpen  {
     top: 60px;
     transform: translate3d(0, 0, 0);
@@ -198,6 +194,28 @@ header {
     font-size: 16px;
     line-height: 24px;
     color: #455A64;
+  }
+}
+
+.header-social-links {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #ECEFF1;
+}
+
+.header-social-container {
+  display: flex;
+  width: 100%;
+
+  @media (min-height: 768px) {
+    width: 320px;
+  }
+
+  a {
+    width: 64px;
+    height: 64px;
   }
 }
 

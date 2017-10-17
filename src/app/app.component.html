@@ -1,4 +1,5 @@
 <bee-header></bee-header>
+<bee-email-bar (emitClose)="closeEmailBar($event)" *ngIf="isShown" [class.isVisible]="isVisible"></bee-email-bar>
 <div class="main-container">
   <div class="main-background"></div>
   <bee-hero></bee-hero>

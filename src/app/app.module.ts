@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,6 +14,12 @@ import { TeamComponent } from './team/team.component';
 import { AdvisorsComponent } from './advisors/advisors.component';
 import { ValuepropsComponent } from './valueprops/valueprops.component';
 import { MediaComponent } from './media/media.component';
+import { EmailBarComponent } from './email-bar/email-bar.component';
+import { RedirectComponent } from './redirect/redirect.component';
+
+const appRoutes: Routes = [
+  { path: 'whitepaper', redirectTo: 'RedirectComponent' }
+];
 
 
 @NgModule({
@@ -27,11 +34,14 @@ import { MediaComponent } from './media/media.component';
     TeamComponent,
     AdvisorsComponent,
     ValuepropsComponent,
-    MediaComponent
+    MediaComponent,
+    EmailBarComponent,
+    RedirectComponent
   ],
   imports: [
     BrowserModule,
-    Ng2PageScrollModule
+    Ng2PageScrollModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
