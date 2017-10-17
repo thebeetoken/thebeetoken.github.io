@@ -12,10 +12,11 @@
   
   @media (min-width: 1025px) {
     padding: 86px 0 121px;
-    height: 3550px;
+    height: 3050px;
   }
 
   button {
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     left: 50%;
     bottom: 40px;
@@ -305,7 +306,6 @@
     overflow: hidden;
     visibility: hidden;
     transform: rotate(90deg);
-    cursor: pointer;
   }
   
   .hexagon-inner {

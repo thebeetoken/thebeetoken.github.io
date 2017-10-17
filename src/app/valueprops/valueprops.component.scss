@@ -26,7 +26,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 588px;
-    margin-top: 0;
+    margin-top: 72px;
 
     .value-prop:nth-child(3),
     .value-prop:nth-child(4) {
@@ -37,6 +37,7 @@
   @media (min-width: 1025px) {
     height: auto;
     width: 904px;
+    margin-top: 0;
 
     .value-prop:nth-child(3),
     .value-prop:nth-child(4) {

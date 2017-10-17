@@ -1,7 +1,7 @@
 <header [class.fixed]="fixed">
   <div class="container-mobile">
     <div class="header-icon-mobile">
-      <div class="header-icon-inner"></div>
+      <a href="#" (click)="closeBurger()"><div class="header-icon-inner"></div></a>
     </div>
     <div class="hamburger" (click)="switchIcon()">
       <img [src]="icon">
@@ -19,7 +19,7 @@
   <div class="overlay"></div>
   <div class="container-desktop">
     <div class="header-icon-large">
-      <div class="header-icon-inner"></div>
+      <a href="#"><div class="header-icon-inner"></div></a>
     </div>
     <div class="links">
       <a pageScroll href="#about">about</a>

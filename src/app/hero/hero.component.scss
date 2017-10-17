@@ -94,6 +94,54 @@
   }
 }
 
+.hero-social-links {
+  display: none;
+
+  @media (min-width: 1025px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 263px;
+    height: 23px;
+    margin-top: 36px;
+
+    a:nth-child(1) {
+      width: 23px;
+      height: 20px;
+    }
+
+    a:nth-child(2) {
+      width: 22px;
+      height: 19px;
+    }
+
+    a:nth-child(3) {
+      width: 23px;
+      height: 22px;
+    }
+
+    a:nth-child(4) {
+      width: 25px;
+      height: 21px;
+    }
+
+    a:nth-child(5) {
+      width: 13px;
+      height: 22px;
+    }
+
+    a {
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+
+
 .hero-logo {
   display: none;
   position: absolute;
@@ -118,6 +166,7 @@
 }
 
 button {
+  font-family: 'Montserrat', sans-serif;
   width: 270px;
   height: 64px;
   background: #FFC107;
