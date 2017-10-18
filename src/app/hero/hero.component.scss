@@ -28,7 +28,7 @@
   z-index: 1;
 
   @media (min-width: 768px) {
-    width: 404px;
+    width: 564px;
     height: 344px;
     padding: 116px 0 0 86px;
   }
@@ -59,15 +59,32 @@
       line-height: 66px;
     }
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 16px;
-      left: -34px;
-      height: 48px;
-      width: 9px;
-      background: #FFC107;
+    &.main-head {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 1px;
+        height: 26px;
+        width: 5px;
+        background: #FFC107;
+
+        @media (min-width: 768px) {
+          top: 14px;
+          left: -22px;
+          height: 42px;
+          width: 6px;
+        }
+
+        @media (min-width: 1025px) {
+          top: 16px;
+          left: -34px;
+          height: 48px;
+          width: 9px;
+        }
+      }
     }
+
   }
 
   p {
