@@ -110,6 +110,80 @@
 
   }
 
+  h2 {
+    position: relative;
+    font-weight: 500;
+    color: #d3d3d3;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    margin-top: 10px;
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 25px;
+      line-height: 50px;
+      padding-left: 0;
+      margin-top: 0;
+    }
+  
+    @media (min-width: 1025px) {
+      font-size: 33px;
+      line-height: 66px;
+      margin-top: 0;
+    }
+
+    &.main-head {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 1px;
+        height: 26px;
+        width: 5px;
+        background: #FFC107;
+
+        @media (min-width: 768px) {
+          top: 10px;
+          left: -22px;
+          height: 32px;
+          width: 6px;
+        }
+
+        @media (min-width: 1025px) {
+          top: 12px;
+          left: -34px;
+          height: 42px;
+          width: 9px;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        right: -6px;
+        height: 4px;
+        width: 26px;
+        background: #fff;
+
+        @media (min-width: 768px) {
+          right: 210px;
+          height: 5px;
+          width: 34px;
+        }
+
+        @media (min-width: 1025px) {
+          right: 271px;
+          height: 8px;
+          width: 48px;
+        }
+      }
+    }
+
+  }
+
   p {
     width: 235px;
     font-size: 16px;
@@ -121,8 +195,8 @@
 
     @media (min-width: 768px) {
       padding-left: 0;
-      width: 260px;
-      margin: 12px 0 0;
+      width: 350px;
+      margin: 25px 0 0;
     }
   
     @media (min-width: 1025px) {
