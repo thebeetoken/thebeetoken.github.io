@@ -60,7 +60,7 @@
     }
 
     &.main-head {
-      &:before {
+      &::before {
         content: '';
         position: absolute;
         top: 8px;
@@ -70,17 +70,40 @@
         background: #FFC107;
 
         @media (min-width: 768px) {
-          top: 14px;
+          top: 10px;
           left: -22px;
-          height: 42px;
+          height: 32px;
           width: 6px;
         }
 
         @media (min-width: 1025px) {
-          top: 16px;
+          top: 12px;
           left: -34px;
-          height: 48px;
+          height: 42px;
           width: 9px;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        right: -6px;
+        height: 4px;
+        width: 26px;
+        background: #fff;
+
+        @media (min-width: 768px) {
+          right: 210px;
+          height: 5px;
+          width: 34px;
+        }
+
+        @media (min-width: 1025px) {
+          right: 271px;
+          height: 8px;
+          width: 48px;
         }
       }
     }

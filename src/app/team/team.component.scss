@@ -80,7 +80,7 @@
   flex-direction: column;
   align-items: center;
   width: 260px;
-  max-height: 1750px;
+  max-height: 1824px;
   overflow: hidden;
   transition: all 1.5s ease-in-out;
 
@@ -201,6 +201,10 @@
     line-height: 24px;
     margin: 0;
     text-align: center;
+  }
+
+  &.david {
+    font-size: 14px;
   }
 }
 
@@ -438,4 +442,8 @@
       width: 200px;
     }
   }
+}
+
+.david {
+  font-size: 13px;
 }
