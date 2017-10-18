@@ -147,10 +147,6 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-
-  @media (min-height: 1025px) {
-    display: none;
-  }
 }
 
 .hamburger {
@@ -207,11 +203,7 @@ header {
 
 .header-social-container {
   display: flex;
-  width: 100%;
-
-  @media (min-height: 768px) {
-    width: 320px;
-  }
+  width: 320px;
 
   a {
     width: 64px;

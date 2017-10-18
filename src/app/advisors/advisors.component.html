@@ -4,7 +4,7 @@
     <h1>Advisors</h1>
     <p>A special group of individuals providing insight from top tech and financial companies.</p>
   </div>
-  <div class="advisors-container-mobile">
+  <div class="advisors-container-mobile" [class.open]="isExpanded">
 
     <div class="advisor-container">
       <div class="hexagon-container">		
@@ -155,7 +155,7 @@
       </div>
       <div class="advisor-blurb">
         <h1>Sam Yam</h1>
-        <p>Co-founder &#64; CTO &#64;Patreon (450M valuation)</p>
+        <p>Co-founder &amp; CTO &#64;Patreon, YC Expert &#64;Y Combinator</p>
       </div>  
     </div>
 
@@ -194,6 +194,7 @@
     </div>
 
   </div>
+  <button (click)="showMore()" *ngIf="!isExpanded">Show More Advisors</button>
   <div class="advisor-container-desktop">
 
     <div class="hexagon-container invisible">		

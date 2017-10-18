@@ -16,9 +16,10 @@ import { ValuepropsComponent } from './valueprops/valueprops.component';
 import { MediaComponent } from './media/media.component';
 import { EmailBarComponent } from './email-bar/email-bar.component';
 import { RedirectComponent } from './redirect/redirect.component';
+import { WhitepaperGuardService } from './whitepaper-guard.service';
 
 const appRoutes: Routes = [
-  { path: 'whitepaper', redirectTo: 'RedirectComponent' }
+  { path: 'whitepaper', component: RedirectComponent, canActivate: [WhitepaperGuardService] }
 ];
 
 
@@ -43,7 +44,9 @@ const appRoutes: Routes = [
     Ng2PageScrollModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    WhitepaperGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
