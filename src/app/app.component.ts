@@ -1,4 +1,4 @@
-import { Component, Inject, HostListener } from '@angular/core';
+import { Component, Inject, HostListener, OnInit } from '@angular/core';
 import { PageScrollConfig } from 'ng2-page-scroll';
 import { DOCUMENT } from "@angular/platform-browser";
 
@@ -7,9 +7,10 @@ import { DOCUMENT } from "@angular/platform-browser";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   isShown = true;
   isVisible = false;
+  myStorage = window.localStorage;
 
   constructor(@Inject(DOCUMENT) private doc: Document) {
     PageScrollConfig.defaultDuration = 350;
@@ -27,5 +28,16 @@ export class AppComponent {
 
   closeEmailBar(data) {
     this.isShown = data;
+  }
+
+  ngOnInit() {
+    if (this.myStorage.getItem('bn-registered')) {
+      var date = new Date();
+      if (parseInt(this.myStorage.getItem('bn-registered')) < (date.getTime() / 1000)) {
+        this.myStorage.removeItem('bn-registered');
+      } else {
+        this.isShown = false;
+      }
+    }
   }
 }

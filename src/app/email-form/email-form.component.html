@@ -8,9 +8,9 @@
     <button id="bee-main-cta-submit" type="submit">Submit</button>
   </form> -->
   <form action="https://thebeetoken.us16.list-manage.com/subscribe/post?u=63e6b143b412ae186091e7063&amp;id=c34696b243" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="bee-main-cta-form validate" target="_blank" novalidate>
-    <input type="email" value="" name="EMAIL" class="email bee-main-cta-email" id="mce-EMAIL" placeholder="Your Email" required>
+    <input type="email" value="" name="EMAIL" class="email bee-main-cta-email" id="mce-EMAIL" placeholder="Your Email" (keypress)="enterPressed($event)" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_63e6b143b412ae186091e7063_c34696b243" tabindex="-1" value=""></div>
-    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" id="bee-main-cta-submit">Submit</button>
+    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" id="bee-main-cta-submit" (click)="closeEmailBarButton()">Submit</button>
   </form>
 </div>

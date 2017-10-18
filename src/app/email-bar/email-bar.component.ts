@@ -7,6 +7,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class EmailBarComponent {
   @Output() emitClose: EventEmitter<any> = new EventEmitter<any>();
+  myStorage = window.localStorage;
 
   constructor() { }
 
@@ -17,6 +18,10 @@ export class EmailBarComponent {
   enterPressed(key) {
     if (key.charCode === 13) {
       setTimeout(() => {
+        let date = new Date();
+        let expDate = JSON.stringify((date.getTime() / 1000) + 172800);
+    
+        this.myStorage.setItem('bn-registered', expDate);
         this.emitClose.emit(false);
       }, 3000);
     }
@@ -24,6 +29,10 @@ export class EmailBarComponent {
 
   closeEmailBarButton() {
     setTimeout(() => {
+      let date = new Date();
+      let expDate = JSON.stringify((date.getTime() / 1000) + 172800);
+  
+      this.myStorage.setItem('bn-registered', expDate);
       this.emitClose.emit(false);
     }, 3000);
   }
