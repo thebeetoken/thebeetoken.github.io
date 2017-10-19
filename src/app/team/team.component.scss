@@ -110,6 +110,10 @@
 
     @media (min-width: 768px) {
       height: 406px;
+
+      &.contributors {
+        height: auto;
+      }
     }
   }
 
@@ -162,6 +166,14 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 125%;
+
+    a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
 
     &.private-member-blurb {
       transform: rotate(-30deg);
@@ -288,6 +300,16 @@
     height: 236px;
     position: relative;
     display: inline-block;
+    transition: all 0.35s ease;
+
+    &.photo {
+      &:hover {
+        .hexagon-photo {
+          box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
+          opacity: 0.3;
+        }
+      }
+    }
   }
   
   .invisible {
@@ -330,6 +352,14 @@
     visibility: visible;
     transform: rotate(-60deg);
     transition: all 0.5s ease;
+
+    a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
 
     &.extremely-light-gold {
       box-shadow: inset 0 0 0 200px rgba(255, 248, 225, 0.1);
