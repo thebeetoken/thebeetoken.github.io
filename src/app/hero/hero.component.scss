@@ -83,29 +83,6 @@
           width: 9px;
         }
       }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
-        right: -6px;
-        height: 4px;
-        width: 26px;
-        background: #fff;
-
-        @media (min-width: 768px) {
-          right: 210px;
-          height: 5px;
-          width: 34px;
-        }
-
-        @media (min-width: 1025px) {
-          right: 271px;
-          height: 8px;
-          width: 48px;
-        }
-      }
     }
 
   }
