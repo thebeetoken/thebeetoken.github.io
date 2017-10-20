@@ -309,6 +309,10 @@
           opacity: 0.3;
         }
       }
+
+      &.no-hover {
+        pointer-events: none;
+      }
     }
   }
   
