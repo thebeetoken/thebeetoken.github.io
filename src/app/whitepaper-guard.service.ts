@@ -11,7 +11,7 @@ export class WhitepaperGuardService implements CanActivate {
       if (this.alwaysFalse) {
 
       } else {
-        window.location.href="https://drive.google.com/file/d/0B9xUBfSaEkksbmZCNmFsb3l5ZE0/view"
+        window.location.href="https://s3-us-west-2.amazonaws.com/beenest-public/whitepaper/bee_whitepaper_v2.pdf"
       }
 
       return false;
