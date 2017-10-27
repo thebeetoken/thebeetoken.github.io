@@ -1,0 +1,83 @@
+:host {
+  display: none;
+
+  @media (min-width: 1025px) {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: #FFC107;
+    z-index: 2;
+  }
+}
+
+.email-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1056px;
+  height: 56px;
+
+  h2 {
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.telegram-icon {
+  position: relative;
+  width: 48px;
+  height: 40px;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  width: 240px;
+  height: 56px;
+  background: #37474F;
+  border: none;
+  border-radius: 3em; 
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+  outline: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.exit {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translate3d(0, -50%, 0);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  
+  &:hover {
+    opacity: 0.6;
+  }
+}

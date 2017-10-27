@@ -14,7 +14,8 @@ import { TeamComponent } from './team/team.component';
 import { AdvisorsComponent } from './advisors/advisors.component';
 import { ValuepropsComponent } from './valueprops/valueprops.component';
 import { MediaComponent } from './media/media.component';
-import { EmailBarComponent } from './email-bar/email-bar.component';
+// import { EmailBarComponent } from './email-bar/email-bar.component';
+import { TelegramBarComponent } from './telegram-bar/telegram-bar.component';
 import { RedirectComponent } from './redirect/redirect.component';
 import { WhitepaperGuardService } from './whitepaper-guard.service';
 
@@ -36,7 +37,7 @@ const appRoutes: Routes = [
     AdvisorsComponent,
     ValuepropsComponent,
     MediaComponent,
-    EmailBarComponent,
+    TelegramBarComponent,
     RedirectComponent
   ],
   imports: [
