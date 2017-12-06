@@ -211,9 +211,21 @@
 }
 
 .row2_0 {
-  margin-left: 170px;
+  @media (min-width: 768px) {
+    margin-left: 80px;
+  }
+
+  @media (min-width: 1025px) {
+    margin-left: 170px;
+  }
 }
 
 .row2_1 {
-  margin-right: 170px;
+  @media (min-width: 768px) {
+    margin-right: 80px;
+  }
+
+  @media (min-width: 1025px) {
+    margin-right: 170px;
+  }
 }
