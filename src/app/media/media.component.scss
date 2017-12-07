@@ -103,12 +103,19 @@
     @media (min-width: 1025px) {
       height: 320px;
       width: 370px;
+
+      &:hover {
+        .image {
+          opacity: 0.5;
+        }
+      }
     }
   }
 
   .image {
     width: 170px;
     height: 146px;
+    transition: all 0.35s ease-in-out;
 
     @media (min-width: 1025px) {
       height: 320px;
@@ -158,7 +165,7 @@
 
   @media (min-width: 1025px) {
     top: -368px;
-    left: 0;
+    left: 150px;
     right: auto;
     width: 133px;
     height: 138px;

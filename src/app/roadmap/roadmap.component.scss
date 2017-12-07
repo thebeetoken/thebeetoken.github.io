@@ -206,7 +206,7 @@
       content: '';
       position: absolute;
       left: -42px;
-      bottom: -205px;
+      bottom: -270px;
       height: 48px;
       width: 46px;
       background: url('/assets/images/roadmap/roadmap-bee-hive-desktop.png');
@@ -214,14 +214,14 @@
 
       @media (min-width: 768px) {
         left: -119px;
-        bottom: -364px;
+        bottom: -610px;
         height: 118px;
         width: 114px;
       }
 
       @media (min-width: 1025px) {
         left: -120px;
-        bottom: -328px;
+        bottom: -600px;
       }
     }
   }
