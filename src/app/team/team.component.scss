@@ -12,7 +12,7 @@
   
   @media (min-width: 1025px) {
     padding: 86px 0 121px;
-    height: 3050px;
+    height: 2250px;
   }
 
   button {
@@ -254,50 +254,90 @@
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    width: 1103px;
+    // width: 1103px;
+    width: 900px;
     height: 100%;
     margin-top: 88px;
   
     .hexagon-container:nth-child(5n + 2) {
-      margin-left: 141px;
+      margin-left: 118px;
     }
   
     .hexagon-container:nth-child(5n + 3) {
-      margin-left: 142px;
+      margin-left: 118px;
     } 
   
     .hexagon-container:nth-child(5n + 4) {
-      margin-top: -117px;
-      margin-left: 207px;
+      margin-top: -94px;
+      margin-left: 169px;
     } 
   
     .hexagon-container:nth-child(5n + 5) {
-      margin-top: -117px;
-      margin-left: 141px;
+      margin-top: -94px;
+      margin-left: 118px;
     } 
   
     .hexagon-container:nth-child(5n + 6) {
-      margin-top: -117px;
+      margin-top: -94px;
     }
     
     .hexagon-container:nth-child(5n + 7) {
-      margin-top: -117px;
+      margin-top: -94px;
     } 
   
     .hexagon-container:nth-child(5n + 8) {
-      margin-top: -117px;
+      margin-top: -94px;
     } 
   
     .hexagon-container:nth-child(5n + 9) {
-      margin-top: -117px;
+      margin-top: -94px;
     } 
+
+
+
+
+    // .hexagon-container:nth-child(5n + 2) {
+    //   margin-left: 141px;
+    // }
+  
+    // .hexagon-container:nth-child(5n + 3) {
+    //   margin-left: 142px;
+    // } 
+  
+    // .hexagon-container:nth-child(5n + 4) {
+    //   margin-top: -117px;
+    //   margin-left: 207px;
+    // } 
+  
+    // .hexagon-container:nth-child(5n + 5) {
+    //   margin-top: -117px;
+    //   margin-left: 141px;
+    // } 
+  
+    // .hexagon-container:nth-child(5n + 6) {
+    //   margin-top: -117px;
+    // }
+    
+    // .hexagon-container:nth-child(5n + 7) {
+    //   margin-top: -117px;
+    // } 
+  
+    // .hexagon-container:nth-child(5n + 8) {
+    //   margin-top: -117px;
+    // } 
+  
+    // .hexagon-container:nth-child(5n + 9) {
+    //   margin-top: -117px;
+    // } 
   }
   
   .hexagon-container {
     position: relative;
     flex-shrink: 0;
-    width: 272px;
-    height: 236px;
+    // width: 272px;
+    // height: 236px;
+    width: 220px;
+    height: 191px;
     position: relative;
     display: inline-block;
     transition: all 0.35s ease;
@@ -326,8 +366,10 @@
   
   .hexagon2 {
     position: absolute;
-    width: 236px;
-    height: 272px;
+    // width: 236px;
+    // height: 272px;
+    width: 191px;
+    height: 220px;
     top: -18px;
     left: 18px;
   }
@@ -407,6 +449,11 @@
       opacity: 0.3;
     }
 
+    &.lighter-white {
+      box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 1.0);
+      opacity: 0.2;
+    }
+
     &.dark-grey {
       box-shadow: inset 0 0 0 200px rgba(38, 50, 56, 1.0);
       opacity: 0.2;
@@ -446,34 +493,63 @@
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0) rotate(-30deg);
-    width: 200px;
-    padding-top: 65px;
+    width: 180px;
+    // width: 200px;
+    padding-top: 36px;
+    // padding-top: 65px;
   
+    // h1 {
+    //   font-weight: 600;
+    //   color: #FFC107;
+    //   font-size: 16px;
+    //   line-height: 24px;
+    //   text-align: center;
+    //   width: 200px;
+    // }
+
+    // h2 {
+    //   font-weight: 600;
+    //   color: #fff;
+    //   font-size: 16px;
+    //   line-height: 24px;
+    //   text-align: center;
+    //   width: 200px;
+    // }
+  
+    // p {
+    //   font-weight: 300;
+    //   color: #fff;
+    //   font-size: 16px;
+    //   line-height: 24px;
+    //   text-align: center;
+    //   width: 200px;
+    // }
+
     h1 {
       font-weight: 600;
       color: #FFC107;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 14px;
+      line-height: 20px;
       text-align: center;
-      width: 200px;
+      width: 180px;
     }
 
     h2 {
       font-weight: 600;
       color: #fff;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 14px;
+      line-height: 20px;
       text-align: center;
-      width: 200px;
+      width: 180px;
     }
   
     p {
       font-weight: 300;
       color: #fff;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 13px;
+      line-height: 17px;
       text-align: center;
-      width: 200px;
+      width: 180px;
     }
   }
 }

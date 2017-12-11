@@ -7,12 +7,11 @@
   padding: 80px 0 225px;
 
   @media (min-width: 768px) {
-    min-height: 1150px;
     padding: 86px 0 145px;
   }
 
   @media (min-width: 1025px) {
-    height: 1900px;
+    height: 1000px;
     padding: 86px 0 145px;
   }
 }
@@ -51,7 +50,7 @@
   align-items: center;
   overflow: hidden;
   width: 260px;
-  max-height: 1750px;
+  height: 2150px;
   transition: all 1.5s ease-in-out;
 
   &.open {
@@ -63,7 +62,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-height: 960px;
+    height: 1400px;
 
     &.open {
       max-height: 5500px;
@@ -164,6 +163,12 @@
   flex-direction: column;
   align-items: center;
 
+  &.long {
+    p {
+      width: 195px;
+    }
+  }
+
   h1 {
     font-weight: 600;
     color: #FFC107;
@@ -190,50 +195,50 @@
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    width: 1103px;
+    width: 900px;
     height: 100%;
     margin-top: -36px;
-  
+
     .hexagon-container:nth-child(5n + 2) {
-      margin-left: 141px;
+      margin-left: 118px;
     }
   
     .hexagon-container:nth-child(5n + 3) {
-      margin-left: 142px;
+      margin-left: 118px;
     } 
   
     .hexagon-container:nth-child(5n + 4) {
-      margin-top: -117px;
-      margin-left: 207px;
+      margin-top: -94px;
+      margin-left: 169px;
     } 
   
     .hexagon-container:nth-child(5n + 5) {
-      margin-top: -117px;
-      margin-left: 141px;
+      margin-top: -94px;
+      margin-left: 118px;
     } 
   
     .hexagon-container:nth-child(5n + 6) {
-      margin-top: -117px;
+      margin-top: -94px;
     }
     
     .hexagon-container:nth-child(5n + 7) {
-      margin-top: -117px;
+      margin-top: -94px;
     } 
   
     .hexagon-container:nth-child(5n + 8) {
-      margin-top: -117px;
+      margin-top: -94px;
     } 
   
     .hexagon-container:nth-child(5n + 9) {
-      margin-top: -117px;
+      margin-top: -94px;
     } 
   }
   
   .hexagon-container {
     position: relative;
     flex-shrink: 0;
-    width: 272px;
-    height: 236px;
+    width: 220px;
+    height: 191px;
     position: relative;
     display: inline-block;
 
@@ -257,8 +262,8 @@
   
   .hexagon2 {
     position: absolute;
-    width: 236px;
-    height: 272px;
+    width: 191px;
+    height: 220px;
     top: -18px;
     left: 18px;
   }
@@ -339,29 +344,32 @@
   display: none;
 
   @media (min-width: 1025px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0) rotate(-30deg);
-    width: 200px;
-    padding-top: 120px;
+    width: 180px;
+    padding-top: 60px;
   
     h1 {
       font-weight: 600;
       color: #FFC107;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 14px;
+      line-height: 20px;
       text-align: center;
-      margin: 0 0 20px;
+      width: 150px;
     }
   
     p {
       font-weight: 300;
       color: #fff;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 13px;
+      line-height: 17px;
       text-align: center;
+      width: 180px;
       margin: 0;
     }
   }
