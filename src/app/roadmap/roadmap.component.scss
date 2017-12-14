@@ -175,12 +175,9 @@
       background: #FFC107;
 
       @media (min-width: 768px) {
+        height: 950px;
         top: 0;
         left: -64px;
-      }
-
-      @media (min-width: 1025px) {
-        height: 950px;
       }
     }
   }
