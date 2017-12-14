@@ -1,13 +1,13 @@
 .hero {
   position: relative;
-  height: 2745px;
+  height: 2500px;
 
   @media (min-width: 768px) {
-    height: 2089px;
+    height: 1970px;
   }
 
   @media (min-width: 1025px) {
-    height: 2609px;
+    height: 2500px;
   }
 }
 
@@ -404,7 +404,7 @@ button {
   }
 
   @media (min-width: 1025px) {
-    bottom: -75px;
+    bottom: -92px;
     left: -50px;
     width: 56px;
     height: 93px;
