@@ -3,11 +3,11 @@
   display: flex;
   justify-content: center;
   padding-top: 140px;
-  height: 1750px;
+  height: 1060px;
   z-index: 1;
 
   @media (min-width: 768px) {
-    height: 1750px;
+    height: 1200px;
     padding-top: 170px;
   }
 
@@ -174,7 +174,7 @@
       position: absolute;
       left: -20px;
       top: 5px;
-      height: 1700px;
+      height: 950px;
       width: 2px;
       background: #FFC107;
 
@@ -206,7 +206,7 @@
       content: '';
       position: absolute;
       left: -42px;
-      bottom: -270px;
+      bottom: -292px;
       height: 48px;
       width: 46px;
       background: url('/assets/images/roadmap/roadmap-bee-hive-desktop.png');
@@ -214,7 +214,7 @@
 
       @media (min-width: 768px) {
         left: -119px;
-        bottom: -610px;
+        bottom: -339px;
         height: 118px;
         width: 114px;
       }
