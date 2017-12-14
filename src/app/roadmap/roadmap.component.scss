@@ -3,16 +3,12 @@
   display: flex;
   justify-content: center;
   padding-top: 140px;
-  height: 1060px;
+  height: 900px;
   z-index: 1;
 
   @media (min-width: 768px) {
-    height: 1200px;
+    height: 1050px;
     padding-top: 170px;
-  }
-
-  @media (min-width: 1025px) {
-    height: 1200px;
   }
 }
 
@@ -174,7 +170,7 @@
       position: absolute;
       left: -20px;
       top: 5px;
-      height: 950px;
+      height: 850px;
       width: 2px;
       background: #FFC107;
 
@@ -206,7 +202,7 @@
       content: '';
       position: absolute;
       left: -42px;
-      bottom: -292px;
+      bottom: -239px;
       height: 48px;
       width: 46px;
       background: url('/assets/images/roadmap/roadmap-bee-hive-desktop.png');
