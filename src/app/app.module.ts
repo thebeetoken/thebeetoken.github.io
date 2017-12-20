@@ -23,11 +23,11 @@ import { KycService } from './kyc.service';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 const appRoutes: Routes = [
-  // {
-  //   path: 'whitepaper', 
-  //   component: RedirectComponent,
-  //   canActivate: [WhitepaperGuardService]
-  // },
+  {
+     path: 'whitepaper', 
+     component: RedirectComponent,
+     canActivate: [WhitepaperGuardService]
+   },
   // { 
   //   path: 'kyc',
   //   component: VerifyComponent,
@@ -42,16 +42,16 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    // SubscribeComponent,
-    // HeroComponent,
-    // EmailFormComponent,
-    // RoadmapComponent,
-    // TeamComponent,
-    // AdvisorsComponent,
-    // ValuepropsComponent,
-    // MediaComponent,
-    // EmailBarComponent,
-    // RedirectComponent,
+    SubscribeComponent,
+    HeroComponent,
+    EmailFormComponent,
+    RoadmapComponent,
+    TeamComponent,
+    AdvisorsComponent,
+    ValuepropsComponent,
+    MediaComponent,
+    EmailBarComponent,
+    RedirectComponent,
     SignUpComponent
   ],
   imports: [
