@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'bee-verify',
-  templateUrl: './verify.component.html',
-  styleUrls: ['./verify.component.scss']
+  selector: 'bee-sign-up',
+  templateUrl: './sign-up.component.html',
+  styleUrls: ['./sign-up.component.scss']
 })
-export class VerifyComponent implements OnInit {
+export class SignUpComponent implements OnInit {
   email: string;
   password: string;
   retypePassword: string;

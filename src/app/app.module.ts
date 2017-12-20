@@ -20,14 +20,14 @@ import { EmailBarComponent } from './email-bar/email-bar.component';
 import { RedirectComponent } from './redirect/redirect.component';
 import { WhitepaperGuardService } from './whitepaper-guard.service';
 import { KycService } from './kyc.service';
-import { VerifyComponent } from './verify/verify.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const appRoutes: Routes = [
-  {
-    path: 'whitepaper', 
-    component: RedirectComponent,
-    canActivate: [WhitepaperGuardService]
-  },
+  // {
+  //   path: 'whitepaper', 
+  //   component: RedirectComponent,
+  //   canActivate: [WhitepaperGuardService]
+  // },
   // { 
   //   path: 'kyc',
   //   component: VerifyComponent,
@@ -42,17 +42,17 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SubscribeComponent,
-    HeroComponent,
-    EmailFormComponent,
-    RoadmapComponent,
-    TeamComponent,
-    AdvisorsComponent,
-    ValuepropsComponent,
-    MediaComponent,
-    EmailBarComponent,
-    RedirectComponent,
-    VerifyComponent
+    // SubscribeComponent,
+    // HeroComponent,
+    // EmailFormComponent,
+    // RoadmapComponent,
+    // TeamComponent,
+    // AdvisorsComponent,
+    // ValuepropsComponent,
+    // MediaComponent,
+    // EmailBarComponent,
+    // RedirectComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
