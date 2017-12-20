@@ -23,23 +23,18 @@ import { KycService } from './kyc.service';
 import { VerifyComponent } from './verify/verify.component';
 
 const appRoutes: Routes = [
-  // {
-  //   path: '',
-  //   pathMatch: 'full',
-  //   // loadChildren: './home'
-  // },
   {
     path: 'whitepaper', 
     component: RedirectComponent,
     canActivate: [WhitepaperGuardService]
   },
-  { 
-    path: 'kyc',
-    component: VerifyComponent,
-    children: [
-      // canActivate: [KycService] 
-    ]
-  },
+  // { 
+  //   path: 'kyc',
+  //   component: VerifyComponent,
+  //   children: [
+  //     // canActivate: [KycService] 
+  //   ]
+  // },
 ];
 
 @NgModule({
@@ -66,8 +61,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    // WhitepaperGuardService,
-    KycService
+    WhitepaperGuardService,
+    // KycService
   ],
   bootstrap: [AppComponent]
 })
