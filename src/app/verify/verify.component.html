@@ -1,0 +1,52 @@
+<section class="verify">
+  <div class="container">
+    <div> Set up an Account </div>
+    <div> As you sign up for this account, you will also be signed up on Beenest. * </div>
+    
+    <form>
+      <div>
+        <input 
+          name="email"
+          [(ngModel)]="email"
+          [value]="email"
+          type="email"
+          placeholder="Email"
+        />
+        <div class="errorText" *ngIf="!emailConfirmed"> {{emailError}} </div>
+        <hr />
+      </div>
+      <div>
+        <input 
+          name="password"
+          [(ngModel)]="password"
+          [value]="password"
+          type="password"
+          placeholder="Password"
+        />
+        <div class="errorText" *ngIf="!passwordConfirmed"> {{passwordError}} </div>
+        <hr />
+      </div>
+      <div>
+        <input 
+          name="retypePassword"
+          [(ngModel)]="retypePassword"
+          [value]="retypePassword"
+          type="password"
+          placeholder="Retype Password"
+        />
+        <div class="errorText" *ngIf="!retypePasswordConfirmed"> {{retypePasswordError}} </div>
+        <hr />
+      </div>
+      <div>
+        <input (click)="handleBox()" name="confirmation" type="checkbox" />
+          I agree to the terms of service.
+        <div *ngIf="!box"> {{boxError}} </div>
+      </div>
+    </form>
+
+    <a (click)="registerEmail()" target="_blank"><button> Sign Up </button></a>
+    <div>
+      * This is to confirm your intention that as an investor in the presale, you will be using our token.
+    </div>
+  </div>
+</section>

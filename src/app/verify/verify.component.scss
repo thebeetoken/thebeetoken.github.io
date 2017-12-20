@@ -1,0 +1,49 @@
+.verify {
+
+    @media (min-width: 768px) {
+        height: 1970px;
+      }
+    
+    @media (min-width: 1025px) {
+        height: 2500px;
+    }
+}
+
+.container {
+    background-color: "#ECEFF1";
+}
+
+.whitepaper {
+    width: 270px;
+    height: 64px;
+    margin-top: 32px;
+  
+    @media (min-width: 1025px) {
+      width: 240px;
+      margin-top: 40px;
+    }
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    width: 270px;
+    height: 64px;
+    background: #FFC107;
+    border: none;
+    border-radius: 3em; 
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+    outline: 0;
+    cursor: pointer;
+  
+    @media (min-width: 1025px) {
+      width: 240px;
+    }
+  
+    &:hover {
+      opacity: 0.6;
+    }
+  }

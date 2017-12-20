@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate } from '@angular/router';
 
 @Injectable()
-export class WhitepaperGuardService implements CanActivate {
+export class KycService implements CanActivate {
   constructor() { }
     canActivate(route: ActivatedRouteSnapshot) {
-        window.location.href="https://s3-us-west-2.amazonaws.com/beenest-public/whitepaper/bee_whitepaper_v3.pdf"
+        window.location.href="https://www.facebook.com/";
         return false;
     }
+
 }
