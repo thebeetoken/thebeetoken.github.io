@@ -1,0 +1,98 @@
+#token-distribution-container {
+  height: auto;
+  width: 100vw;
+  background-color: #37474f;
+  padding: 7vh 10vw;
+  box-sizing: border-box;
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: #f0eeda;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+
+    @media (max-width: 1025px) {
+      width: 400px;
+      margin-bottom: 4vh;
+    }
+    @media (max-width: 768px) {
+      width: 250px;
+      margin-bottom: 3vh;
+    }
+  }
+}
+
+.token-distribution-table {
+  min-height: 70vh;
+  height: auto;
+  width: 80vw;
+
+  .table-head {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .table-head h4 {
+    font-size: 20px;
+    color: #edb72d;
+    text-align: center;
+  }
+
+  .table-head h5 {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .table-body {
+    width: 100%;
+    min-height: 80%;
+    height: auto;
+    border-top: 2px solid #79848a;
+    border-bottom: 2px solid #79848a;
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      height: 14.2%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .row:nth-child(even) { background-color: #4b5960; }
+
+    .row h5 {
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      margin-bottom: .5em;
+    }
+
+    .row h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+.row .column {
+  width: 33.33333%;
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  box-sizing: border-box;
+}
