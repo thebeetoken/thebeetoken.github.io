@@ -8,6 +8,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { HeroComponent } from './hero/hero.component';
 import { EmailFormComponent } from './email-form/email-form.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
+import { TokenDistributionComponent } from './token-distribution/token-distribution.component';
 import { TeamComponent } from './team/team.component';
 import { AdvisorsComponent } from './advisors/advisors.component';
 import { ValuepropsComponent } from './valueprops/valueprops.component';
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
     HeroComponent,
     EmailFormComponent,
     RoadmapComponent,
+    TokenDistributionComponent,
     TeamComponent,
     AdvisorsComponent,
     ValuepropsComponent,
