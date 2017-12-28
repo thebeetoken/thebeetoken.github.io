@@ -13,8 +13,8 @@ export class HeroComponent implements OnInit {
   private hrs: any;
   private min: any;
   private sec: any;
-  private registrationDate: Date = new Date(2017, 11, 28, 0, 18, 10); // new Date(2018, 0, 2, 12)
-  private preSaleDate: Date = new Date(2017, 11, 28, 0, 18, 15); // new Date(2018, 0, 19, 11, 59)
+  private registrationDate: Date = new Date(2018, 0, 2, 12); // new Date(2018, 0, 2, 12)
+  private preSaleDate: Date = new Date(2018, 0, 19, 11, 59); // new Date(2018, 0, 19, 11, 59)
   private registration: boolean = false;
   private sale: boolean = false;
   private end: boolean = false; 
@@ -52,7 +52,10 @@ export class HeroComponent implements OnInit {
     }
     if(this.sale) {
       remainTime = this.preSaleDate.getTime() - now;
-      if(remainTime <= 0) this.end = true;
+      if(remainTime <= 0) {
+        this.end = true;
+        return;
+      }
     }
 
 
