@@ -9,9 +9,9 @@
           <h2>The Future of Home Sharing</h2>
 
           <hr />
-            <bee-sold-out *ngIf="sale"></bee-sold-out>
-            <div *ngIf="!sale">
-              <h2>Presale registration ends in</h2>
+            <div *ngIf="!end">
+              <h2 *ngIf="!registration">Presale registration starts in</h2>
+              <h2 *ngIf="registration">Presale registration ends in</h2>
               <div class="hero-countdown">
                   <div> {{days}} days : &nbsp; </div>
                   <div> {{hrs}} hrs : &nbsp; </div>
@@ -19,13 +19,17 @@
                   <div> {{sec}} sec </div>
               </div>
             </div>
+            <bee-sold-out *ngIf="end"></bee-sold-out>
           <hr />
           
-          <a class="whitepaper" target="_blank" *ngIf="!sale">
+          <a *ngIf="!registration" class="whitepaper" [routerLink]="['/presale_interest_form']" target="_blank">
+            <button>Presale Interest Form</button>
+          </a>
+          <a *ngIf="registration && !sale" class="whitepaper" [routerLink]="['/presale_registration']" target="_blank">
             <button>Register for Presale</button>
           </a>
-          <a class="whitepaper" target="_blank" *ngIf="sale">
-            <bee-email-form></bee-email-form>
+          <a *ngIf="end" class="whitepaper" target="_blank">
+              <bee-email-form></bee-email-form>
           </a>
           
           <div class="hero-social-links">
