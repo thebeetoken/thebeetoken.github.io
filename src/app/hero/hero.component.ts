@@ -13,7 +13,11 @@ export class HeroComponent implements OnInit {
   private hrs: any;
   private min: any;
   private sec: any;
-  private sale: boolean = (this.days === 0 && this.hrs === 0 && this.min === 0 && this.sec === 0)
+  private registrationDate: Date = new Date(2017, 11, 28, 0, 18, 10); // new Date(2018, 0, 2, 12)
+  private preSaleDate: Date = new Date(2017, 11, 28, 0, 18, 15); // new Date(2018, 0, 19, 11, 59)
+  private registration: boolean = false;
+  private sale: boolean = false;
+  private end: boolean = false; 
 
   constructor(@Inject(DOCUMENT) private doc: Document) { }
 
@@ -30,15 +34,28 @@ export class HeroComponent implements OnInit {
     let countDown = Observable
       .interval(1000)
       .subscribe(() => {
-        if(this.sale) countDown.unsubscribe();
-        else this.handleCountDown()
+        if(this.end) countDown.unsubscribe();
+        else this.handleCountDown();
       });
    }
 
   handleCountDown() {
     let now = new Date().getTime();
-    let eventDate = new Date(2018, 0, 12).getTime();
-    let remainTime = eventDate - now;
+    let remainTime;
+    if(!this.registration){
+      remainTime = this.registrationDate.getTime() - now;
+      if(remainTime <= 0) this.registration = true;
+    }
+    if(this.registration) {
+      remainTime = this.preSaleDate.getTime() - now;
+      if(remainTime <= 0) this.sale = true;
+    }
+    if(this.sale) {
+      remainTime = this.preSaleDate.getTime() - now;
+      if(remainTime <= 0) this.end = true;
+    }
+
+
     let sec = Math.floor(remainTime / 1000);
     let min = Math.floor(sec / 60);
     let hr = Math.floor(min / 60);
@@ -46,7 +63,7 @@ export class HeroComponent implements OnInit {
     hr %= 24;
     min %= 60;
     sec %= 60;
-  
+    
     this.hrs = hr < 10 ? '0' + hr : hr;
     this.min = min < 10 ? '0' + min : min;
     this.sec = sec < 10 ? '0' + sec : sec;
