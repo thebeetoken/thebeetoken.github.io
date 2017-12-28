@@ -1,28 +1,57 @@
 <section class="hero">
   <div class="hero-container">
+
+
     <section class="hero-content">
       <div class="hero-logo" [class.disappear]="disappear"></div>
-      <h1 class="main-head">The Bee Token</h1>
-      <h2>The Future of Home Sharing</h2>
-      <p>
-        0% Commission Decentralized Home Sharing Network with Bee Protocols<br>
-      </p>
-      <a class="whitepaper" [routerLink]="['/whitepaper']" target="_blank"><button>Read our whitepaper</button></a>
-      <div class="hero-social-links">
-        <a href="https://medium.com/@thebeetoken" target="_blank">
-          <img src="/assets/svg/medium-gold.svg" alt="medium">
-        </a>
-        <a href="https://twitter.com/thebeetoken" target="_blank">
-          <img src="/assets/svg/twitter-gold.svg" alt="twitter">
-        </a>
-        <a href="https://t.me/beetoken" target="_blank">
-          <img src="/assets/svg/telegram-gold.svg" alt="telegram">
-        </a>
-        <a href="https://www.facebook.com/thebeetoken" target="_blank">
-          <img src="/assets/svg/facebook-gold.svg" alt="facebook">
-        </a>
+      <div class="hero-center">
+          <h1 class="main-head">The Bee Token</h1>
+          <h2>The Future of Home Sharing</h2>
+
+          <hr />
+            <bee-sold-out *ngIf="sale"></bee-sold-out>
+            <div *ngIf="!sale">
+              <h2>Presale registration ends in</h2>
+              <div class="hero-countdown">
+                  <div> {{days}} days : &nbsp; </div>
+                  <div> {{hrs}} hrs : &nbsp; </div>
+                  <div> {{min}} min : &nbsp; </div>
+                  <div> {{sec}} sec </div>
+              </div>
+            </div>
+          <hr />
+          
+          <a class="whitepaper" target="_blank" *ngIf="!sale">
+            <button>Register for Presale</button>
+          </a>
+          <a class="whitepaper" target="_blank" *ngIf="sale">
+            <bee-email-form></bee-email-form>
+          </a>
+          
+          <div class="hero-social-links">
+            <a href="https://medium.com/@thebeetoken" target="_blank">
+              <img src="/assets/svg/medium-gold.svg" alt="medium">
+            </a>
+            <a href="https://twitter.com/thebeetoken" target="_blank">
+              <img src="/assets/svg/twitter-gold.svg" alt="twitter">
+            </a>
+            <a href="https://t.me/beetoken" target="_blank">
+              <img src="/assets/svg/telegram-gold.svg" alt="telegram">
+            </a>
+            <a href="https://www.facebook.com/thebeetoken" target="_blank">
+              <img src="/assets/svg/facebook-gold.svg" alt="facebook">
+            </a>
+            <a target="_blank">
+              <img alt="instagram">
+            </a>
+            <a target="_blank">
+              <img alt="reddit">
+            </a>
+          </div>
       </div>
     </section>
+
+
     <section class="about-content">
       <div id="about"></div>
       <div class="about-bee-trail">

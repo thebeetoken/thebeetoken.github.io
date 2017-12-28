@@ -21,6 +21,7 @@ import { RedirectComponent } from './redirect/redirect.component';
 import { WhitepaperGuardService } from './whitepaper-guard.service';
 import { KycService } from './kyc.service';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { SoldOutComponent } from './sold-out/sold-out.component';
 
 const appRoutes: Routes = [
   {
@@ -52,7 +53,8 @@ const appRoutes: Routes = [
     MediaComponent,
     EmailBarComponent,
     RedirectComponent,
-    SignUpComponent
+    SignUpComponent,
+    SoldOutComponent
   ],
   imports: [
     BrowserModule,
