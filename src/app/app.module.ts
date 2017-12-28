@@ -20,6 +20,9 @@ import { EmailBarComponent } from './email-bar/email-bar.component';
 // import { TelegramBarComponent } from './telegram-bar/telegram-bar.component';
 import { RedirectComponent } from './redirect/redirect.component';
 import { WhitepaperGuardService } from './whitepaper-guard.service';
+import { KycService } from './kyc.service';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SoldOutComponent } from './sold-out/sold-out.component';
 
 const appRoutes: Routes = [
   { path: 'whitepaper', component: RedirectComponent, canActivate: [WhitepaperGuardService] }
@@ -42,7 +45,9 @@ const appRoutes: Routes = [
     PartnersComponent,
     MediaComponent,
     EmailBarComponent,
-    RedirectComponent
+    RedirectComponent,
+    SignUpComponent,
+    SoldOutComponent
   ],
   imports: [
     BrowserModule,
