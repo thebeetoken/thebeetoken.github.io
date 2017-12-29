@@ -8,7 +8,7 @@ import { Chart } from 'chart.js';
 })
 export class TokenDistributionComponent {
   chart = [];
-  
+
   teamAndAdvisors = 'Team & Advisors';
   companyReserve = 'Company Reserve';
   publicSale = 'Public Sale';
@@ -25,25 +25,25 @@ export class TokenDistributionComponent {
             30, // Community Reserve percentage
             15, // Team & Advisors percentage
             25, // Company Reserve percentage
-            10, // Public Sale pt1 percentage
-            10, // Public Sale pt2 percentage
-            10, // Public Sale pt3 percentage
+            30, // Public Sale pt1 percentage
+            // 10, // Public Sale pt2 percentage
+            // 10, // Public Sale pt3 percentage
           ],
           backgroundColor: [
             '#fd9f28', // Commmunity Reserve background-color
             '#fece93', // Team & Advisors background-color
             '#fdc02f', // Company Reserve background-color
             '#fedf88', // Public Sale pt1 background-color
-            '#fff3d5', // Public Sale pt2 background-color
-            '#fffbef', // Public Sale pt3 background-color
+            // '#fff3d5', // Public Sale pt2 background-color
+            // '#fffbef', // Public Sale pt3 background-color
           ],
           borderWidth: [
             1, // Community & Reserve border-width
             1, // Team & Advizors border-width
             1, // Company Reserve border-width
             1, // Public Sale pt1 border-width
-            1, // Public Sale pt2 border-width
-            1, // Public Sale pt3 border-width
+            // 1, // Public Sale pt2 border-width
+            // 1, // Public Sale pt3 border-width
           ]
         }],
         // Labels that show on mouse-hover
@@ -52,8 +52,8 @@ export class TokenDistributionComponent {
           this.teamAndAdvisors,
           this.companyReserve,
           this.publicSale,
-          this.publicSale,
-          this.publicSale,
+          // this.publicSale,
+          // this.publicSale,
         ],
       },
       options: {
