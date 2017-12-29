@@ -1,3 +1,5 @@
+@import "token-distribution-chart.scss";
+
 #token-distribution-container {
   height: auto;
   width: 100vw;
@@ -59,12 +61,13 @@
     flex-direction: column;
 
     .row {
-      height: 14.2%;
+      min-height: 80px;
+      height: auto;
       width: 100%;
       display: flex;
       justify-content: space-around;
     }
-    
+
     .row:nth-child(even) { background-color: #4b5960; }
 
     .row h5 {
@@ -93,6 +96,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1em 0;
+  padding: 1.5em .75em;
   box-sizing: border-box;
 }

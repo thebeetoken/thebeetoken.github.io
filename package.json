@@ -23,6 +23,7 @@
     "@angular/router": "^4.2.4",
     "@types/node": "^6.0.89",
     "body-parser": "^1.18.2",
+    "chart.js": "^2.7.1",
     "core-js": "^2.4.1",
     "express": "^4.16.2",
     "express-history-api-fallback": "^2.2.1",
