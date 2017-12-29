@@ -1,0 +1,245 @@
+#token-supply-container {
+  background-color: #263238;
+  min-height: 700px;
+  height: auto;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10vh 0;
+  position: relative;
+
+  h3 {
+    color: #f5bd2f;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  div {
+    text-align: center;
+    display: block;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+
+    color: #fff;
+
+    h5 {
+      font-size: 19px;
+      font-weight: 500;
+      display: inline-block;
+      margin-right: 0.3em;
+    }
+
+    span {
+      font-weight: 100;
+      font-size: 19px;
+    }
+  }
+}
+
+#chart-container {
+  position: relative;
+  width: 350px;
+  min-height: 350px;
+  height: auto;
+  box-sizing: border-box;
+  padding-top: 150px !important;
+  margin: 0 auto !important;
+
+  @media (min-width: 768px) {
+    width: 650px;
+    height: auto;
+    padding-top: 50px !important;
+  }
+}
+
+#canvasChart {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  transition: all .15s ease-in-out;
+
+  @media (min-width: 768px) {
+    width: 550px;
+    height: auto;
+  }
+}
+
+.token-supply--legend-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  .legend-label {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    @media (min-width: 768px) { font-size: 16px; }
+    @media (min-width: 1025px) { font-size: 18px; }
+  }
+
+  .legend-percent {
+    color: #e4b330;
+    font-size: 16px;
+    @media (min-width: 768px) { font-size: 18px; }
+    @media (min-width: 1025px) { font-size: 20px; }
+  }
+
+  .pointer {
+    height: 1px;
+    max-height: 1px;
+    width: 80px;
+    background-color: #e4b330;
+    z-index: 1000;
+    @media (min-width: 768px) { width: 150px; }
+  }
+
+  .pointer-dot {
+    width: 6px;
+    min-width: 6px;
+    max-width: 6px;
+    height: 6px;
+    min-height: 6px;
+    max-height: 6px;
+    background-color: #e4b330;
+    border-radius: 50%;
+  }
+}
+
+.transition--all--ease-in-out {
+  transition: all .15s ease-in-out;
+}
+
+.position--absolute {
+  position: absolute;
+  z-index: 1001;
+}
+
+.hide-mobile {
+  @media (max-width: 349px) { display: none !important; }
+}
+
+// Team Advisors tooltip/legend style
+#teamAdvisors--label {
+  bottom: -25px;
+  left: 7px;
+}
+#teamAdvisors--percent {
+  bottom: -1px;
+  left: 7px;
+}
+#teamAdvisors--pointer {
+  bottom: 46px;
+  left: 47px;
+  @media (min-width: 768px) { bottom: 52px; }
+}
+#teamAdvisors--pointer-dot {
+  bottom: 43px;
+  left: 47px;
+  @media (min-width: 768px) { bottom: 49px; }
+}
+
+// Community Reserve tooltip/legend style
+#communityReserve--label {
+  bottom: -25px;
+  right: 7px;
+}
+#communityReserve--percent {
+  bottom: -1px;
+  right: 5px;
+}
+#communityReserve--pointer {
+  bottom: 46px;
+  right: 50px;
+  @media (min-width: 768px) { bottom: 52px; }
+}
+#communityReserve--pointer-dot {
+  bottom: 43px;
+  right: 50px;
+  @media (min-width: 768px) { bottom: 49px; }
+}
+
+// Company Reserve tooltip/legend style
+#companyReserve--label {
+  bottom: 170px;
+  left: 10px;
+  @media (min-width: 768px) { bottom: 150px; }
+}
+#companyReserve--percent {
+  bottom: 140px;
+  left: 10px;
+  @media (min-width: 768px) { bottom: 175px; }
+}
+#companyReserve--pointer {
+  bottom: 186px;
+  left: 50px;
+
+  @media (min-width: 768px) {
+    bottom: 229px;
+    left: 52px;
+  }
+}
+#companyReserve--pointer-dot {
+  bottom: 183px;
+  left: 50px;
+
+  @media (min-width: 768px) {
+    bottom: 226px;
+    left: 52px;
+  }
+}
+
+// Public Sale tooltip/legend style
+#publicSale--label {
+  bottom: 170px;
+  right: 7px;
+  @media (min-width: 768px) { bottom: 150px; }
+}
+#publicSale--percent {
+  bottom: 140px;
+  right: 7px;
+  @media (min-width: 768px) { bottom: 175px; }
+}
+#publicSale--pointer {
+  bottom: 186px;
+  right: 50px;
+  width: 30px;
+
+  @media (min-width: 768px) {
+    bottom: 229px;
+    right: 52px;
+    width: 80px;
+  }
+}
+#publicSale--pointer-group {
+  bottom: 118px;
+  right: 65px;
+  height: 75px !important;
+  width: 15px;
+  border: 1px solid #e4b330;
+  border-left: none !important;
+  background-color: #263238;
+  z-index: 1001;
+
+  @media (min-width: 768px) {
+    bottom: 140px;
+    right: 120px;
+    height: 145px !important;
+    width: 30px;
+  }
+}
+#publicSale--pointer-dot {
+  bottom: 183px;
+  right: 50px;
+
+  @media (min-width: 768px) {
+    bottom: 226px;
+    right: 52px;
+  }
+}
