@@ -8,6 +8,11 @@ import { Chart } from 'chart.js';
 })
 export class TokenDistributionComponent {
   chart = [];
+  
+  teamAndAdvisors = 'Team & Advisors';
+  companyReserve = 'Company Reserve';
+  publicSale = 'Public Sale';
+  communityReserve = 'Community Reserve';
 
   ngOnInit() {
     let canvas = document.getElementById('canvasChart');
@@ -43,12 +48,12 @@ export class TokenDistributionComponent {
         }],
         // Labels that show on mouse-hover
         labels: [
-          'Community Reserve',
-          'Team & Advisors',
-          'Company Reserve',
-          'Public Sale',
-          'Public Sale',
-          'Public Sale',
+          this.communityReserve,
+          this.teamAndAdvisors,
+          this.companyReserve,
+          this.publicSale,
+          this.publicSale,
+          this.publicSale,
         ],
       },
       options: {
