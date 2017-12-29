@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 86px;
-  
+
   h1 {
     font-weight: 500;
     color: #FFF8E1;
@@ -31,30 +31,6 @@
   position: relative;
   width: 100%;
   margin-top: 64px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
-    top: -230px;
-    width: 260px;
-    height: 1px;
-    background: #FFF8E1;
-
-    @media (min-width:  768px) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 584px;
-    }
-
-    @media (min-width: 1025px) {
-      width: 960px;
-    }
-  }
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -142,33 +118,6 @@
     @media (min-width: 1025px) {
       width: auto;
     }
-  }
-}
-
-.jar {
-  position: absolute;
-  top: -341px;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
-  width: 107px;
-  height: 111px;
-  background: url('/assets/images/jar.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-width: 768px) {
-    left: auto;
-    transform: translate3d(0, 0, 0);
-    right: 0;
-  }
-
-  @media (min-width: 1025px) {
-    top: -368px;
-    left: 150px;
-    right: auto;
-    width: 133px;
-    height: 138px;
   }
 }
 
