@@ -12,7 +12,7 @@
     height: 80px;
     width: 100%;
     background: #FFC107;
-    z-index: 2;
+    z-index: 3;
   }
 }
 
@@ -53,7 +53,7 @@ button {
   height: 56px;
   background: #37474F;
   border: none;
-  border-radius: 3em; 
+  border-radius: 3em;
   color: #fff;
   font-size: 14px;
   line-height: 22px;
@@ -76,7 +76,7 @@ button {
   height: 24px;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
-  
+
   &:hover {
     opacity: 0.6;
   }

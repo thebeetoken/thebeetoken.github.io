@@ -96,7 +96,7 @@
     max-height: 1px;
     width: 80px;
     background-color: #e4b330;
-    z-index: 1000;
+    z-index: 1;
     @media (min-width: 768px) { width: 150px; }
   }
 
@@ -118,7 +118,7 @@
 
 .position--absolute {
   position: absolute;
-  z-index: 1001;
+  z-index: 2;
 }
 
 .hide-mobile {
@@ -138,11 +138,21 @@
   bottom: 46px;
   left: 47px;
   @media (min-width: 768px) { bottom: 52px; }
+
+  @media (min-width: 1025px) {
+    bottom: 57px;
+    left: 57px;
+  }
 }
 #teamAdvisors--pointer-dot {
   bottom: 43px;
   left: 47px;
   @media (min-width: 768px) { bottom: 49px; }
+
+  @media (min-width: 1025px) {
+    bottom: 54px;
+    left: 51px;
+  }
 }
 
 // Community Reserve tooltip/legend style
@@ -158,11 +168,21 @@
   bottom: 46px;
   right: 50px;
   @media (min-width: 768px) { bottom: 52px; }
+
+  @media (min-width: 1025px) {
+    bottom: 57px;
+    right: 57px;
+  }
 }
 #communityReserve--pointer-dot {
   bottom: 43px;
   right: 50px;
   @media (min-width: 768px) { bottom: 49px; }
+
+  @media (min-width: 1025px) {
+    bottom: 55px;
+    right: 54px;
+  }
 }
 
 // Company Reserve tooltip/legend style
@@ -184,6 +204,11 @@
     bottom: 229px;
     left: 52px;
   }
+
+  @media (min-width: 1025px) {
+    bottom: 233px;
+    left: 60px;
+  }
 }
 #companyReserve--pointer-dot {
   bottom: 183px;
@@ -192,6 +217,11 @@
   @media (min-width: 768px) {
     bottom: 226px;
     left: 52px;
+  }
+
+  @media (min-width: 1025px) {
+    bottom: 230px;
+    left: 58px;
   }
 }
 
@@ -216,6 +246,12 @@
     right: 52px;
     width: 80px;
   }
+
+  @media (min-width: 1025px) {
+    bottom: 233px;
+    right: 60px;
+    width: 70px;
+  }
 }
 #publicSale--pointer-group {
   bottom: 118px;
@@ -225,7 +261,7 @@
   border: 1px solid #e4b330;
   border-left: none !important;
   background-color: #263238;
-  z-index: 1001;
+  z-index: 2;
 
   @media (min-width: 768px) {
     bottom: 140px;
@@ -241,5 +277,10 @@
   @media (min-width: 768px) {
     bottom: 226px;
     right: 52px;
+  }
+
+  @media (min-width: 1025px) {
+    bottom: 230px;
+    right: 57px;
   }
 }
