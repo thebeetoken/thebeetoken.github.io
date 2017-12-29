@@ -63,6 +63,8 @@
   color: #000;
   line-height: 24px;
   text-align: left;
+  transition: all .15s ease-in-out;
+  @media (max-width: 1175px) { width: 280px; }
 }
 
 .bee-main-cta-form input:focus {
