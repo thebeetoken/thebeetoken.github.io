@@ -29,7 +29,6 @@
 }
 
 .token-distribution-table {
-  min-height: 70vh;
   height: auto;
   width: 80vw;
   max-width: 1200px;
@@ -49,9 +48,14 @@
   }
 
   .table-head h5 {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 300;
     color: #fff;
     text-align: center;
+    margin: 5px;
+
+    @media (min-width: 768px) { font-size: 14px; }
+    @media (min-width: 1025px) { font-size: 15px; }
   }
 
   .table-body {
