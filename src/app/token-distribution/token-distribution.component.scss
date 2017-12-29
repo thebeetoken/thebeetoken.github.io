@@ -1,6 +1,6 @@
 @import "token-distribution-chart.scss";
 
-#token-distribution-container {
+.token-distribution-container {
   height: auto;
   width: 100vw;
   background-color: #37474f;
@@ -10,7 +10,7 @@
   h3 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 500;
     color: #f0eeda;
     margin: 0 auto;
@@ -20,6 +20,7 @@
       width: 400px;
       margin-bottom: 4vh;
     }
+
     @media (max-width: 768px) {
       width: 250px;
       margin-bottom: 3vh;
@@ -31,6 +32,8 @@
   min-height: 70vh;
   height: auto;
   width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
 
   .table-head {
     width: 100%;
@@ -71,20 +74,26 @@
     .row:nth-child(even) { background-color: #4b5960; }
 
     .row h5 {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 300;
       color: #fff;
       text-align: center;
       margin: 0;
       margin-bottom: .5em;
+
+      @media (min-width: 768px) { font-size: 13px; }
+      @media (min-width: 1025px) { font-size: 15px; }
     }
 
     .row h4 {
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 13px;
+      font-weight: 500;
       color: #fff;
       text-align: center;
       margin: 0;
+
+      @media (min-width: 768px) { font-size: 15px; }
+      @media (min-width: 1025px) { font-size: 16.5px; }
     }
   }
 }

@@ -1,4 +1,4 @@
-#token-supply-container {
+.token-supply-container {
   background-color: #263238;
   min-height: 700px;
   height: auto;
@@ -38,7 +38,7 @@
   }
 }
 
-#chart-container {
+.chart-container {
   position: relative;
   width: 350px;
   min-height: 350px;
@@ -98,6 +98,7 @@
     background-color: #e4b330;
     z-index: 1;
     @media (min-width: 768px) { width: 150px; }
+    @media (min-width: 1025px) { width: 180px; }
   }
 
   .pointer-dot {
@@ -134,6 +135,9 @@
   bottom: -1px;
   left: 7px;
 }
+@media (min-width: 1025px) {
+  #teamAdvisors--label, #teamAdvisors--percent { left: -20px; }
+}
 #teamAdvisors--pointer {
   bottom: 46px;
   left: 47px;
@@ -141,7 +145,7 @@
 
   @media (min-width: 1025px) {
     bottom: 57px;
-    left: 57px;
+    left: 27px;
   }
 }
 #teamAdvisors--pointer-dot {
@@ -151,7 +155,7 @@
 
   @media (min-width: 1025px) {
     bottom: 54px;
-    left: 51px;
+    left: 21px;
   }
 }
 
@@ -161,9 +165,13 @@
   right: 7px;
 }
 #communityReserve--percent {
-  bottom: -1px;
+  bottom: 0px;
   right: 5px;
 }
+@media (min-width: 1025px) {
+  #communityReserve--label, #communityReserve--percent { right: -27px; }
+}
+
 #communityReserve--pointer {
   bottom: 46px;
   right: 50px;
@@ -171,7 +179,7 @@
 
   @media (min-width: 1025px) {
     bottom: 57px;
-    right: 57px;
+    right: 27px;
   }
 }
 #communityReserve--pointer-dot {
@@ -181,7 +189,7 @@
 
   @media (min-width: 1025px) {
     bottom: 55px;
-    right: 54px;
+    right: 24px;
   }
 }
 
@@ -196,6 +204,9 @@
   left: 10px;
   @media (min-width: 768px) { bottom: 175px; }
 }
+@media (min-width: 1025px) {
+  #companyReserve--label, #companyReserve--percent { left: -20px; }
+}
 #companyReserve--pointer {
   bottom: 186px;
   left: 50px;
@@ -207,7 +218,7 @@
 
   @media (min-width: 1025px) {
     bottom: 233px;
-    left: 60px;
+    left: 30px;
   }
 }
 #companyReserve--pointer-dot {
@@ -221,7 +232,7 @@
 
   @media (min-width: 1025px) {
     bottom: 230px;
-    left: 58px;
+    left: 28px;
   }
 }
 
@@ -236,6 +247,9 @@
   right: 7px;
   @media (min-width: 768px) { bottom: 175px; }
 }
+@media (min-width: 1025px) {
+  #publicSale--label, #publicSale--percent { right: -27px; }
+}
 #publicSale--pointer {
   bottom: 186px;
   right: 50px;
@@ -249,8 +263,8 @@
 
   @media (min-width: 1025px) {
     bottom: 233px;
-    right: 60px;
-    width: 70px;
+    right: 30px;
+    width: 120px;
   }
 }
 #publicSale--pointer-group {
@@ -281,6 +295,6 @@
 
   @media (min-width: 1025px) {
     bottom: 230px;
-    right: 57px;
+    right: 27px;
   }
 }
