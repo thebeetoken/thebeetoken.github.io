@@ -5,23 +5,47 @@
     <section class="hero-content">
       <div class="hero-logo" [class.disappear]="disappear"></div>
       <div class="hero-center">
-          <h1 class="main-head">The Bee Token</h1>
-          <h2>The Future of Home Sharing</h2>
+        <h1 class="main-head">The Bee Token</h1>
+        <h3 class="home-text">The Future of Home Sharing</h3>
 
-          <hr />
-            <div *ngIf="!end">
-              <h2 *ngIf="!registration">Presale registration starts in</h2>
-              <h2 *ngIf="registration">Presale registration ends in</h2>
-              <div class="hero-countdown">
-                  <div> {{days}} days : &nbsp; </div>
-                  <div> {{hrs}} hrs : &nbsp; </div>
-                  <div> {{min}} min : &nbsp; </div>
-                  <div> {{sec}} sec </div>
-              </div>
+        <hr />
+        <div *ngIf="!end">
+          <h6 class="presale-text" *ngIf="!registration">Presale registration starts in</h6>
+          <h6 class="presale-text" *ngIf="registration">Presale registration ends in</h6>
+          <div class="hero-countdown">
+            <div class="hero-metric">
+              <span>
+                {{days}}
+                <span class="countdown-metric"> : &nbsp; </span>
+              </span>
+              <span class="hero-unit"> days </span>
             </div>
-            <bee-sold-out *ngIf="end"></bee-sold-out>
-          <hr />
-          
+
+            <div class="hero-metric">
+              <span>
+                {{hrs}}
+                <span class="countdown-metric"> : &nbsp; </span>              
+              </span>
+              <span class="hero-unit"> hrs </span>
+            </div>
+            <div class="hero-metric">
+              <span>
+                {{min}}
+                <span class="countdown-metric"> : &nbsp;</span>
+              </span>
+              <span class="hero-unit"> min </span>
+            </div>
+            <div class="hero-metric">
+              <span>{{sec}}</span>
+              <span class="hero-unit"> sec </span>
+            </div>
+          </div>
+        </div>
+
+        <bee-sold-out *ngIf="end"></bee-sold-out>
+        <hr />
+
+        <div class="registration-container">
           <a *ngIf="!registration" class="whitepaper" [routerLink]="['/presale_interest_form']" target="_blank">
             <button>Presale Interest Form</button>
           </a>
@@ -29,29 +53,30 @@
             <button>Register for Presale</button>
           </a>
           <a *ngIf="end" class="whitepaper" target="_blank">
-              <bee-email-form></bee-email-form>
+            <bee-email-form></bee-email-form>
           </a>
-          
-          <div class="hero-social-links">
-            <a href="https://medium.com/@thebeetoken" target="_blank">
-              <img src="/assets/svg/medium-gold.svg" alt="medium">
-            </a>
-            <a href="https://twitter.com/thebeetoken" target="_blank">
-              <img src="/assets/svg/twitter-gold.svg" alt="twitter">
-            </a>
-            <a href="https://t.me/beetoken" target="_blank">
-              <img src="/assets/svg/telegram-gold.svg" alt="telegram">
-            </a>
-            <a href="https://www.facebook.com/thebeetoken" target="_blank">
-              <img src="/assets/svg/facebook-gold.svg" alt="facebook">
-            </a>
-            <a target="_blank">
+        </div>
+
+        <div class="hero-social-links">
+          <a href="https://medium.com/@thebeetoken" target="_blank">
+            <img src="/assets/svg/medium-gold.svg" alt="medium">
+          </a>
+          <a href="https://twitter.com/thebeetoken" target="_blank">
+            <img src="/assets/svg/twitter-gold.svg" alt="twitter">
+          </a>
+          <a href="https://t.me/beetoken" target="_blank">
+            <img src="/assets/svg/telegram-gold.svg" alt="telegram">
+          </a>
+          <a href="https://www.facebook.com/thebeetoken" target="_blank">
+            <img src="/assets/svg/facebook-gold.svg" alt="facebook">
+          </a>
+          <!-- <a target="_blank">
               <img alt="instagram">
             </a>
             <a target="_blank">
               <img alt="reddit">
-            </a>
-          </div>
+            </a> -->
+        </div>
       </div>
     </section>
 
@@ -66,8 +91,8 @@
       </div>
       <h1>About Bee</h1>
       <p>
-	We are a seasoned team of former employees from Google, Facebook, Uber, and Civic reimagining the sharing economy.<br>
-  Together, we are building Beenest and the Bee Protocols on the Ethereum blockchain.
+        We are a seasoned team of former employees from Google, Facebook, Uber, and Civic reimagining the sharing economy.
+        <br> Together, we are building Beenest and the Bee Protocols on the Ethereum blockchain.
         <br>
       </p>
       <div class="about-bee-trail-small"></div>
@@ -78,25 +103,26 @@
           <div class="more-info-text">
             <h1>Beenest</h1>
             <p>
-Beenest is a home sharing platform for hosts to list their homes and for guests to find accommodations. 
-Beenest rewards users with network incentives, commission-free transactions, and security unrivaled in the home sharing industry. 
+              Beenest is a home sharing platform for hosts to list their homes and for guests to find accommodations. Beenest rewards users
+              with network incentives, commission-free transactions, and security unrivaled in the home sharing industry.
             </p>
           </div>
           <img class="more-info-image" src="/assets/images/hero/what-is-bee-first.png">
         </div>
-  
+
         <div class="more-info-container">
           <div class="more-info-trail"></div>
           <div class="more-info-text">
             <h1>Bee Protocols</h1>
             <p>
-The Bee Protocols are a set of Ethereum smart contracts providing developers the tools to rapidly launch new decentralized applications. 
-By utilizing industry proven Bee Protocols, developers can expect faster development cycles, reduced integration costs, and an existing user base.
+              The Bee Protocols are a set of Ethereum smart contracts providing developers the tools to rapidly launch new decentralized
+              applications. By utilizing industry proven Bee Protocols, developers can expect faster development cycles,
+              reduced integration costs, and an existing user base.
             </p>
           </div>
           <img class="more-info-image" src="/assets/images/hero/what-is-bee-second.png">
         </div>
-  
+
         <div class="more-info-container">
           <div class="more-info-text">
             <h1>Bee Token</h1>
