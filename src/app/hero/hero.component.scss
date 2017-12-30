@@ -30,13 +30,13 @@
   @media (min-width: 768px) {
     width: 564px;
     height: 344px;
-    padding: 116px 0 0 86px;
+    margin: 0 auto;
   }
 
   @media (min-width: 1025px) {
     width: 750px;
     height: 438px;
-    padding: 246px 0 0 214px;
+    padding: 246px 0 0;
   }
 
   h1 {
@@ -46,17 +46,15 @@
     font-size: 30px;
     line-height: 36px;
     margin: 0;
-    padding-left: 20px;
 
     @media (min-width: 768px) {
       font-size: 42px;
       line-height: 52px;
-      padding-left: 0;
     }
   
     @media (min-width: 1025px) {
-      font-size: 56px;
-      line-height: 66px;
+      font-size: 68px;
+      line-height: 82px;
     }
 
     &.main-head {
@@ -192,31 +190,46 @@
   font-size: 30px;
   color: #fff;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: 768px) {
     width: 497px;
   }
   @media (min-width: 1025px){
     width: 620px;
   }
-
 }
 
 .hero-metric {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-time {
   color: #fff;
+  font-size: 38px;
   text-align: center;
 }
 
 .hero-unit {
-  display: inline-block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.hero-countdown-integer {
+  width: 48px;
+  font-weight: 300;
 }
 
 .countdown-metric {
   color: #FFC107; 
   font-size: 30px;
+  margin-bottom: 25px;
 }
 
 .hero-center {
@@ -225,21 +238,28 @@
 
 h3 {
   &.home-text {
-    color: #d3d3d3;
+    color: #B0BEC5;
     text-align: center;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 8px 0 40px;
    }
 }
 
 h6 {
   &.presale-text {
+    font-size: 14px;
+    line-height: 16px;
     color: #fff;
     text-align: center;
+    margin: 16px 0 8px;
+    font-weight: 500;
   }
 }
 
 .registration-container {
   text-align: center;
-  margin: 0 auto;
+  margin: 32px auto;
 }
 
 // END COUNTDOWN CSS
@@ -292,7 +312,7 @@ h6 {
   display: none;
   position: absolute;
   top: 50px;
-  left: 215px;
+  left: -100px;
   height: 150px;
   width: 119px;
   background: url('/assets/svg/logo-vertical.svg');
@@ -416,9 +436,9 @@ button {
   @media (min-width: 1025px) {
     height: 322px;
     width: 170px;
-    top: -338px;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
+    top: -299px;
+    left: 36%;
+    transform: scale(0.8);
     background: url('/assets/images/hero/about-bee-path-desktop.png');
     background-position: center center;
     background-repeat: no-repeat;
