@@ -13,8 +13,8 @@ export class HeroComponent implements OnInit {
   private hrs: any;
   private min: any;
   private sec: any;
-  private registrationDate: Date = new Date(2018, 0, 2, 12); // new Date(2018, 0, 2, 12)
-  private preSaleDate: Date = new Date(2018, 0, 19, 11, 59); // new Date(2018, 0, 19, 11, 59)
+  private registrationDate: Date = new Date(2018, 0, 2, 12);
+  private preSaleDate: Date = new Date(2018, 0, 19, 11, 59);
   private registration: boolean = false;
   private sale: boolean = false;
   private end: boolean = false; 
@@ -62,7 +62,7 @@ export class HeroComponent implements OnInit {
     let sec = Math.floor(remainTime / 1000);
     let min = Math.floor(sec / 60);
     let hr = Math.floor(min / 60);
-    this.days = Math.floor(hr / 24);
+    let days = Math.floor(hr / 24);
     hr %= 24;
     min %= 60;
     sec %= 60;
@@ -70,6 +70,7 @@ export class HeroComponent implements OnInit {
     this.hrs = hr < 10 ? '0' + hr : hr;
     this.min = min < 10 ? '0' + min : min;
     this.sec = sec < 10 ? '0' + sec : sec;
+    this.days = days < 10 ? '0' + days: days;
   }
 
 }

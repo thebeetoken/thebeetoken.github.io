@@ -16,10 +16,8 @@ import { AdvisorsComponent } from './advisors/advisors.component';
 import { ValuepropsComponent } from './valueprops/valueprops.component';
 import { MediaComponent } from './media/media.component';
 import { EmailBarComponent } from './email-bar/email-bar.component';
-// import { TelegramBarComponent } from './telegram-bar/telegram-bar.component';
 import { RedirectComponent } from './redirect/redirect.component';
 import { WhitepaperGuardService } from './whitepaper-guard.service';
-import { KycService } from './kyc.service';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SoldOutComponent } from './sold-out/sold-out.component';
 
@@ -28,14 +26,7 @@ const appRoutes: Routes = [
      path: 'whitepaper', 
      component: RedirectComponent,
      canActivate: [WhitepaperGuardService]
-   },
-  // { 
-  //   path: 'kyc',
-  //   component: VerifyComponent,
-  //   children: [
-  //     // canActivate: [KycService] 
-  //   ]
-  // },
+   }
 ];
 
 @NgModule({
@@ -63,8 +54,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    WhitepaperGuardService,
-    // KycService
+    WhitepaperGuardService
   ],
   bootstrap: [AppComponent]
 })
