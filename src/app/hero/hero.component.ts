@@ -58,7 +58,6 @@ export class HeroComponent implements OnInit {
       }
     }
 
-
     let sec = Math.floor(remainTime / 1000);
     let min = Math.floor(sec / 60);
     let hr = Math.floor(min / 60);
