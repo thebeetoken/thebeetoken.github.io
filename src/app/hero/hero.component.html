@@ -14,30 +14,25 @@
           <h6 class="presale-text" *ngIf="registration">Presale registration ends in</h6>
           <div class="hero-countdown">
             <div class="hero-metric">
-              <span>
-                {{days}}
-                <span class="countdown-metric"> : &nbsp; </span>
-              </span>
-              <span class="hero-unit"> days </span>
+              <span class="hero-countdown-integer">{{days}}</span>
+              <span class="hero-unit">days</span>
             </div>
-
+            <span class="countdown-metric">:</span>
             <div class="hero-metric">
-              <span>
-                {{hrs}}
-                <span class="countdown-metric"> : &nbsp; </span>              
+              <span class="hero-countdown-integer">{{hrs}}             
               </span>
-              <span class="hero-unit"> hrs </span>
+              <span class="hero-unit">hrs</span>
             </div>
+            <span class="countdown-metric">:</span>
             <div class="hero-metric">
-              <span>
-                {{min}}
-                <span class="countdown-metric"> : &nbsp;</span>
+              <span class="hero-countdown-integer">{{min}}
               </span>
-              <span class="hero-unit"> min </span>
+              <span class="hero-unit">min</span>
             </div>
+            <span class="countdown-metric">:</span>
             <div class="hero-metric">
-              <span>{{sec}}</span>
-              <span class="hero-unit"> sec </span>
+              <span class="hero-countdown-integer">{{sec}}</span>
+              <span class="hero-unit">sec</span>
             </div>
           </div>
         </div>
