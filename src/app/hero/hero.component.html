@@ -41,10 +41,10 @@
         <hr />
 
         <div class="registration-container">
-          <a *ngIf="!registration" class="whitepaper" [routerLink]="['/presaleinterest']" target="_blank">
+          <a *ngIf="!registration" class="whitepaper" href="https://www.beetoken.com/presaleinterest" target="_blank">
             <button>Presale Interest Form</button>
           </a>
-          <a *ngIf="registration && !sale" class="whitepaper" [routerLink]="['/presaleregistration']" target="_blank">
+          <a *ngIf="registration && !sale" class="whitepaper" href="https://www.beetoken.com/presaleregistration" target="_blank">
             <button>Register for Presale</button>
           </a>
           <a *ngIf="end" class="whitepaper" target="_blank">
