@@ -19,7 +19,6 @@ import { MediaComponent } from './media/media.component';
 import { EmailBarComponent } from './email-bar/email-bar.component';
 import { RedirectComponent } from './redirect/redirect.component';
 import { WhitepaperGuardService } from './whitepaper-guard.service';
-import { SignUpComponent } from './sign-up/sign-up.component';
 import { SoldOutComponent } from './sold-out/sold-out.component';
 
 const appRoutes: Routes = [
@@ -48,7 +47,6 @@ const appRoutes: Routes = [
     MediaComponent,
     EmailBarComponent,
     RedirectComponent,
-    SignUpComponent,
     SoldOutComponent
   ],
   imports: [
