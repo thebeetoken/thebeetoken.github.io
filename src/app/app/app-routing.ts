@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// const routes: Routes = [];
-
 @NgModule({
   imports: [
     RouterModule.forRoot(<Routes>[
-      { path: '', pathMatch: 'full', loadChildren: '../home#HomeModule' }
+      { path: '', pathMatch: 'full', loadChildren: '../home#HomeModule' },
+      { path: 'presale-specifics', loadChildren: '../presale#PresaleModule' },
+      { path: 'whitepaper', loadChildren: '../redirect#RedirectModule' }
     ]),
   ],
   exports: [
