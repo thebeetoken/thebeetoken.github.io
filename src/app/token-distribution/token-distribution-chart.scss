@@ -20,16 +20,18 @@
     text-align: center;
     display: block;
     height: 30px;
+    height: auto;
     padding: 0;
     margin: 0;
-
     color: #fff;
 
     h5 {
       font-size: 19px;
       font-weight: 500;
-      display: inline-block;
       margin-right: 0.3em;
+      margin-bottom: 12px;
+
+      @media (min-width: 768px) { display: inline-block; }
     }
 
     span {
@@ -41,11 +43,11 @@
 
 .chart-container {
   position: relative;
-  width: 350px;
+  width: 300px;
   min-height: 350px;
   height: auto;
   box-sizing: border-box;
-  padding-top: 150px !important;
+  padding-top: 110px !important;
   margin: 0 auto !important;
 
   @media (min-width: 768px) {
@@ -95,10 +97,10 @@
   .pointer {
     height: 1px;
     max-height: 1px;
-    width: 80px;
+    width: 70px;
     background-color: #e4b330;
     z-index: 1;
-    @media (min-width: 768px) { width: 150px; }
+    @media (min-width: 768px) { width: 175px; }
     @media (min-width: 1025px) { width: 180px; }
   }
 
@@ -123,24 +125,24 @@
   z-index: 2;
 }
 
-.hide-mobile {
-  @media (max-width: 349px) { display: none !important; }
-}
-
 // Team Advisors tooltip/legend style
 #teamAdvisors--label {
-  bottom: -25px;
+  bottom: 35px;
   left: 7px;
+
+  @media (min-width: 768px) { bottom: -30px; }
 }
 #teamAdvisors--percent {
-  bottom: -1px;
+  bottom: 54px;
   left: 7px;
+
+  @media (min-width: 768px) { bottom: -1px; }
 }
 @media (min-width: 1025px) {
   #teamAdvisors--label, #teamAdvisors--percent { left: -20px; }
 }
 #teamAdvisors--pointer {
-  bottom: 46px;
+  bottom: 101px;
   left: 47px;
   @media (min-width: 768px) { bottom: 52px; }
 
@@ -150,7 +152,7 @@
   }
 }
 #teamAdvisors--pointer-dot {
-  bottom: 43px;
+  bottom: 98px;
   left: 47px;
   @media (min-width: 768px) { bottom: 49px; }
 
@@ -162,19 +164,23 @@
 
 // Community Reserve tooltip/legend style
 #communityReserve--label {
-  bottom: -25px;
+  bottom: 35px;
   right: 7px;
+
+  @media (min-width: 768px) { bottom: -30px; }
 }
 #communityReserve--percent {
-  bottom: 0px;
+  bottom: 55px;
   right: 5px;
+
+  @media (min-width: 768px) { bottom: -1px; }
 }
 @media (min-width: 1025px) {
   #communityReserve--label, #communityReserve--percent { right: -27px; }
 }
 
 #communityReserve--pointer {
-  bottom: 46px;
+  bottom: 101px;
   right: 50px;
   @media (min-width: 768px) { bottom: 52px; }
 
@@ -184,7 +190,7 @@
   }
 }
 #communityReserve--pointer-dot {
-  bottom: 43px;
+  bottom: 98px;
   right: 50px;
   @media (min-width: 768px) { bottom: 49px; }
 
@@ -196,81 +202,82 @@
 
 // Company Reserve tooltip/legend style
 #companyReserve--label {
-  bottom: 170px;
+  bottom: 210px;
   left: 10px;
-  @media (min-width: 768px) { bottom: 150px; }
+
+  @media (min-width: 768px) { bottom: 190px; }
 }
 #companyReserve--percent {
-  bottom: 140px;
+  bottom: 180px;
   left: 10px;
-  @media (min-width: 768px) { bottom: 175px; }
+
+  @media (min-width: 768px) { bottom: 215px; }
 }
 @media (min-width: 1025px) {
   #companyReserve--label, #companyReserve--percent { left: -20px; }
 }
 #companyReserve--pointer {
-  bottom: 186px;
+  bottom: 226px;
   left: 50px;
 
   @media (min-width: 768px) {
-    bottom: 229px;
+    bottom: 269px;
     left: 52px;
   }
 
   @media (min-width: 1025px) {
-    bottom: 233px;
+    bottom: 273px;
     left: 30px;
   }
 }
 #companyReserve--pointer-dot {
-  bottom: 183px;
+  bottom: 223px;
   left: 50px;
 
   @media (min-width: 768px) {
-    bottom: 226px;
+    bottom: 266px;
     left: 52px;
   }
 
   @media (min-width: 1025px) {
-    bottom: 230px;
+    bottom: 270px;
     left: 28px;
   }
 }
 
 // Public Sale tooltip/legend style
 #publicSale--label {
-  bottom: 170px;
+  bottom: 210px;
   right: 7px;
-  @media (min-width: 768px) { bottom: 150px; }
+
+  @media (min-width: 768px) { bottom: 190px; }
 }
 #publicSale--percent {
-  bottom: 140px;
+  bottom: 168px;
   right: 7px;
-  @media (min-width: 768px) { bottom: 175px; }
+  
+  @media (min-width: 768px) { bottom: 215px; }
 }
 @media (min-width: 1025px) {
   #publicSale--label, #publicSale--percent { right: -27px; }
 }
 #publicSale--pointer {
-  bottom: 186px;
+  bottom: 226px;
   right: 50px;
-  // width: 30px;
 
   @media (min-width: 768px) {
-    bottom: 229px;
+    bottom: 269px;
     right: 52px;
-    // width: 80px;
   }
 
   @media (min-width: 1025px) {
-    bottom: 233px;
+    bottom: 273px;
     right: 30px;
-    // width: 120px;
   }
 }
 #publicSale--pointer-group {
   display: none !important;
-  bottom: 118px;
+  bottom: 158px;
   right: 65px;
   height: 75px !important;
   width: 15px;
@@ -280,23 +287,23 @@
   z-index: 2;
 
   @media (min-width: 768px) {
-    bottom: 140px;
+    bottom: 180px;
     right: 120px;
     height: 145px !important;
     width: 30px;
   }
 }
 #publicSale--pointer-dot {
-  bottom: 183px;
+  bottom: 223px;
   right: 50px;
 
   @media (min-width: 768px) {
-    bottom: 226px;
+    bottom: 266px;
     right: 52px;
   }
 
   @media (min-width: 1025px) {
-    bottom: 230px;
+    bottom: 270px;
     right: 27px;
   }
 }
