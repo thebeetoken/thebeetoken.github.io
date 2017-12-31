@@ -4,8 +4,12 @@
   height: auto;
   width: 100vw;
   background-color: #37474f;
-  padding: 7vh 10vw;
+  padding: 78px 0;
   box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 100px 0;
+  }
 
   h3 {
     font-family: 'Montserrat', sans-serif;
@@ -30,9 +34,13 @@
 
 .token-distribution-table {
   height: auto;
-  width: 80vw;
+  width: 100vw;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 80vw;
+  }
 
   .table-head {
     width: 100%;
@@ -42,14 +50,16 @@
   }
 
   .table-head h4 {
-    font-size: 20px;
+    font-size: 17px;
     color: #edb72d;
     text-align: center;
+    @media (min-width: 768px) { font-size: 18px; }
+    @media (min-width: 1025px) { font-size: 20px; }
   }
 
   .table-head h5 {
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 11px;
+    font-weight: 100;
     color: #fff;
     text-align: center;
     margin: 5px;
@@ -90,8 +100,8 @@
     }
 
     .row h4 {
-      font-size: 13px;
-      font-weight: 500;
+      font-size: 11px;
+      font-weight: 400;
       color: #fff;
       text-align: center;
       margin: 0;
