@@ -143,62 +143,14 @@
   background-image: url("https://res.cloudinary.com/dlvkxi2wx/image/upload/v1514663154/request_gy17lp.png");
 }
 
-
-.partners-logos {
-  width: 80vw;
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: space-around;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  @media (min-width: 768px) {
-    width: 740px;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  @media (min-width: 1025px) {
-    width: 1025px;
-  }
-
-  li {
-    width: 235px;
-    height: 75px;
-    background-color: rgba(255,255,255,0.3);
-    list-style-type: none;
-    margin: 15px;
-    font-size: 14px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .2s ease-in-out;
-
-    @media (min-width: 768px) {
-      width: 175px;
-      height: 63.7777px;
-    }
-
-    @media (min-width: 1025px) {
-      width: 275px;
-      height: 90px;
-      margin: 20px;
-      font-size: 16px;
-    }
-  }
-}
-
 .partners-content-no-top-padding {
   box-sizing: border-box;
   height: auto;
   width: 80vw;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0;
+  padding-bottom: 30px;
 
   @media (min-width: 768px) {
     display: flex;
