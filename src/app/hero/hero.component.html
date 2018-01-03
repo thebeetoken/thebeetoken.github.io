@@ -9,6 +9,7 @@
         <h3 class="home-text">The Future of Home Sharing</h3>
 
         <hr />
+        <!--
         <div *ngIf="!end">
           <h6 class="presale-text" *ngIf="!registration">Presale registration starts in</h6>
           <h6 class="presale-text" *ngIf="registration">Presale registration ends in</h6>
@@ -36,11 +37,13 @@
             </div>
           </div>
         </div>
+        -->
 
-        <bee-sold-out *ngIf="end"></bee-sold-out>
+        <bee-sold-out></bee-sold-out>
         <hr />
 
         <div class="registration-container">
+          <!--
           <a *ngIf="!registration" class="whitepaper" href="https://www.beetoken.com/presaleinterest" target="_blank">
             <button>Presale Interest Form</button>
           </a>
@@ -48,6 +51,8 @@
             <button>Register for Presale</button>
           </a>
           <a *ngIf="end" target="_blank">
+          -->
+          <a target="_blank">
             <bee-email-form></bee-email-form>
           </a>
         </div>
