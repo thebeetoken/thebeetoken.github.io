@@ -5,7 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
   imports: [
     RouterModule.forRoot(<Routes>[
       { path: '', pathMatch: 'full', loadChildren: '../presale#PresaleModule' },
-      { path: 'home', loadChildren: '../home#HomeModule' },
+      // { path: '', pathMatch: 'full', loadChildren: '../home#HomeModule' },
+      // { path: 'presale', loadChildren: '../presale#PresaleModule' },
       { path: 'whitepaper', loadChildren: '../redirect#RedirectModule' }
     ]),
   ],

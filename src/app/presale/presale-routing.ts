@@ -6,7 +6,7 @@ import { PresaleComponent } from './presale.component';
 @NgModule({
   imports: [
     RouterModule.forChild(<Routes>[
-      { path: '', component: PresaleComponent},
+      { path: '',  pathMatch: 'full', component: PresaleComponent}
     ]),
   ],
   exports: [
