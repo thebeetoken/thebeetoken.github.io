@@ -7,8 +7,7 @@ import { PresaleComponent } from './presale.component';
 import { PresaleRoutingModule } from './presale-routing';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
-import { RegistrationComponent } from './registration/registration.component';
-import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { ICOComponent } from './ico/ico.component';
 
 @NgModule({
   imports: [
@@ -20,8 +19,7 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     HeaderComponent,
     FooterComponent,
     PresaleComponent,
-    ConfirmationComponent,
-    RegistrationComponent
+    ICOComponent
   ],
   providers: [],
 })
