@@ -203,6 +203,7 @@ header {
 
 .header-social-container {
   display: flex;
+  justify-content: space-between;
   width: 256px;
 
   a {

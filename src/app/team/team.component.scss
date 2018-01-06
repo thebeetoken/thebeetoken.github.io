@@ -93,11 +93,25 @@
     max-height: 960px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 10px;
 
     &.open {
       max-height: 5500px;
+    }
+
+    .member-container:nth-child(1),
+    .member-container:nth-child(2n + 1) {
+      margin-right: 35px;
+    }
+
+    .member-container:nth-child(2),
+    .member-container:nth-child(2n + 2) {
+      margin-left: 35px;
+    }
+
+    .member-container:last-of-type {
+      margin-right: 0;
     }
   }
 
