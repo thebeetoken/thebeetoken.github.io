@@ -141,22 +141,22 @@
   #teamAdvisors--label, #teamAdvisors--percent { left: -20px; }
 }
 #teamAdvisors--pointer {
-  bottom: 101px;
+  bottom: 82px;
   left: 47px;
-  @media (min-width: 768px) { bottom: 52px; }
+  @media (min-width: 768px) { bottom: 34px; }
 
   @media (min-width: 1025px) {
-    bottom: 57px;
+    bottom: 39px;
     left: 27px;
   }
 }
 #teamAdvisors--pointer-dot {
-  bottom: 98px;
+  bottom: 79px;
   left: 47px;
-  @media (min-width: 768px) { bottom: 49px; }
+  @media (min-width: 768px) { bottom: 31px; }
 
   @media (min-width: 1025px) {
-    bottom: 54px;
+    bottom: 36px;
     left: 21px;
   }
 }
@@ -169,7 +169,7 @@
   @media (min-width: 768px) { bottom: -30px; }
 }
 #communityReserve--percent {
-  bottom: 55px;
+  bottom: 54px;
   right: 5px;
 
   @media (min-width: 768px) { bottom: -1px; }
@@ -177,24 +177,23 @@
 @media (min-width: 1025px) {
   #communityReserve--label, #communityReserve--percent { right: -27px; }
 }
-
 #communityReserve--pointer {
-  bottom: 101px;
+  bottom: 82px;
   right: 50px;
-  @media (min-width: 768px) { bottom: 52px; }
+  @media (min-width: 768px) { bottom: 34px; }
 
   @media (min-width: 1025px) {
-    bottom: 57px;
+    bottom: 39px;
     right: 27px;
   }
 }
 #communityReserve--pointer-dot {
-  bottom: 98px;
+  bottom: 79px;
   right: 50px;
-  @media (min-width: 768px) { bottom: 49px; }
+  @media (min-width: 768px) { bottom: 31px; }
 
   @media (min-width: 1025px) {
-    bottom: 55px;
+    bottom: 37px;
     right: 24px;
   }
 }
@@ -216,65 +215,65 @@
   #companyReserve--label, #companyReserve--percent { left: -20px; }
 }
 #companyReserve--pointer {
-  bottom: 226px;
+  bottom: 208px;
   left: 50px;
 
   @media (min-width: 768px) {
-    bottom: 269px;
+    bottom: 250px;
     left: 52px;
   }
 
   @media (min-width: 1025px) {
-    bottom: 273px;
+    bottom: 255px;
     left: 30px;
   }
 }
 #companyReserve--pointer-dot {
-  bottom: 223px;
+  bottom: 205px;
   left: 50px;
 
   @media (min-width: 768px) {
-    bottom: 266px;
+    bottom: 247px;
     left: 52px;
   }
 
   @media (min-width: 1025px) {
-    bottom: 270px;
+    bottom: 253px;
     left: 28px;
   }
 }
 
 // Public Sale tooltip/legend style
-#publicSale--label {
+#tokenDistribution--label {
   bottom: 210px;
   right: 7px;
 
   @media (min-width: 768px) { bottom: 190px; }
 }
-#publicSale--percent {
-  bottom: 168px;
+#tokenDistribution--percent {
+  bottom: 180px;
   right: 7px;
-  
+
   @media (min-width: 768px) { bottom: 215px; }
 }
 @media (min-width: 1025px) {
-  #publicSale--label, #publicSale--percent { right: -27px; }
+  #tokenDistribution--label, #tokenDistribution--percent { right: -27px; }
 }
-#publicSale--pointer {
-  bottom: 226px;
+#tokenDistribution--pointer {
+  bottom: 208px;
   right: 50px;
 
   @media (min-width: 768px) {
-    bottom: 269px;
+    bottom: 249px;
     right: 52px;
   }
 
   @media (min-width: 1025px) {
-    bottom: 273px;
+    bottom: 255px;
     right: 30px;
   }
 }
-#publicSale--pointer-group {
+#tokenDistribution--pointer-group {
   display: none !important;
   bottom: 158px;
   right: 65px;
@@ -292,17 +291,17 @@
     width: 30px;
   }
 }
-#publicSale--pointer-dot {
-  bottom: 223px;
+#tokenDistribution--pointer-dot {
+  bottom: 205px;
   right: 50px;
 
   @media (min-width: 768px) {
-    bottom: 266px;
+    bottom: 247px;
     right: 52px;
   }
 
   @media (min-width: 1025px) {
-    bottom: 270px;
+    bottom: 253px;
     right: 27px;
   }
 }

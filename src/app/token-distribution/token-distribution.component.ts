@@ -11,7 +11,7 @@ export class TokenDistributionComponent {
 
   teamAndAdvisors = 'Team & Advisors';
   companyReserve = 'Company Reserve';
-  publicSale = 'Token Distribution';
+  tokenDistribution = 'Token Distribution';
   communityReserve = 'Community Reserve';
 
   ngOnInit() {
@@ -45,7 +45,7 @@ export class TokenDistributionComponent {
           this.communityReserve,
           this.teamAndAdvisors,
           this.companyReserve,
-          this.publicSale,
+          this.tokenDistribution,
         ],
       },
       options: {
