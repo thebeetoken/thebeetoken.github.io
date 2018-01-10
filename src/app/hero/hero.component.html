@@ -9,10 +9,10 @@
         <h3 class="home-text">The Future of Home Sharing</h3>
 
         <hr />
-        <!--
+        
         <div *ngIf="!end">
-          <h6 class="presale-text" *ngIf="!registration">Presale registration starts in</h6>
-          <h6 class="presale-text" *ngIf="registration">Presale registration ends in</h6>
+          <h6 class="presale-text" *ngIf="!registration">The Beetoken Whitelist opens in</h6>
+          <h6 class="presale-text" *ngIf="registration">Our Whitelist in end in</h6>
           <div class="hero-countdown">
             <div class="hero-metric">
               <span class="hero-countdown-integer">{{days}}</span>
@@ -37,27 +37,15 @@
             </div>
           </div>
         </div>
-        -->
-
-        <bee-sold-out></bee-sold-out>
+        <bee-sold-out *ngIf="end"></bee-sold-out>
         <hr />
 
         <div class="registration-container">
-          
-          <!-- <a *ngIf="!registration" class="whitepaper" href="https://www.beetoken.com/presaleinterest" target="_blank">
-            <button>Presale Interest Form</button>
-          </a>
-          <a *ngIf="registration && !sale" class="whitepaper" href="https://www.beetoken.com/presaleregistration" target="_blank">
-            <button>Register for Presale</button>
-          </a>
-          <a *ngIf="end" target="_blank"> -->
-         
-          <a class="whitepaper" href="https://www.beetoken.com/tgewhitelist" target="_blank">
+          <a *ngIf="registration && !end" class="whitepaper" href="https://www.beetoken.com/tgewhitelist" target="_blank">
             <button>Sign up for the Whitelist</button>
-          </a>
-
+          </a>         
           <!-- <a target="_blank"> -->
-            <!-- <bee-email-form></bee-email-form> -->
+          <bee-email-form *ngIf="end"></bee-email-form>
           <!-- </a> -->
         </div>
 

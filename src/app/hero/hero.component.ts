@@ -15,9 +15,9 @@ export class HeroComponent implements OnInit {
   private min: any;
   private sec: any;
   // Presale Registration starts: Jan 2nd 2018 @12h PT == Jan 2nd 2018 @20h UTC
-  private registrationDate: Date = new Date(Date.UTC(2018, 0, 2, 20));
+  private registrationDate: Date = new Date(Date.UTC(2018, 0, 10, 20));
   // Jan 19th 2018 @23h59 PT == Jan 20th 2018 @7h59 UTC
-  private preSaleDate: Date = new Date(Date.UTC(2018, 0, 20, 7, 59));
+  private preSaleDate: Date = new Date(Date.UTC(2018, 0, 17, 20));
   private registration: boolean = false;
   private sale: boolean = false;
   private end: boolean = false; 
