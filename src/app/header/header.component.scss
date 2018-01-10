@@ -84,19 +84,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 690px;
+    width: 850px;
     height: 50px;
-  
+
     a {
       font-weight: 600;
       color: #fff;
       font-size: 16px;
-      line-height: 50px;
+      line-height: 24px;
       text-decoration: none;
+      padding: 16px;
     }
   
     button {
-      width: 176px;
+      width: 136px;
       height: 50px;
       background: transparent;
       border: none;
