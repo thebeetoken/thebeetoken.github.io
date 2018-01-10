@@ -15,12 +15,12 @@ export class HeroComponent implements OnInit {
   private min: any;
   private sec: any;
   // Presale Registration starts: Jan 2nd 2018 @12h PT == Jan 2nd 2018 @20h UTC
-  private registrationDate: Date = new Date(Date.UTC(2018, 0, 2, 20));
+  private registrationDate: Date = new Date(Date.UTC(2018, 0, 10, 20));
   // Jan 19th 2018 @23h59 PT == Jan 20th 2018 @7h59 UTC
-  private preSaleDate: Date = new Date(Date.UTC(2018, 0, 20, 7, 59));
+  // private preSaleDate: Date = new Date(Date.UTC(2018, 0, 20, 7, 59));
   private registration: boolean = false;
-  private sale: boolean = false;
-  private end: boolean = false; 
+  // private sale: boolean = false;
+  // private end: boolean = false; 
 
   constructor(@Inject(DOCUMENT) private doc: Document) { }
 
@@ -37,29 +37,15 @@ export class HeroComponent implements OnInit {
     let countDown = Observable
       .interval(1000)
       .subscribe(() => {
-        if(this.end) countDown.unsubscribe();
+        if(this.registration) countDown.unsubscribe();
         else this.handleCountDown();
       });
   }
 
   handleCountDown() {
     let now = new Date().getTime();
-    let remainTime;
-    if(!this.registration){
-      remainTime = this.registrationDate.getTime() - now;
-      if(remainTime <= 0) this.registration = true;
-    }
-    if(this.registration) {
-      remainTime = this.preSaleDate.getTime() - now;
-      if(remainTime <= 0) this.sale = true;
-    }
-    if(this.sale) {
-      remainTime = this.preSaleDate.getTime() - now;
-      if(remainTime <= 0) {
-        this.end = true;
-        return;
-      }
-    }
+    let remainTime = this.registrationDate.getTime() - now;
+    if(remainTime <= 0) this.registration = true;
 
     let sec = Math.floor(remainTime / 1000);
     let min = Math.floor(sec / 60);
