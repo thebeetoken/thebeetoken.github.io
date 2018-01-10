@@ -1,6 +1,7 @@
 @import "token-distribution-chart.scss";
 
 .token-distribution-container {
+  position: relative;
   height: auto;
   width: 100vw;
   background-color: #37474f;
@@ -121,4 +122,17 @@
   justify-content: space-around;
   padding: 1.25em .25em;
   box-sizing: border-box;
+}
+
+#token {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 60px;
+
+  @media (min-width: 1025px) {
+    top: -30px;
+  }
 }
