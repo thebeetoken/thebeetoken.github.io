@@ -419,19 +419,21 @@ button {
 
 .about-bee-trail {
   position: absolute;
-  top: -165px;
-  left: 10px;
+  top: -160px;
+  left: 28px;
   height: 219px;
   width: 75px;
   background: url('/assets/images/hero/about-bee-path-mobile.png');
   background-position: center center;
   background-repeat: no-repeat;
-  transform: scale(0.75);
+  transform: scale(0.55);
   background-size: cover;
 
   @media (min-width: 768px) {
-    left: 130px;
-    top: -250px;
+    left: 156px;
+    top: -228px;
+    transform: scale(0.75);
+
   }
 
   @media (min-width: 1025px) {
